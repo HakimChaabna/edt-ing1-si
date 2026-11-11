@@ -1,6 +1,6 @@
 {
-  "name": "Emploi du temps ING1 SI",
-  "short_name": "EDT SI",
+  "name": "Planning ING1 SI",
+  "short_name": "Planning",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#0A1A3A",
