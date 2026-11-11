@@ -1,0 +1,33 @@
+name: Mise à jour de l'EDT
+
+on:
+  schedule:
+    - cron: "*/30 5-21 * * *"   # toutes les 30 min, de 6h à 23h (heure de Paris en hiver)
+  workflow_dispatch:            # bouton « Run workflow » pour lancer à la main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: edt
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Récupérer ADE
+        env:
+          ADE_URL_FISE: ${{ secrets.ADE_URL_FISE }}
+          ADE_URL_FISA: ${{ secrets.ADE_URL_FISA }}
+        run: python3 scripts/build.py
+      - name: Publier si l'EDT a changé
+        run: |
+          git config user.name "edt-bot"
+          git config user.email "edt-bot@users.noreply.github.com"
+          git add data/events.json
+          git diff --cached --quiet || (git commit -m "EDT mis à jour" && git push)
