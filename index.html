@@ -57,6 +57,12 @@
   .list{display:flex;flex-direction:column;gap:14px}
 
   .slot{display:flex;flex-direction:column;gap:7px}
+  .cards{display:flex;flex-direction:column;gap:8px;height:var(--slot-h)}
+  .cards .ev{height:auto;flex:1;min-height:0}
+  .slot.multi .ev{padding-top:10px;padding-bottom:10px}
+  .slot.multi .ev::before{top:10px;bottom:10px}
+  .slot.multi .title{-webkit-line-clamp:1}
+  .slot.multi .room{font-size:13px}
   .when{font-size:13px;font-weight:500;color:var(--mute);padding-left:4px;font-variant-numeric:tabular-nums;
     display:flex;align-items:center;gap:6px}
   .when.live{color:var(--red)}
@@ -98,7 +104,8 @@
   .col h3{display:flex;gap:8px;align-items:baseline;font-size:15px;font-weight:400;color:var(--mute);margin:0 4px 12px}
   .col h3 b{font-size:22px;font-weight:600;color:var(--txt)}
   .col.today h3,.col.today h3 b{color:var(--red)}
-  .ev,.empty{height:128px}
+  :root{--slot-h:128px}
+  .ev,.empty{height:var(--slot-h)}
   .title{font-size:16px;-webkit-line-clamp:3}
 
   /* téléphone : la même semaine, qu'on fait défiler horizontalement colonne par colonne */
@@ -107,7 +114,7 @@
       margin:0 -20px;padding:2px 20px 8px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
     .board::-webkit-scrollbar{display:none}
     .col{flex:0 0 calc(100% - 70px);scroll-snap-align:start}
-    .ev,.empty{height:118px}
+    :root{--slot-h:118px}
     .title{font-size:17px}
     .big{font-size:32px}
   }
@@ -208,21 +215,33 @@ function render(){
     const cls = [sameDay(d, now) ? "today" : "", sameDay(d, selDay) ? "sel" : "", list.length ? "has" : ""].join(" ");
     pills += `<button class="day ${cls}" data-i="${i}"><span>${DAYS[d.getDay()]}</span><b>${d.getDate()}</b><i></i></button>`;
 
+    // deux créneaux fixes par jour (matin / après-midi) pour que tout reste aligné d'un jour à l'autre
+    const halves = [
+      {label: "Matin", items: list.filter(e => e.s.getHours() < 13)},
+      {label: "Après-midi", items: list.filter(e => e.s.getHours() >= 13)},
+    ];
     let body = "";
-    if (!list.length){
-      body = `<div class="empty">Pas de cours</div>`;
-    } else {
-      list.forEach((e, k) => {
-        const live = now >= e.s && now < e.e;
+    halves.forEach(h => {
+      const n = h.items.length;
+      if (!n){
+        body += `<div class="slot"><div class="when">${h.label}</div><div class="empty">Pas de cours</div></div>`;
+        return;
+      }
+      const first = h.items[0], last = h.items[n-1];
+      const live = h.items.some(e => now >= e.s && now < e.e);
+      let cards = "";
+      h.items.forEach(e => {
         const past = now >= e.e;
-        body += `<div class="slot">
-          <div class="when ${live ? "live" : ""}">${hm(e.s)} – ${hm(e.e)}${live ? " · En cours" : ""}</div>
-          <button class="ev ${past ? "past" : ""}" style="--c:${e.c}" data-id="${esc(e.id)}">
+        const sub = n > 1 ? `${hm(e.s)} – ${hm(e.e)}${e.room ? " · " + esc(e.room) : ""}` : esc(e.room || "Salle non indiquée");
+        cards += `<button class="ev ${past ? "past" : ""}" style="--c:${e.c}" data-id="${esc(e.id)}">
             <div class="title">${esc(e.title)}</div>
-            <div class="room">${esc(e.room || "Salle non indiquée")}</div>
-          </button></div>`;
+            <div class="room">${sub}</div>
+          </button>`;
       });
-    }
+      body += `<div class="slot ${n > 1 ? "multi" : ""}" style="--k:${n}">
+        <div class="when ${live ? "live" : ""}">${hm(first.s)} – ${hm(last.e)}${live ? " · En cours" : ""}</div>
+        <div class="cards">${cards}</div></div>`;
+    });
     cols += `<section class="col ${sameDay(d, selDay) ? "sel" : ""} ${sameDay(d, now) ? "today" : ""}">
       <h3><span>${DAYS_LONG[d.getDay()]}</span><b>${d.getDate()}</b></h3><div class="list">${body}</div></section>`;
   }
