@@ -262,11 +262,28 @@ function render(){
     if (target) $("board").scrollLeft = target.offsetLeft - 20;
   }
 
-  if (updated){
-    const min = Math.round((now - updated) / 60000);
-    const ago = min < 1 ? "à l'instant" : min < 60 ? `il y a ${min} min` : min < 1440 ? `il y a ${Math.round(min/60)} h` : `le ${updated.getDate()} ${MONTHS[updated.getMonth()]}`;
-    $("foot").innerHTML = `Mis à jour ${ago} depuis ADE<br>En cas de doute, ADE et le groupe Annonces font foi.`;
+  const ref = lastCheck || updated;
+  if (ref){
+    const min = Math.round((now - ref) / 60000);
+    const ago = min < 1 ? "à l'instant" : min < 60 ? `il y a ${min} min` : min < 1440 ? `il y a ${Math.round(min/60)} h` : `le ${ref.getDate()} ${MONTHS[ref.getMonth()]}`;
+    const verb = lastCheck ? "Vérifié" : "Mis à jour";
+    const warn = lastFailed ? "⚠️ Dernière synchronisation échouée · " : "";
+    $("foot").innerHTML = `${warn}${verb} ${ago} depuis ADE<br>En cas de doute, ADE et le groupe Annonces font foi.`;
   }
+}
+
+// heure du dernier passage du robot, demandée directement à GitHub (sans commit)
+let lastCheck = null, lastFailed = false;
+async function loadLastCheck(){
+  try {
+    const r = await fetch("https://api.github.com/repos/HakimChaabna/edt-ing1-si/actions/workflows/update.yml/runs?per_page=1&status=completed");
+    if (!r.ok) return;
+    const run = (await r.json()).workflow_runs?.[0];
+    if (!run) return;
+    lastCheck = new Date(run.updated_at);
+    lastFailed = run.conclusion !== "success";
+    render();
+  } catch {}
 }
 
 function openSheet(id){
@@ -333,6 +350,7 @@ $("seg").onclick = ev => { const b = ev.target.closest("button"); if (b && b.dat
     const r = await fetch("data/events.json?v=" + Date.now(), {cache: "no-store"});
     if (!r.ok) throw new Error(r.status);
     load(await r.json());
+    loadLastCheck();
   } catch (err) {
     $("board").innerHTML = `<div class="msg">Impossible de charger l'emploi du temps pour le moment.<br>Réessaie dans quelques minutes.</div>`;
   }
