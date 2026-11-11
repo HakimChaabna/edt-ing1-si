@@ -57,7 +57,7 @@
   .list{display:flex;flex-direction:column;gap:14px}
 
   .slot{display:flex;flex-direction:column;gap:7px}
-  .slot.ghost{visibility:hidden}
+  .cards .empty{height:auto;flex:1}
   .slot.full .cards{height:calc(var(--slot-h) * 2 + 17px + 7px + 14px)}
   .cards{display:flex;flex-direction:column;gap:8px;height:var(--slot-h)}
   .cards .ev{height:auto;flex:1;min-height:0}
@@ -155,6 +155,7 @@ const PALETTE = ["#007AFF","#34C759","#FF9500","#AF52DE","#30B0C7","#5856D6","#A
 const MONTHS_LONG = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
 
 const PIN = `<svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1.5a4.5 4.5 0 0 0-4.5 4.5c0 3.2 3.8 7.6 4.1 8a.5.5 0 0 0 .8 0c.3-.4 4.1-4.8 4.1-8A4.5 4.5 0 0 0 8 1.5Zm0 6.2a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4Z"/></svg>`;
+const isCompanyDay = e => /entreprise/i.test(e.title);
 const $ = id => document.getElementById(id);
 let scrollPending = true;
 let events = [], allEvents = [], tracks = [], track = null, updated = null, weekStart, selDay;
@@ -230,16 +231,20 @@ function render(){
     };
     const slotHtml = (items, cls = "") => {
       const n = items.length;
-      if (!n) return `<div class="slot ghost" aria-hidden="true"><div class="when">&nbsp;</div><div class="cards"></div></div>`;
+      if (!n) return `<div class="slot ${cls}"><div class="when">&nbsp;</div><div class="cards"><div class="empty">Pas de cours</div></div></div>`;
       const live = items.some(e => now >= e.s && now < e.e);
       const first = items[0], last = items.reduce((a, b) => b.e > a.e ? b : a);
+      // pas d'horaire pour les journées en entreprise : ça dépend de chaque entreprise
+      const label = items.every(isCompanyDay) ? "&nbsp;" : `${hm(first.s)} – ${hm(last.e)}${live ? " · En cours" : ""}`;
       return `<div class="slot ${n > 1 ? "multi" : ""} ${cls}">
-        <div class="when ${live ? "live" : ""}">${hm(first.s)} – ${hm(last.e)}${live ? " · En cours" : ""}</div>
+        <div class="when ${live && label !== "&nbsp;" ? "live" : ""}">${label}</div>
         <div class="cards">${items.map(e => card(e, n)).join("")}</div></div>`;
     };
     const spansDay = e => e.s.getHours() < 13 && (e.e.getHours() > 14 || (e.e.getHours() === 14 && e.e.getMinutes() > 0));
     let body = "";
-    if (list.length && list.every(spansDay)) {
+    if (!list.length) {
+      body = slotHtml([], "full");
+    } else if (list.every(spansDay)) {
       body = slotHtml(list, "full");
     } else {
       body = slotHtml(list.filter(e => e.s.getHours() < 13)) + slotHtml(list.filter(e => e.s.getHours() >= 13));
@@ -270,11 +275,11 @@ function openSheet(id){
   const dur = Math.round((e.e - e.s) / 60000);
   $("sheet").innerHTML = `<div class="grab"></div>
     <div class="top" style="--c:${e.c}"><h4><span class="dot"></span>${esc(e.title)}</h4><button class="close" id="closeBtn">OK</button></div>
-    <p class="sw">${DAYS_LONG[e.s.getDay()]} ${e.s.getDate()} ${MONTHS_LONG[e.s.getMonth()]} · ${hm(e.s)} – ${hm(e.e)}</p>
+    <p class="sw">${DAYS_LONG[e.s.getDay()]} ${e.s.getDate()} ${MONTHS_LONG[e.s.getMonth()]}${isCompanyDay(e) ? "" : ` · ${hm(e.s)} – ${hm(e.e)}`}</p>
     <div class="group">
       ${row("Salle", esc(e.room))}
       ${row("Type", esc(e.type))}
-      ${row("Durée", `${Math.floor(dur/60)} h${dur%60 ? " "+pad(dur%60) : ""}`)}
+      ${isCompanyDay(e) ? "" : row("Durée", `${Math.floor(dur/60)} h${dur%60 ? " "+pad(dur%60) : ""}`)}
       ${row(e.teachers.length > 1 ? "Enseignants" : "Enseignant", e.teachers.map(esc).join("<br>"))}
       ${row("Groupes", e.groups.map(esc).join("<br>"))}
     </div>`;
