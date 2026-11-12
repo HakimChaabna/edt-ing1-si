@@ -206,6 +206,8 @@ const HW_TYPES = {
   "À préparer": {bg: "#EBEBEF", fg: "#55555C", dot: "#8E8E93"},
 };
 const hwStyle = h => { const t = HW_TYPES[h.type] || HW_TYPES["À préparer"]; return `--hb:${t.bg};--hf:${t.fg};--hc:${t.dot}`; };
+const subjectKey = code => (codeTitle[code] || code || "").toLowerCase();
+const sameSubject = (a, b) => a === b || subjectKey(a) === subjectKey(b);
 const hwLabel = h => esc(h.type) + (h.status === "pending" ? " ?" : "");
 const $ = id => document.getElementById(id);
 let scrollPending = true;
@@ -269,7 +271,7 @@ function render(){
   // (le week-end va sous le dernier jour affiché)
   hwByCourse = {}; dueBoxes = Array.from({length: n}, () => []);
   homework.filter(h => h.d >= weekStart && h.d < addDays(weekStart, 7)).forEach(h => {
-    const course = wk.find(e => sameDay(e.s, h.d) && e.code === h.code && (!h.due || (h.due >= e.s && h.due <= e.e)));
+    const course = wk.find(e => sameDay(e.s, h.d) && sameSubject(e.code, h.code) && (!h.due || (h.due >= e.s && h.due <= e.e)));
     if (course) (hwByCourse[course.id] ||= []).push(h);
     else dueBoxes[Math.min(Math.round((h.d - weekStart) / 864e5), n - 1)].push(h);
   });
@@ -395,7 +397,7 @@ function openDue(i){
 function dedupe(list){
   const best = {};
   list.forEach(h => {
-    const k = `${h.date}|${h.code}|${h.type}`;
+    const k = `${h.date}|${subjectKey(h.code)}|${h.type}`;
     if (!best[k] || (best[k].status === "pending" && h.status === "ok")) best[k] = h;
   });
   return Object.values(best);
@@ -427,7 +429,9 @@ function toast(msg, ms = 2600){
 function openPropose(){
   const iso = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
   const today = new Date();
-  const codes = Object.keys(codeTitle).filter(c => !/entreprise/i.test(codeTitle[c])).sort((a, b) => codeTitle[a].localeCompare(codeTitle[b], "fr"));
+  const byTitle = {};
+  Object.keys(codeTitle).sort().forEach(c => { if (!/entreprise/i.test(codeTitle[c]) && !byTitle[subjectKey(c)]) byTitle[subjectKey(c)] = c; });
+  const codes = Object.values(byTitle).sort((a, b) => codeTitle[a].localeCompare(codeTitle[b], "fr"));
   const segBtns = (name, opts, on) => `<div class="seg" data-name="${name}">${opts.map(o => `<button type="button" class="${o === on ? "on" : ""}" data-v="${o}">${o}</button>`).join("")}</div>`;
   $("sheet").innerHTML = `<div class="grab"></div>
     <div class="top"><h4>Proposer un devoir</h4><button class="close" id="closeBtn">Annuler</button></div>
