@@ -77,10 +77,14 @@
   .title{font-size:17px;font-weight:600;line-height:1.25;letter-spacing:-.2px;
     display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
   .room{font-size:15px;color:var(--mute);display:flex;align-items:center;gap:6px;min-width:0}
-  .rt{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .rt{flex:0 1 auto;min-width:44px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .room .hw{flex-shrink:0}
+  .room{overflow:hidden}
   .hw{flex:none;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;color:var(--hf);background:var(--hb)}
   .hw.pending{color:var(--mute);background:transparent;box-shadow:inset 0 0 0 1px #C7C7CC;border-radius:999px}
-  .ev.cancel .title{text-decoration:line-through}
+  .ev.cancel{background:#F7F7F9}
+  .ev.cancel .title{text-decoration:line-through;color:var(--mute)}
+  .ev.cancel::before{background:#C7C7CC}
   .due{margin-top:14px;width:100%;text-align:left;background:var(--card);border-radius:18px;padding:14px 18px;
     box-shadow:0 1px 2px rgba(0,0,0,.04),0 0 0 .5px rgba(0,0,0,.04);transition:transform .15s}
   .due:active{transform:scale(.98)}
@@ -112,6 +116,36 @@
   .send{display:block;width:100%;margin-top:16px;padding:14px;border-radius:14px;background:var(--red);color:#fff;font-size:17px;font-weight:600}
   .send:disabled{opacity:.5}
   .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+  .hdr-r{display:flex;align-items:center;gap:8px}
+  .abadge{font-size:13px;font-weight:600;padding:6px 11px;border-radius:999px;background:rgba(118,118,128,.12);color:var(--txt)}
+  .abadge.has{background:var(--red);color:#fff}
+  .abadge[hidden]{display:none}
+  .alink{display:block;margin:14px auto 0;font-size:13px;color:var(--mute);text-decoration:underline;text-underline-offset:2px}
+  .btnrow{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+  .btnrow .propose{margin:26px 0 0}
+  .acts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .act{background:var(--card);border-radius:12px;padding:12px;font-size:15px;font-weight:600;color:var(--txt);text-align:left;
+    box-shadow:0 0 0 .5px rgba(0,0,0,.06)}
+  .act small{display:block;font-size:12px;font-weight:400;color:var(--mute);margin-top:2px}
+  .act.on{box-shadow:inset 0 0 0 1.5px var(--txt)}
+  .act:disabled{opacity:.5}
+  .inl{margin-top:8px;display:flex;gap:8px}
+  .inl input{flex:1;font:inherit;font-size:16px;padding:10px 12px;border-radius:10px;border:0;background:var(--card);box-shadow:0 0 0 .5px rgba(0,0,0,.1);outline:none}
+  .inl button{padding:10px 14px;border-radius:10px;background:var(--txt);color:#fff;font-size:15px;font-weight:600}
+  .pc{background:var(--card);border-radius:14px;padding:14px 16px;margin-top:10px}
+  .pc .ph{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:15px;font-weight:600}
+  .pc .pd{font-size:15px;margin-top:6px;color:var(--txt)}
+  .pc .pd.none{color:var(--mute);font-style:italic}
+  .pc .pw{font-size:13px;color:#B24A00;margin-top:6px}
+  .pc .pb{display:flex;gap:8px;margin-top:12px}
+  .pc .pb button{flex:1;padding:10px;border-radius:10px;font-size:15px;font-weight:600;background:rgba(118,118,128,.12);color:var(--txt)}
+  .pc .pb .ok{background:var(--red);color:#fff}
+  .pc .pb button:disabled{opacity:.5}
+  .pc .group{margin-top:10px;background:var(--bg)}
+  .mini{display:inline-flex;gap:6px;margin-left:8px}
+  .mini button{font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;background:rgba(118,118,128,.12)}
+  .mini .ok{background:var(--red);color:#fff}
+  .empty-list{color:var(--mute);text-align:center;padding:30px 0;font-size:15px}
   .toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translate(-50%,20px);opacity:0;
     background:#1C1C1E;color:#fff;font-size:15px;padding:11px 18px;border-radius:999px;transition:.3s;pointer-events:none;z-index:20}
   .toast.on{opacity:1;transform:translate(-50%,0)}
@@ -166,7 +200,7 @@
 <div class="wrap">
   <header>
     <span class="sub">ING1 SI · EPISEN</span>
-    <div class="seg" id="seg" hidden></div>
+    <div class="hdr-r"><button class="abadge" id="adminBadge" hidden></button><div class="seg" id="seg" hidden></div></div>
   </header>
   <h1 class="big" id="bigTitle">Emploi du temps</h1>
   <div class="weeknav">
@@ -179,8 +213,12 @@
   </div>
   <nav class="days" id="days"></nav>
   <main class="board" id="board"><div class="msg">Chargement…</div></main>
-  <button class="propose" id="proposeBtn" hidden>+ Proposer un devoir</button>
+  <div class="btnrow">
+    <button class="propose" id="proposeBtn" hidden>+ Proposer un devoir</button>
+    <button class="propose" id="addCourseBtn" hidden>+ Ajouter un cours</button>
+  </div>
   <footer id="foot"></footer>
+  <button class="alink" id="adminLink" hidden>Mode délégué</button>
 </div>
 <div class="toast" id="toast"></div>
 <div id="sheetRoot">
@@ -205,12 +243,24 @@ const HW_TYPES = {
   "À rendre":   {bg: "#E0EEFF", fg: "#0A4FA8", dot: "#007AFF"},
   "À préparer": {bg: "#FFF4C2", fg: "#8A6500", dot: "#FFCC00"},
 };
+// Modifications de cours faites par les délégués
+const CHG = {
+  cancel: {label: "Annulé",         bg: "#E5E5EA", fg: "#3A3A3C"},
+  visio:  {label: "Visio",          bg: "#EFE6FF", fg: "#6A2FC4"},
+  room:   {label: "Salle modifiée", bg: "#DDF3F6", fg: "#0A6B78"},
+  add:    {label: "Ajouté",         bg: "#DFF4E4", fg: "#1D7633"},
+  note:   {label: "Info",           bg: "#E7ECF4", fg: "#3A4A63"},
+};
+const chgPill = m => `<span class="hw" style="--hb:${CHG[m.action].bg};--hf:${CHG[m.action].fg}">${CHG[m.action].label}</span>`;
+const hasMod = (e, a) => (e.mods || []).some(m => m.action === a);
+const modVal = (e, a) => (e.mods || []).find(m => m.action === a)?.value;
 const hwStyle = h => { const t = HW_TYPES[h.type] || HW_TYPES["À préparer"]; return `--hb:${t.bg};--hf:${t.fg};--hc:${t.dot}`; };
 const subjectKey = code => (codeTitle[code] || code || "").toLowerCase();
 const sameSubject = (a, b) => a === b || subjectKey(a) === subjectKey(b);
 const hwLabel = h => esc(h.type) + (h.status === "pending" ? " ?" : "");
 const $ = id => document.getElementById(id);
 let scrollPending = true;
+let allChanges = [], colorOf = () => "#8E8E93";
 let allHomework = [], homework = [], dueBoxes = [], hwByCourse = {}, codeTitle = {};
 let events = [], allEvents = [], tracks = [], track = null, updated = null, weekStart, selDay;
 
@@ -219,10 +269,32 @@ function readTrack(){
   if (p) return p.toUpperCase();
   try { return localStorage.getItem("edt-track"); } catch { return null; }
 }
+// ADE garde la priorité : une modif dont le cours n'existe plus est ignorée,
+// un cours ajouté disparaît s'il apparaît pour de vrai dans ADE au même moment.
+function applyChanges(list, changes){
+  const out = list.map(e => ({...e, mods: []}));
+  changes.forEach(c => {
+    const d = new Date(c.date + "T00:00:00");
+    const at = hhmm => { const [H, M] = hhmm.split(":").map(Number); const x = new Date(d); x.setHours(H, M); return x; };
+    if (c.action === "add"){
+      const s = at(c.start), e = at(c.end);
+      if (out.some(x => sameSubject(x.code, c.code) && x.s < e && x.e > s)) return;
+      out.push({id: "chg-" + c.id, s, e, start: s.toISOString(), end: e.toISOString(), code: c.code,
+        title: c.title || codeTitle[c.code] || c.code, type: "", room: c.room || "", teachers: [], groups: [],
+        tracks: c.tracks, c: colorOf(c.code), mods: [{action: "add", id: c.id}]});
+      return;
+    }
+    const target = out.find(x => sameDay(x.s, d) && sameSubject(x.code, c.code) &&
+      (!c.slot || (c.slot === "matin") === (x.s.getHours() < 13)));
+    if (target) target.mods.push({action: c.action, value: c.value || "", id: c.id});
+  });
+  return out.sort((a, b) => a.s - b.s);
+}
 function setTrack(t){
   track = t;
   try { localStorage.setItem("edt-track", t); } catch {}
-  events = allEvents.filter(e => !e.tracks || e.tracks.includes(t));
+  events = applyChanges(allEvents.filter(e => !e.tracks || e.tracks.includes(t)),
+    allChanges.filter(c => !c.tracks || c.tracks.includes(t)));
   homework = dedupe(allHomework.filter(h => !h.tracks || h.tracks.includes(t)));
   $("seg").innerHTML = tracks.map(x => `<button class="${x === t ? "on" : ""}" data-t="${x}">${x}</button>`).join("");
   render();
@@ -286,10 +358,19 @@ function render(){
     // Un créneau vide reste invisible ; un événement qui couvre toute la journée occupe les deux créneaux.
     const card = (e, n) => {
       const past = now >= e.e;
+      const room = hasMod(e, "visio") ? "En visio" : (modVal(e, "room") || e.room);
+      e = {...e, room};
       const sub = n > 1 ? `${hm(e.s)} – ${hm(e.e)}${e.room ? " · " + esc(e.room) : ""}` : esc(e.room || "Salle non indiquée");
-      const hws = (hwByCourse[e.id] || []).map(h =>
-        `<span class="hw ${h.status === "pending" ? "pending" : ""}" style="${hwStyle(h)}">${hwLabel(h)}</span>`).join("");
-      return `<button class="ev ${past ? "past" : ""}" style="--c:${e.c}" data-id="${esc(e.id)}">
+      // au plus 2 pastilles sur la carte (les plus importantes), le reste en « +N » : tout est dans la fiche
+      const order = ["cancel", "add", "visio", "room"];
+      const mods = e.mods || [];
+      const all = [
+        ...mods.filter(m => m.action !== "note").sort((a, b) => order.indexOf(a.action) - order.indexOf(b.action)).map(chgPill),
+        ...(hwByCourse[e.id] || []).map(h => `<span class="hw ${h.status === "pending" ? "pending" : ""}" style="${hwStyle(h)}">${hwLabel(h)}</span>`),
+        ...mods.filter(m => m.action === "note").map(chgPill),
+      ];
+      const hws = all.length > 2 ? all.slice(0, 1).join("") + `<span class="hw" style="--hb:#EBEBEF;--hf:#55555C">+${all.length - 1}</span>` : all.join("");
+      return `<button class="ev ${past ? "past" : ""} ${hasMod(e, "cancel") ? "cancel" : ""}" style="--c:${e.c}" data-id="${esc(e.id)}">
           <div class="title">${esc(e.title)}</div>
           <div class="room"><span class="rt">${sub}</span>${hws}</div>
         </button>`;
@@ -297,7 +378,7 @@ function render(){
     const slotHtml = (items, cls = "") => {
       const n = items.length;
       if (!n) return `<div class="slot ${cls}"><div class="when">&nbsp;</div><div class="cards"><div class="empty">Pas de cours</div></div></div>`;
-      const live = items.some(e => now >= e.s && now < e.e);
+      const live = items.some(e => now >= e.s && now < e.e && !hasMod(e, "cancel"));
       const first = items[0], last = items.reduce((a, b) => b.e > a.e ? b : a);
       // pas d'horaire pour les journées en entreprise : ça dépend de chaque entreprise
       const label = items.every(isCompanyDay) ? "&nbsp;" : `${hm(first.s)} – ${hm(last.e)}${live ? " · En cours" : ""}`;
@@ -367,18 +448,28 @@ function openSheet(id){
     <div class="top" style="--c:${e.c}"><h4><span class="dot"></span>${esc(e.title)}</h4><button class="close" id="closeBtn">OK</button></div>
     <p class="sw">${DAYS_LONG[e.s.getDay()]} ${e.s.getDate()} ${MONTHS_LONG[e.s.getMonth()]}${isCompanyDay(e) ? "" : ` · ${hm(e.s)} – ${hm(e.e)}`}</p>
     <div class="group">
-      ${row("Salle", esc(e.room))}
+      ${row("Salle", hasMod(e, "visio") ? "En visio" : modVal(e, "room") ? `${esc(modVal(e, "room"))} <s>${esc(e.room)}</s>` : esc(e.room))}
       ${row("Type", esc(e.type))}
       ${isCompanyDay(e) ? "" : row("Durée", `${Math.floor(dur/60)} h${dur%60 ? " "+pad(dur%60) : ""}`)}
       ${row(e.teachers.length > 1 ? "Enseignants" : "Enseignant", e.teachers.map(esc).join("<br>"))}
       ${row("Groupes", e.groups.map(esc).join("<br>"))}
     </div>
-    ${(hwByCourse[e.id] || []).length ? `<h5>À prévoir</h5><div class="group">${hwByCourse[e.id].map(hwRow).join("")}</div>` : ""}`;
+    ${(e.mods || []).length ? `<h5>Info délégués</h5><div class="group">${e.mods.map(m => {
+      const txt = {cancel: "Cours annulé", visio: "Cours en visio", room: `Nouvelle salle : ${esc(m.value)}`, add: "Cours ajouté par les délégués", note: esc(m.value)}[m.action];
+      return `<div class="row"><span>${CHG[m.action].label}</span><span>${txt}</span></div>`;
+    }).join("")}</div>` : ""}
+    ${(hwByCourse[e.id] || []).length ? `<h5>À prévoir</h5><div class="group">${hwByCourse[e.id].map(hwRow).join("")}</div>` : ""}
+    ${admin ? adminActions(e) : ""}`;
   $("closeBtn").onclick = closeSheet;
+  if (admin) bindAdminActions(e);
   $("sheetRoot").classList.add("open");
 }
 function hwRow(h){
-  const val = h.status === "pending" ? `<span class="pend">Pas encore vérifié</span>` : esc(h.detail || "");
+  let val = h.status === "pending" ? `<span class="pend">Pas encore vérifié</span>` : esc(h.detail || "");
+  if (admin && h.status === "pending"){
+    const p = pending.find(x => x.id === h.id);
+    val = `${p && p.detail ? esc(p.detail) : `<span class="pend">Sans détail</span>`}<span class="mini"><button data-rv="refuse" data-id="${esc(h.id)}">Refuser</button><button class="ok" data-rv="ok" data-id="${esc(h.id)}">Valider</button></span>`;
+  }
   return `<div class="row"><span>${esc(h.type)}${h.due ? " · " + hm(h.due) : ""}</span><span>${val}</span></div>`;
 }
 function openDue(i){
@@ -416,6 +507,7 @@ async function loadHomework(){
     const r = await fetch(HW_API);
     const data = await r.json();
     allHomework = prepHomework(data.items || []);
+    allChanges = data.changes || [];
     setTrack(track);
   } catch {}
 }
@@ -505,8 +597,212 @@ async function submitPropose(ev){
     toast(msg || "L'envoi n'a pas marché, réessaie", 5000);
   }
 }
+/* ================= Mode délégué ================= */
+let admin = null, pending = [];
+try { admin = JSON.parse(localStorage.getItem("edt-admin") || "null"); if (admin && !admin.token) admin = null; } catch {}
+const isoDate = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+const hhmmOf = d => `${pad(d.getHours())}:${pad(d.getMinutes())}`;
+async function api(body){
+  const r = await fetch(HW_API, {method: "POST", headers: {"Content-Type": "text/plain;charset=utf-8"}, body: JSON.stringify(body)});
+  const j = await r.json();
+  if (!j.ok) throw new Error(j.error || "erreur");
+  return j;
+}
+const adminApi = body => api({...body, token: admin && admin.token});
+function adminError(err){
+  if (err.message === "session"){ logout(); toast("Ta session délégué a expiré, reconnecte-toi", 4000); }
+  else if (err.message === "bloque") toast("Trop d'essais, réessaie dans quelques minutes", 4000);
+  else toast("Ça n'a pas marché, réessaie", 4000);
+}
+function updateAdminUI(){
+  $("adminLink").hidden = !HW_API;
+  $("adminLink").textContent = admin ? "Quitter le mode délégué" : "Mode délégué";
+  $("adminBadge").hidden = !admin;
+  $("adminBadge").textContent = pending.length ? `À valider · ${pending.length}` : (admin && admin.name ? admin.name : "Délégué");
+  $("adminBadge").classList.toggle("has", pending.length > 0);
+  $("addCourseBtn").hidden = !admin;
+}
+async function refreshPending(){
+  if (!admin) return updateAdminUI();
+  try { pending = (await adminApi({action: "pending"})).items || []; } catch (err) { adminError(err); }
+  updateAdminUI();
+}
+async function reloadAll(){ await loadHomework(); await refreshPending(); }
+function logout(){ admin = null; pending = []; try { localStorage.removeItem("edt-admin"); } catch {} updateAdminUI(); setTrack(track); }
+
+function openLogin(){
+  $("sheet").innerHTML = `<div class="grab"></div>
+    <div class="top"><h4>Mode délégué</h4><button class="close" id="closeBtn">Annuler</button></div>
+    <p class="sw">Réservé aux délégués : validation des devoirs et modifications de cours.</p>
+    <form id="lf"><div class="group"><div class="f"><label for="lfPwd">Code délégué</label><input type="password" id="lfPwd" autocomplete="current-password"></div></div>
+    <p class="err" id="lfErr"></p><button class="send" id="lfSend" type="submit">Se connecter</button></form>`;
+  $("closeBtn").onclick = closeSheet;
+  $("lfPwd").oninput = () => $("lfErr").textContent = "";
+  $("lf").onsubmit = async ev => {
+    ev.preventDefault();
+    const code = $("lfPwd").value.trim(); if (!code) return $("lfErr").textContent = "Entre ton code délégué.";
+    $("lfSend").disabled = true; $("lfSend").textContent = "Vérification…";
+    try {
+      const res = await api({action: "login", code});
+      admin = {token: res.token, name: res.name}; try { localStorage.setItem("edt-admin", JSON.stringify(admin)); } catch {}
+      closeSheet(); toast(`Bonjour ${res.name}, mode délégué activé`); await refreshPending(); setTrack(track);
+    } catch (err) {
+      $("lfErr").textContent = err.message === "bloque" ? "Trop d'essais ratés, réessaie dans 15 minutes." : err.message === "code" ? "Code incorrect." : "Connexion impossible, réessaie.";
+      $("lfSend").disabled = false; $("lfSend").textContent = "Se connecter";
+    }
+  };
+  $("sheetRoot").classList.add("open");
+  setTimeout(() => $("lfPwd").focus(), 300);
+}
+
+/* ---- validation des propositions ---- */
+function subjectOptions(sel){
+  const byTitle = {};
+  Object.keys(codeTitle).sort().forEach(c => { if (!/journ[ée]e en entreprise/i.test(codeTitle[c]) && !byTitle[subjectKey(c)]) byTitle[subjectKey(c)] = c; });
+  const codes = Object.values(byTitle).sort((a, b) => codeTitle[a].localeCompare(codeTitle[b], "fr"));
+  if (sel && !codes.some(c => sameSubject(c, sel))) codes.unshift(sel);
+  return codes.map(c => `<option value="${esc(c)}" ${sel && sameSubject(c, sel) ? "selected" : ""}>${esc(codeTitle[c] || c)}</option>`).join("");
+}
+const segHtml = (name, opts, on) => `<div class="seg" data-name="${name}">${opts.map(o => `<button type="button" class="${o === on ? "on" : ""}" data-v="${o}">${o}</button>`).join("")}</div>`;
+function bindSegs(root){ root.querySelectorAll(".seg").forEach(seg => seg.onclick = ev => {
+  const b = ev.target.closest("button"); if (!b) return; seg.querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b)); }); }
+const segVal = (root, name) => root.querySelector(`.seg[data-name="${name}"] .on`)?.dataset.v;
+function fmtDay(iso, time){ const d = new Date(iso + "T00:00:00"); return `${DAYS[d.getDay()].toLowerCase()}. ${d.getDate()} ${MONTHS[d.getMonth()]}${time ? " · " + time.replace(":", "h") : ""}`; }
+
+function openPending(){
+  const card = p => `<div class="pc" data-id="${esc(p.id)}">
+      <div class="ph"><span class="hw" style="${hwStyle(p)}">${esc(p.type)}</span>${esc(codeTitle[p.code] || p.code)}</div>
+      <div class="sw" style="margin:4px 0 0">${fmtDay(p.date, p.time)} · ${esc(p.track)}</div>
+      <div class="pd ${p.detail ? "" : "none"}">${p.detail ? esc(p.detail) : "Sans détail"}</div>
+      ${p.remark ? `<div class="pw">⚠️ ${esc(p.remark)}</div>` : ""}
+      <div class="pb"><button data-a="refuse">Refuser</button><button data-a="edit">Modifier</button><button class="ok" data-a="ok">Valider</button></div>
+    </div>`;
+  $("sheet").innerHTML = `<div class="grab"></div>
+    <div class="top"><h4>À valider</h4><button class="close" id="closeBtn">OK</button></div>
+    <p class="sw">Les propositions de la classe. Elles s'affichent en gris, sans détail, jusqu'à ta décision.</p>
+    ${pending.length ? pending.map(card).join("") : `<div class="empty-list">Rien à valider pour l'instant</div>`}
+    <button class="alink" id="logoutBtn">Quitter le mode délégué</button>`;
+  $("closeBtn").onclick = closeSheet;
+  $("logoutBtn").onclick = () => { closeSheet(); logout(); toast("Mode délégué désactivé"); };
+  $("sheet").querySelectorAll(".pc").forEach(el => el.onclick = ev => {
+    const b = ev.target.closest("button[data-a]"); if (!b) return;
+    const p = pending.find(x => x.id === el.dataset.id);
+    if (b.dataset.a === "edit") return editPending(el, p);
+    review(p.id, b.dataset.a, null, el);
+  });
+  $("sheetRoot").classList.add("open");
+}
+function editPending(el, p){
+  el.innerHTML = `<div class="group">
+      <div class="f"><label>Type</label>${segHtml("type", Object.keys(HW_TYPES), p.type)}</div>
+      <div class="f"><label>Matière</label><select data-k="code">${subjectOptions(p.code)}</select></div>
+      <div class="f"><label>Date</label><input type="date" data-k="date" value="${esc(p.date)}"></div>
+      <div class="f"><label>Heure limite</label><input type="time" data-k="time" value="${esc(p.time || "")}"></div>
+      <div class="f"><label>Parcours</label>${segHtml("track", ["FISE", "FISA", "Les deux"], p.track)}</div>
+      <div class="f stack"><label>Détail</label><textarea data-k="detail" maxlength="200">${esc(p.detail || "")}</textarea></div>
+    </div>
+    <div class="pb"><button data-a="cancel">Annuler</button><button class="ok" data-a="save">Enregistrer et valider</button></div>`;
+  bindSegs(el);
+  el.onclick = ev => {
+    const b = ev.target.closest("button[data-a]"); if (!b) return;
+    if (b.dataset.a === "cancel") return openPending();
+    const v = k => el.querySelector(`[data-k="${k}"]`).value;
+    review(p.id, "ok", {type: segVal(el, "type"), track: segVal(el, "track"), code: v("code"), date: v("date"), time: v("time"), detail: v("detail").trim()}, el);
+  };
+}
+async function review(id, decision, fields, el){
+  el && el.querySelectorAll("button").forEach(b => b.disabled = true);
+  try {
+    await adminApi({action: "review", id, decision, fields});
+    toast(decision === "ok" ? "Validé" : "Refusé");
+    pending = pending.filter(x => x.id !== id);
+    updateAdminUI();
+    if (el) openPending();
+    loadHomework().then(refreshPending);
+  } catch (err) { adminError(err); el && el.querySelectorAll("button").forEach(b => b.disabled = false); }
+}
+
+/* ---- actions sur un cours ---- */
+function adminActions(e){
+  const m = a => (e.mods || []).find(x => x.action === a);
+  if (hasMod(e, "add")) return `<h5>Actions délégué</h5><div class="acts"><button class="act" data-op="del" data-id="${esc(m("add").id)}">Supprimer ce cours<small>Ajouté par les délégués</small></button></div>`;
+  const btn = (a, on, off, sub) => m(a)
+    ? `<button class="act on" data-op="del" data-id="${esc(m(a).id)}">${off}<small>${sub}</small></button>`
+    : `<button class="act" data-op="${a}">${on}</button>`;
+  return `<h5>Actions délégué</h5><div class="acts">
+      ${btn("cancel", "Annuler le cours", "Rétablir le cours", "Actuellement annulé")}
+      ${btn("visio", "Passer en visio", "Retirer la visio", "Actuellement en visio")}
+      ${btn("room", "Changer de salle", "Salle d'origine", "Nouvelle salle : " + esc(m("room")?.value || ""))}
+      ${btn("note", "Ajouter une note", "Retirer la note", esc(m("note")?.value || ""))}
+    </div><div id="actInput"></div>`;
+}
+function bindAdminActions(e){
+  $("sheet").querySelectorAll("[data-rv]").forEach(b => b.onclick = () => review(b.dataset.id, b.dataset.rv, null, null).then(() => setTimeout(() => openSheet(e.id), 400)));
+  $("sheet").querySelectorAll(".act").forEach(b => b.onclick = () => {
+    const op = b.dataset.op;
+    if (op === "del") return saveChange(e, {op: "remove", id: b.dataset.id});
+    if (op === "room" || op === "note"){
+      $("actInput").innerHTML = `<div class="inl"><input id="actVal" maxlength="${op === "room" ? 40 : 120}" placeholder="${op === "room" ? "B204" : "Apportez votre ordinateur"}"><button id="actOk">OK</button></div>`;
+      $("actVal").focus();
+      $("actOk").onclick = () => { const v = $("actVal").value.trim(); if (v) saveChange(e, {op: "set", action: op, value: v}); };
+      return;
+    }
+    saveChange(e, {op: "set", action: op});
+  });
+}
+async function saveChange(e, {op, action, value, id}){
+  $("sheet").querySelectorAll(".act, #actOk").forEach(b => b.disabled = true);
+  const track = !e.tracks || e.tracks.length > 1 ? "Les deux" : e.tracks[0];
+  try {
+    if (op === "remove") await adminApi({action: "change", op, id});
+    else await adminApi({action: "change", op, change: {date: isoDate(e.s), slot: e.s.getHours() < 13 ? "matin" : "aprem", code: e.code, track, action, value: value || ""}});
+    toast("C'est en ligne pour toute la classe");
+    await loadHomework();
+    const again = events.find(x => x.id === e.id);
+    again ? openSheet(again.id) : closeSheet();
+  } catch (err) { adminError(err); $("sheet").querySelectorAll(".act, #actOk").forEach(b => b.disabled = false); }
+}
+
+/* ---- ajouter un cours ---- */
+function openAddCourse(){
+  const today = new Date();
+  $("sheet").innerHTML = `<div class="grab"></div>
+    <div class="top"><h4>Ajouter un cours</h4><button class="close" id="closeBtn">Annuler</button></div>
+    <p class="sw">Pour un cours qui n'est pas (encore) dans ADE. S'il y apparaît plus tard, ton ajout disparaît tout seul.</p>
+    <form id="af" novalidate><div class="group">
+      <div class="f"><label for="afCode">Matière</label><select id="afCode"><option value="">Choisir</option>${subjectOptions()}</select></div>
+      <div class="f"><label for="afTitle">Titre</label><input id="afTitle" maxlength="60" placeholder="Facultatif, ex. Rattrapage"></div>
+      <div class="f"><label for="afDate">Date</label><input type="date" id="afDate" value="${isoDate(today)}"></div>
+      <div class="f"><label for="afStart">Début</label><input type="time" id="afStart" value="14:00"></div>
+      <div class="f"><label for="afEnd">Fin</label><input type="time" id="afEnd" value="16:00"></div>
+      <div class="f"><label for="afRoom">Salle</label><input id="afRoom" maxlength="40" placeholder="TD 3 St-Simon"></div>
+      <div class="f"><label>Parcours</label>${segHtml("track", ["FISE", "FISA", "Les deux"], "Les deux")}</div>
+    </div><p class="err" id="afErr"></p><button class="send" id="afSend" type="submit">Ajouter</button></form>`;
+  $("closeBtn").onclick = closeSheet;
+  bindSegs($("sheet"));
+  $("af").onsubmit = async ev => {
+    ev.preventDefault();
+    const code = $("afCode").value, date = $("afDate").value, start = $("afStart").value, end = $("afEnd").value;
+    if (!code) return $("afErr").textContent = "Choisis la matière.";
+    if (!date || !start || !end) return $("afErr").textContent = "Indique la date et les horaires.";
+    if (end <= start) return $("afErr").textContent = "L'heure de fin doit être après le début.";
+    const t = $("afTitle").value.trim();
+    $("afSend").disabled = true; $("afSend").textContent = "Ajout…";
+    try {
+      await adminApi({action: "change", op: "set", change: {action: "add", date, code, start, end,
+        title: t ? `${codeTitle[code] || code} (${t.toLowerCase()})` : "", room: $("afRoom").value.trim(), track: segVal($("sheet"), "track")}});
+      closeSheet(); toast("Cours ajouté pour toute la classe"); await loadHomework();
+    } catch (err) { adminError(err); $("afSend").disabled = false; $("afSend").textContent = "Ajouter"; }
+  };
+  $("sheetRoot").classList.add("open");
+}
+
+$("adminLink").onclick = () => admin ? (logout(), toast("Mode délégué désactivé")) : openLogin();
+$("adminBadge").onclick = openPending;
+$("addCourseBtn").onclick = openAddCourse;
 $("proposeBtn").onclick = openPropose;
 $("proposeBtn").hidden = !HW_API;
+updateAdminUI();
 
 const closeSheet = () => $("sheetRoot").classList.remove("open");
 
@@ -543,7 +839,8 @@ function load(data){
   updated = data.updated ? new Date(data.updated) : null;
   // une couleur différente par matière : on attribue la palette dans l'ordre alphabétique des codes
   const keys = [...new Set((data.events || []).map(e => e.code || e.title))].sort();
-  const col = k => PALETTE[keys.indexOf(k) % PALETTE.length];
+  const col = k => PALETTE[Math.max(keys.indexOf(k), 0) % PALETTE.length];
+  colorOf = col;
   allEvents = (data.events || []).map(e => ({...e, s: new Date(e.start), e: new Date(e.end), c: col(e.code || e.title)}));
   allEvents.forEach(e => { if (e.code && !codeTitle[e.code]) codeTitle[e.code] = e.title; });
   tracks = data.tracks || [];
@@ -561,11 +858,12 @@ $("seg").onclick = ev => { const b = ev.target.closest("button"); if (b && b.dat
     if (!r.ok) throw new Error(r.status);
     load(await r.json());
     loadLastCheck();
-    loadHomework();
+    loadHomework().then(refreshPending);
   } catch (err) {
     $("board").innerHTML = `<div class="msg">Impossible de charger l'emploi du temps pour le moment.<br>Réessaie dans quelques minutes.</div>`;
   }
-  setInterval(render, 60000); // met à jour « En cours » toutes les minutes
+  setInterval(() => { render(); }, 60000);
+  setInterval(() => { if (admin) refreshPending(); }, 120000); // met à jour « En cours » toutes les minutes
 })();
 </script>
 </body>
