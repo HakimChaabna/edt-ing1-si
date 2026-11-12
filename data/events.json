@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T20:37+01:00",
+ "updated": "2026-11-12T21:03+01:00",
  "tracks": [
   "FISA",
   "FISE"
@@ -1654,9 +1654,9 @@
    "id": "ADE602d55504543323032362d323032372d36333934392d302d30",
    "start": "2027-01-06T09:00:00+01:00",
    "end": "2027-01-06T11:00:00+01:00",
-   "code": "",
-   "title": "*** Examen SI - Programmation orientée objet avancée ( horaire a confirmer)",
-   "type": "",
+   "code": "POO",
+   "title": "Programmation orientée objet avancée",
+   "type": "Examen",
    "room": "TD 3 St-Simon",
    "teachers": [
     "EXAMEN",
@@ -1669,15 +1669,17 @@
    "tracks": [
     "FISA",
     "FISE"
-   ]
+   ],
+   "exam": true,
+   "tbc": true
   },
   {
    "id": "ADE602d55504543323032362d323032372d35313535372d302d30",
    "start": "2027-01-06T14:00:00+01:00",
    "end": "2027-01-06T16:00:00+01:00",
-   "code": "",
-   "title": "*** Examen SI - Statistiques inférentielles ( horaire a confirmer)",
-   "type": "",
+   "code": "STAT",
+   "title": "Statistiques Inférentielles",
+   "type": "Examen",
    "room": "TD 3 St-Simon",
    "teachers": [
     "Brofferio Sara",
@@ -1691,7 +1693,9 @@
    "tracks": [
     "FISA",
     "FISE"
-   ]
+   ],
+   "exam": true,
+   "tbc": true
   },
   {
    "id": "ADE602d55504543323032362d323032372d32323437342d302d33",
@@ -1941,9 +1945,9 @@
    "id": "ADE602d55504543323032362d323032372d36333935322d302d30",
    "start": "2027-01-18T09:00:00+01:00",
    "end": "2027-01-18T11:00:00+01:00",
-   "code": "",
-   "title": "*** Examen SI - Mathématiques pour l'ingénieur ( horaire a confirmr)",
-   "type": "",
+   "code": "MATH",
+   "title": "Mathématique pour l'ingénieur",
+   "type": "Examen",
    "room": "TD 3 St-Simon",
    "teachers": [
     "Egloff Sebastien",
@@ -1957,15 +1961,17 @@
    "tracks": [
     "FISA",
     "FISE"
-   ]
+   ],
+   "exam": true,
+   "tbc": true
   },
   {
    "id": "ADE602d55504543323032362d323032372d35313534392d302d30",
    "start": "2027-01-18T14:00:00+01:00",
    "end": "2027-01-18T16:00:00+01:00",
-   "code": "",
-   "title": "*** Examen SI - Théorie des graphes ( horaire a confirmer)",
-   "type": "",
+   "code": "TG",
+   "title": "Théorie des Graphes",
+   "type": "Examen",
    "room": "TD 3 St-Simon",
    "teachers": [
     "Caspard Nathalie",
@@ -1979,7 +1985,9 @@
    "tracks": [
     "FISA",
     "FISE"
-   ]
+   ],
+   "exam": true,
+   "tbc": true
   },
   {
    "id": "ADE602d55504543323032362d323032372d31383436362d302d32",
@@ -2233,9 +2241,9 @@
    "id": "ADE602d55504543323032362d323032372d36333936322d302d30",
    "start": "2027-02-02T09:00:00+01:00",
    "end": "2027-02-02T11:00:00+01:00",
-   "code": "",
-   "title": "*** Examen SI - Dynamique de groupe et communication ( horaire a confirmer)",
-   "type": "",
+   "code": "DYN",
+   "title": "Dynamique de groupe et communication",
+   "type": "Examen",
    "room": "TD 3 St-Simon",
    "teachers": [
     "EXAMEN",
@@ -2248,15 +2256,17 @@
    "tracks": [
     "FISA",
     "FISE"
-   ]
+   ],
+   "exam": true,
+   "tbc": true
   },
   {
    "id": "ADE602d55504543323032362d323032372d35313534332d302d30",
    "start": "2027-02-02T14:00:00+01:00",
    "end": "2027-02-02T16:00:00+01:00",
-   "code": "",
-   "title": "*** Examen SI - Logique ( horaire a confirmer)",
-   "type": "",
+   "code": "LOG1",
+   "title": "Logique 1",
+   "type": "Examen",
    "room": "TD 5 St-Simon",
    "teachers": [
     "Busatto-Gaston Damien",
@@ -2270,15 +2280,17 @@
    "tracks": [
     "FISA",
     "FISE"
-   ]
+   ],
+   "exam": true,
+   "tbc": true
   },
   {
    "id": "ADE602d55504543323032362d323032372d36333934382d302d30",
    "start": "2027-02-04T09:00:00+01:00",
    "end": "2027-02-04T11:00:00+01:00",
-   "code": "",
-   "title": "*** Examen SI - Introduction à l'infrastructure système et réseau ( horaire a confirmer)",
-   "type": "",
+   "code": "INFR",
+   "title": "Introduction à l'infrastructure système et réseau",
+   "type": "Examen",
    "room": "Amphi B3 (A. Boulle)",
    "teachers": [
     "Busatto-Gaston Damien",
@@ -2291,15 +2303,17 @@
    "tracks": [
     "FISA",
     "FISE"
-   ]
+   ],
+   "exam": true,
+   "tbc": true
   },
   {
    "id": "ADE602d55504543323032362d323032372d36333934322d302d30",
    "start": "2027-02-04T14:00:00+01:00",
    "end": "2027-02-04T16:00:00+01:00",
-   "code": "",
-   "title": "*** Examen SI - Bases de données : conception et développement ( horaire a confirmer)",
-   "type": "",
+   "code": "BD",
+   "title": "Bases de données : conception et développement",
+   "type": "Examen",
    "room": "TD 3 St-Simon",
    "teachers": [
     "Gava Frederic",
@@ -2312,7 +2326,9 @@
    "tracks": [
     "FISA",
     "FISE"
-   ]
+   ],
+   "exam": true,
+   "tbc": true
   },
   {
    "id": "ADE602d55504543323032362d323032372d33353237342d302d3339",
@@ -4216,9 +4232,9 @@
    "id": "ADE602d55504543323032362d323032372d343330352d302d30",
    "start": "2027-05-10T09:00:00+02:00",
    "end": "2027-05-10T11:00:00+02:00",
-   "code": "",
-   "title": "*** Examen SI - Outils pour le cycle de vie du logiciel ( horaire a confirmer)",
-   "type": "",
+   "code": "OUT",
+   "title": "Outils pour le cycle de vie du logiciel",
+   "type": "Examen",
    "room": "TD 5 St-Simon",
    "teachers": [
     "EXAMEN",
@@ -4232,15 +4248,17 @@
    "tracks": [
     "FISA",
     "FISE"
-   ]
+   ],
+   "exam": true,
+   "tbc": true
   },
   {
    "id": "ADE602d55504543323032362d323032372d343330332d302d30",
    "start": "2027-05-10T14:00:00+02:00",
    "end": "2027-05-10T16:00:00+02:00",
-   "code": "",
-   "title": "*** Examen SI - Modelisation des systemes d'information ( horaire a confirmer)",
-   "type": "",
+   "code": "MOD",
+   "title": "Modélisation des systèmes d'information",
+   "type": "Examen",
    "room": "TD 5 St-Simon",
    "teachers": [
     "EXAMEN",
@@ -4254,7 +4272,9 @@
    "tracks": [
     "FISA",
     "FISE"
-   ]
+   ],
+   "exam": true,
+   "tbc": true
   },
   {
    "id": "ADE602d55504543323032362d323032372d333635362d302d32",
@@ -4911,9 +4931,9 @@
    "id": "ADE602d55504543323032362d323032372d343331312d302d30",
    "start": "2027-06-10T09:00:00+02:00",
    "end": "2027-06-10T11:00:00+02:00",
-   "code": "",
-   "title": "*** Examen SI - Programmation pour la communication ( horaire a confirmer)",
-   "type": "",
+   "code": "PROG",
+   "title": "Programmation pour la communication",
+   "type": "Examen",
    "room": "TD 5 St-Simon",
    "teachers": [
     "Mourlin Fabrice",
@@ -4927,15 +4947,17 @@
    "tracks": [
     "FISA",
     "FISE"
-   ]
+   ],
+   "exam": true,
+   "tbc": true
   },
   {
    "id": "ADE602d55504543323032362d323032372d353637382d302d30",
    "start": "2027-06-10T14:00:00+02:00",
    "end": "2027-06-10T16:00:00+02:00",
-   "code": "",
-   "title": "*** Examen SI - Le risque societal dans le metier de l'ingenieur ( horaire a confirmer)",
-   "type": "",
+   "code": "RIS",
+   "title": "Le risque sociétal dans le métier de l'ingénieur",
+   "type": "Examen",
    "room": "TD 3 St-Simon",
    "teachers": [
     "EXAMEN",
@@ -4949,7 +4971,9 @@
    "tracks": [
     "FISA",
     "FISE"
-   ]
+   ],
+   "exam": true,
+   "tbc": true
   },
   {
    "id": "ADE602d55504543323032362d323032372d31323535382d312d30",
@@ -4997,9 +5021,9 @@
    "id": "ADE602d55504543323032362d323032372d353530342d302d30",
    "start": "2027-06-14T14:00:00+02:00",
    "end": "2027-06-14T16:00:00+02:00",
-   "code": "",
-   "title": "*** Examen SI - Les organisations dans leur écosytemes ( horaire a confirmer)",
-   "type": "",
+   "code": "ORGA",
+   "title": "Les organisations dans leur écosystème",
+   "type": "Examen",
    "room": "TD 5 St-Simon",
    "teachers": [
     "Coulibaly Micheline Mazawan",
@@ -5013,7 +5037,9 @@
    "tracks": [
     "FISA",
     "FISE"
-   ]
+   ],
+   "exam": true,
+   "tbc": true
   },
   {
    "id": "ADE602d55504543323032362d323032372d33353237342d302d3833",
@@ -5161,7 +5187,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-12T19:37:21.776Z",
+  "updated": "2026-11-12T20:03:47.722Z",
   "items": [
    {
     "id": "8b5015f0",
@@ -5200,6 +5226,19 @@
     ],
     "status": "ok",
     "detail": "Chapitre 1 (ajustement exponentiel), Chapitre 2 jusqu'à fonction de repartition"
+   },
+   {
+    "id": "c1eb04c5",
+    "date": "2026-11-23",
+    "time": null,
+    "code": "MATH",
+    "type": "À préparer",
+    "tracks": [
+     "FISE",
+     "FISA"
+    ],
+    "status": "ok",
+    "detail": ""
    }
   ],
   "changes": [
