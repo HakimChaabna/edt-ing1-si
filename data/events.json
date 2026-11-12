@@ -1,52 +1,10 @@
 {
- "updated": "2026-11-11T16:48+01:00",
+ "updated": "2026-11-12T04:46+01:00",
  "tracks": [
   "FISA",
   "FISE"
  ],
  "events": [
-  {
-   "id": "ADE602d55504543323032362d323032372d31383735352d302d32",
-   "start": "2026-10-21T09:00:00+02:00",
-   "end": "2026-10-21T13:00:00+02:00",
-   "code": "STAT",
-   "title": "Statistiques Inférentielles",
-   "type": "CM",
-   "room": "INFO 2 St-Simon",
-   "teachers": [
-    "Brofferio Sara",
-    "(Modifié le:14/10/2026 12:27)"
-   ],
-   "groups": [
-    "SI ING 1 FISA",
-    "SI ING 1 FISE"
-   ],
-   "tracks": [
-    "FISA",
-    "FISE"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d32313035382d302d36",
-   "start": "2026-10-21T14:00:00+02:00",
-   "end": "2026-10-21T18:00:00+02:00",
-   "code": "POO",
-   "title": "Programmation orientée objet avancée",
-   "type": "CM",
-   "room": "INFO 2 St-Simon",
-   "teachers": [
-    "Maestracci Valentin",
-    "(Modifié le:14/10/2026 12:41)"
-   ],
-   "groups": [
-    "SI ING 1 FISA",
-    "SI ING 1 FISE"
-   ],
-   "tracks": [
-    "FISA",
-    "FISE"
-   ]
-  },
   {
    "id": "ADE602d55504543323032362d323032372d383238362d302d32",
    "start": "2026-10-22T09:00:00+02:00",
