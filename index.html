@@ -420,9 +420,9 @@ async function loadHomework(){
 
 /* ---------- formulaire « Proposer un devoir » ---------- */
 let toastTimer;
-function toast(msg){
+function toast(msg, ms = 2600){
   $("toast").textContent = msg; $("toast").classList.add("on");
-  clearTimeout(toastTimer); toastTimer = setTimeout(() => $("toast").classList.remove("on"), 2600);
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => $("toast").classList.remove("on"), ms);
 }
 function openPropose(){
   const iso = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
@@ -454,9 +454,16 @@ function openPropose(){
     seg.querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b));
   });
   ["pfCode", "pfDate"].forEach(id => $(id).oninput = () => $("pfErr").textContent = "");
+  if (draft){
+    const setSeg = (name, v) => $("sheet").querySelectorAll(`.seg[data-name="${name}"] button`).forEach(b => b.classList.toggle("on", b.dataset.v === v));
+    setSeg("type", draft.type); setSeg("track", draft.track);
+    $("pfCode").value = draft.code; $("pfDate").value = draft.date; $("pfTime").value = draft.time; $("pfDetail").value = draft.detail;
+  }
   $("pf").onsubmit = submitPropose;
   $("sheetRoot").classList.add("open");
 }
+// Envoi « optimiste » : la proposition s'affiche tout de suite, l'envoi à Google se fait en arrière-plan.
+let draft = null; // garde la saisie si l'envoi échoue, pour ne pas tout retaper
 async function submitPropose(ev){
   ev.preventDefault();
   const pick = name => $("sheet").querySelector(`.seg[data-name="${name}"] .on`)?.dataset.v;
@@ -471,20 +478,27 @@ async function submitPropose(ev){
   let sent = [];
   try { sent = JSON.parse(localStorage.getItem("edt-sent") || "[]").filter(t => Date.now() - t < 36e5); } catch {}
   if (sent.length >= 6) return $("pfErr").textContent = "Tu as déjà envoyé beaucoup de propositions, réessaie plus tard.";
-  $("pfSend").disabled = true; $("pfSend").textContent = "Envoi…";
+  try { localStorage.setItem("edt-sent", JSON.stringify([...sent, Date.now()])); } catch {}
+
+  // 1. affichage immédiat en gris
+  const tmpId = "tmp-" + Date.now();
+  allHomework.push(...prepHomework([{id: tmpId, date: p.date, time: p.time || null, code: p.code, type: p.type,
+    tracks: p.track === "Les deux" ? ["FISE", "FISA"] : [p.track], status: "pending", detail: null}]));
+  draft = null;
+  closeSheet(); setTrack(track); toast("Merci, c'est envoyé aux délégués");
+
+  // 2. envoi en arrière-plan
   try {
     const r = await fetch(HW_API, {method: "POST", headers: {"Content-Type": "text/plain;charset=utf-8"}, body: JSON.stringify(p)});
     const res = await r.json();
     if (!res.ok) throw new Error(res.error);
-    try { localStorage.setItem("edt-sent", JSON.stringify([...sent, Date.now()])); } catch {}
-    // affichage immédiat en gris, sans attendre le prochain chargement
-    allHomework.push(...prepHomework([{id: res.id, date: p.date, time: p.time || null, code: p.code, type: p.type,
-      tracks: p.track === "Les deux" ? ["FISE", "FISA"] : [p.track], status: "pending", detail: null}]));
-    closeSheet(); setTrack(track); toast("Merci, c'est envoyé aux délégués");
+    const h = allHomework.find(x => x.id === tmpId); if (h) h.id = res.id;
   } catch (err) {
-    const msg = {plein: "Trop de propositions en attente, réessaie plus tard.", date: "Cette date n'est pas valide."}[err.message];
-    $("pfErr").textContent = msg || "L'envoi n'a pas marché, réessaie dans un instant.";
-    $("pfSend").disabled = false; $("pfSend").textContent = "Envoyer";
+    // 3. en cas d'échec : on retire la proposition grise et on garde la saisie
+    allHomework = allHomework.filter(x => x.id !== tmpId);
+    draft = p; setTrack(track);
+    const msg = {plein: "Trop de propositions en attente, réessaie plus tard."}[err.message];
+    toast(msg || "L'envoi n'a pas marché, réessaie", 5000);
   }
 }
 $("proposeBtn").onclick = openPropose;
