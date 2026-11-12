@@ -164,6 +164,7 @@ function doPost(e) {
     if (!qui) return json({ ok: false, error: "session" });
     if (p.action === "pending") return json({ ok: true, items: enAttente() });
     if (p.action === "review") return avecVerrou(() => examiner(p, qui));
+    if (p.action === "addhw") return avecVerrou(() => ajouterDevoir(p, qui));
     if (p.action === "change") return avecVerrou(() => modifierCours(p, qui));
     return json({ ok: false, error: "action" });
   } catch (err) {
@@ -256,6 +257,19 @@ function examiner(p, qui) {
   } else return json({ ok: false, error: "decision" });
   viderCache();
   return json({ ok: true });
+}
+
+/* ---- devoir ajouté directement par un délégué (publié sans validation) ---- */
+function ajouterDevoir(p, qui) {
+  const d = nettoyerDevoir(p);
+  if (d.erreur) return json({ ok: false, error: d.erreur });
+  const sh = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(ONGLET);
+  const id = Utilities.getUuid().slice(0, 8);
+  sh.appendRow([id, Utilities.formatDate(new Date(), "Europe/Paris", "dd/MM/yyyy HH:mm"), d.date, d.heure, d.matiere, d.type,
+    d.parcours, d.detail, "Validé", "Ajouté par un délégué", trace(qui)]);
+  marquerDoublons(sh, lignes(), { ...d, ligne: sh.getLastRow(), id });
+  viderCache();
+  return json({ ok: true, id });
 }
 
 /* ---- modifications de cours ---- */

@@ -469,6 +469,8 @@ function hwRow(h){
   if (admin && h.status === "pending"){
     const p = pending.find(x => x.id === h.id);
     val = `${p && p.detail ? esc(p.detail) : `<span class="pend">Sans détail</span>`}<span class="mini"><button data-rv="refuse" data-id="${esc(h.id)}">Refuser</button><button class="ok" data-rv="ok" data-id="${esc(h.id)}">Valider</button></span>`;
+  } else if (admin && !String(h.id).startsWith("tmp-")){
+    val += `<span class="mini"><button data-ed="${esc(h.id)}">Modifier</button></span>`;
   }
   return `<div class="row"><span>${esc(h.type)}${h.due ? " · " + hm(h.due) : ""}</span><span>${val}</span></div>`;
 }
@@ -537,8 +539,8 @@ function openPropose(){
   const codes = Object.values(byTitle).sort((a, b) => codeTitle[a].localeCompare(codeTitle[b], "fr"));
   const segBtns = (name, opts, on) => `<div class="seg" data-name="${name}">${opts.map(o => `<button type="button" class="${o === on ? "on" : ""}" data-v="${o}">${o}</button>`).join("")}</div>`;
   $("sheet").innerHTML = `<div class="grab"></div>
-    <div class="top"><h4>Proposer un devoir</h4><button class="close" id="closeBtn">Annuler</button></div>
-    <p class="sw">Anonyme. Ta proposition apparaît en gris jusqu'à ce qu'un délégué la vérifie.</p>
+    <div class="top"><h4>${admin ? "Ajouter un devoir" : "Proposer un devoir"}</h4><button class="close" id="closeBtn">Annuler</button></div>
+    <p class="sw">${admin ? "Mode délégué : le devoir est publié directement pour toute la classe." : "Anonyme. Ta proposition apparaît en gris jusqu'à ce qu'un délégué la vérifie."}</p>
     <form id="pf" novalidate>
       <div class="group">
         <div class="f"><label>Type</label>${segBtns("type", Object.keys(HW_TYPES), "Interro")}</div>
@@ -553,7 +555,7 @@ function openPropose(){
       </div>
       <input class="hp" id="pfWeb" tabindex="-1" autocomplete="off" aria-hidden="true">
       <p class="err" id="pfErr"></p>
-      <button class="send" id="pfSend" type="submit">Envoyer</button>
+      <button class="send" id="pfSend" type="submit">${admin ? "Publier" : "Envoyer"}</button>
     </form>`;
   $("closeBtn").onclick = closeSheet;
   $("sheet").querySelectorAll(".seg").forEach(seg => seg.onclick = ev => {
@@ -581,6 +583,7 @@ async function submitPropose(ev){
   };
   if (!p.code) return $("pfErr").textContent = "Choisis la matière.";
   if (!p.date) return $("pfErr").textContent = "Choisis la date.";
+  if (admin) return publishHomework(p);
   // limite douce côté téléphone : 6 propositions par heure
   let sent = [];
   try { sent = JSON.parse(localStorage.getItem("edt-sent") || "[]").filter(t => Date.now() - t < 36e5); } catch {}
@@ -632,6 +635,7 @@ function updateAdminUI(){
   $("adminBadge").textContent = pending.length ? `À valider · ${pending.length}` : (admin && admin.name ? admin.name : "Délégué");
   $("adminBadge").classList.toggle("has", pending.length > 0);
   $("addCourseBtn").hidden = !admin;
+  $("proposeBtn").textContent = admin ? "+ Ajouter un devoir" : "+ Proposer un devoir";
 }
 async function refreshPending(){
   if (!admin) return updateAdminUI();
@@ -748,7 +752,6 @@ function adminActions(e){
     </div><div id="actInput"></div>`;
 }
 function bindAdminActions(e){
-  $("sheet").querySelectorAll("[data-rv]").forEach(b => b.onclick = () => review(b.dataset.id, b.dataset.rv, null, null).then(() => setTimeout(() => openSheet(e.id), 400)));
   $("sheet").querySelectorAll(".act").forEach(b => b.onclick = () => {
     const op = b.dataset.op;
     if (op === "del") return saveChange(e, {op: "remove", id: b.dataset.id});
@@ -807,6 +810,50 @@ function openAddCourse(){
   };
   $("sheetRoot").classList.add("open");
 }
+
+/* ---- devoirs publiés directement, modifiés ou supprimés par un délégué ---- */
+async function publishHomework(p){
+  const tmpId = "tmp-" + Date.now();
+  allHomework.push(...prepHomework([{id: tmpId, date: p.date, time: p.time || null, code: p.code, type: p.type,
+    tracks: p.track === "Les deux" ? ["FISE", "FISA"] : [p.track], status: "ok", detail: p.detail}]));
+  draft = null; closeSheet(); setTrack(track); toast("Publié pour toute la classe");
+  try { await adminApi({action: "addhw", ...p}); loadHomework(); }
+  catch (err) { allHomework = allHomework.filter(x => x.id !== tmpId); draft = p; setTrack(track); adminError(err); }
+}
+function openEditHW(id){
+  const h = allHomework.find(x => x.id === id) || {};
+  const p = pending.find(x => x.id === id);
+  const v = {type: h.type, code: h.code, date: h.date, time: h.time || "", detail: (p && p.detail) || h.detail || "",
+    track: !h.tracks || h.tracks.length > 1 ? "Les deux" : h.tracks[0]};
+  $("sheet").innerHTML = `<div class="grab"></div>
+    <div class="top"><h4>Modifier le devoir</h4><button class="close" id="closeBtn">Annuler</button></div>
+    <div class="group" id="ehw">
+      <div class="f"><label>Type</label>${segHtml("type", Object.keys(HW_TYPES), v.type)}</div>
+      <div class="f"><label>Matière</label><select data-k="code">${subjectOptions(v.code)}</select></div>
+      <div class="f"><label>Date</label><input type="date" data-k="date" value="${esc(v.date)}"></div>
+      <div class="f"><label>Heure limite</label><input type="time" data-k="time" value="${esc(v.time)}"></div>
+      <div class="f"><label>Parcours</label>${segHtml("track", ["FISE", "FISA", "Les deux"], v.track)}</div>
+      <div class="f stack"><label>Détail</label><textarea data-k="detail" maxlength="200">${esc(v.detail)}</textarea></div>
+    </div>
+    <button class="send" id="ehwSave">Enregistrer</button>
+    <button class="alink" id="ehwDel" style="color:var(--red)">Supprimer ce devoir</button>`;
+  const root = $("ehw"); bindSegs(root);
+  $("closeBtn").onclick = closeSheet;
+  $("ehwSave").onclick = () => {
+    const g = k => root.querySelector(`[data-k="${k}"]`).value;
+    review(id, "ok", {type: segVal(root, "type"), track: segVal(root, "track"), code: g("code"), date: g("date"), time: g("time"), detail: g("detail").trim()}, null)
+      .then(closeSheet);
+  };
+  $("ehwDel").onclick = () => review(id, "refuse", null, null).then(closeSheet);
+  $("sheetRoot").classList.add("open");
+}
+// boutons des devoirs dans les fiches (cours et « À prévoir »), en mode délégué
+$("sheet").addEventListener("click", ev => {
+  const rv = ev.target.closest("[data-rv]");
+  if (rv) { ev.stopPropagation(); return review(rv.dataset.id, rv.dataset.rv, null, null).then(closeSheet); }
+  const ed = ev.target.closest("[data-ed]");
+  if (ed) { ev.stopPropagation(); openEditHW(ed.dataset.ed); }
+});
 
 $("adminLink").onclick = () => admin ? (logout(), toast("Mode délégué désactivé")) : openLogin();
 $("adminBadge").onclick = openPending;
