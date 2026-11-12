@@ -501,14 +501,25 @@ function prepHomework(items){
     return {...h, d, due};
   });
 }
-async function loadHomework(){
+// Devoirs et modifs : affichés tout de suite depuis une copie (robot GitHub ou téléphone),
+// puis remplacés par la version en direct de Google dès qu'elle arrive.
+let hwStamp = 0;
+function applyHW(data, live = false){
+  if (!data || !data.items) return;
+  const t = Date.parse(data.updated || "") || 0;
+  if (!live && t <= hwStamp) return; // une copie plus ancienne que ce qui est affiché ne remplace rien
+  hwStamp = live ? Date.now() : t;
+  allHomework = prepHomework(data.items || []);
+  allChanges = data.changes || [];
+  setTrack(track);
+}
+async function loadHomework(prefetched){
   if (!HW_API) return;
   try {
-    const r = await fetch(HW_API);
-    const data = await r.json();
-    allHomework = prepHomework(data.items || []);
-    allChanges = data.changes || [];
-    setTrack(track);
+    const data = prefetched ? await prefetched : await (await fetch(HW_API)).json();
+    if (!data || !data.items) return;
+    applyHW(data, true);
+    try { localStorage.setItem("edt-hw", JSON.stringify(data)); } catch {}
   } catch {}
 }
 
@@ -852,18 +863,27 @@ $("seg").onclick = ev => { const b = ev.target.closest("button"); if (b && b.dat
 
 (async () => {
   defaultView();
+  // la demande à Google part tout de suite, en parallèle de l'emploi du temps
+  const hwLive = HW_API ? fetch(HW_API).then(r => r.json()).catch(() => null) : null;
   try {
     if (window.EDT_DATA) return load(window.EDT_DATA);
     const r = await fetch("data/events.json?v=" + Date.now(), {cache: "no-store"});
     if (!r.ok) throw new Error(r.status);
-    load(await r.json());
+    const data = await r.json();
+    load(data);
+    // affichage immédiat avec la copie la plus récente : celle du robot ou celle gardée par le téléphone
+    let local = null;
+    try { local = JSON.parse(localStorage.getItem("edt-hw") || "null"); } catch {}
+    [data.homework, local].filter(Boolean)
+      .sort((a, b) => (Date.parse(a.updated || "") || 0) - (Date.parse(b.updated || "") || 0))
+      .forEach(c => applyHW(c));
     loadLastCheck();
-    loadHomework().then(refreshPending);
+    loadHomework(hwLive).then(refreshPending);
   } catch (err) {
     $("board").innerHTML = `<div class="msg">Impossible de charger l'emploi du temps pour le moment.<br>Réessaie dans quelques minutes.</div>`;
   }
   setInterval(() => { render(); }, 60000);
-  setInterval(() => { if (admin) refreshPending(); }, 120000); // met à jour « En cours » toutes les minutes
+  setInterval(() => { if (admin) refreshPending(); }, 120000);
 })();
 </script>
 </body>

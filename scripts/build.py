@@ -146,6 +146,20 @@ def build(feeds: dict[str, str]) -> dict:
     return {"updated": now.isoformat(timespec="minutes"), "tracks": sorted(feeds), "events": out}
 
 
+def fetch_homework() -> dict | None:
+    """Copie publique des devoirs et modifs depuis le script Google (la même que celle lue par le site).
+    L'adresse est lue directement dans index.html : rien à configurer en plus."""
+    m = re.search(r'const HW_API = "(https://script\.google\.com/[^"]+)"', (ROOT / "index.html").read_text(encoding="utf-8"))
+    if not m:
+        return None
+    try:
+        data = json.loads(fetch(m.group(1)))
+        return data if isinstance(data.get("items"), list) else None
+    except Exception as err:  # Google indisponible : on garde l'ancienne copie, ADE est quand même mis à jour
+        print(f"Devoirs non récupérés ({err}), ancienne copie conservée.")
+        return None
+
+
 def main() -> None:
     feeds: dict[str, str] = {}
     if len(sys.argv) > 1:
@@ -166,12 +180,17 @@ def main() -> None:
     if not data["events"] and OUT.exists():
         sys.exit("Aucun cours reçu, on garde l'ancienne version par sécurité.")
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    # On ne réécrit le fichier que si les cours ont changé, pour éviter un commit toutes les 30 min.
-    if OUT.exists():
-        old = json.loads(OUT.read_text(encoding="utf-8"))
-        if old.get("events") == data["events"]:
-            print("Aucun changement.")
-            return
+    old = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
+    hw = fetch_homework() if len(sys.argv) == 1 else None
+    data["homework"] = hw if hw is not None else old.get("homework")
+    if data["homework"] is None:
+        del data["homework"]
+    # On ne réécrit le fichier que si les cours, devoirs ou modifs ont changé (pas pour un simple horodatage).
+    same_hw = (old.get("homework") or {}).get("items") == (data.get("homework") or {}).get("items") and \
+              (old.get("homework") or {}).get("changes") == (data.get("homework") or {}).get("changes")
+    if old.get("events") == data["events"] and same_hw:
+        print("Aucun changement.")
+        return
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{len(data['events'])} cours écrits dans {OUT.relative_to(ROOT)}")
 
