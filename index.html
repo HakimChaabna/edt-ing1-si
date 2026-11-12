@@ -76,7 +76,45 @@
   .ev:active{transform:scale(.98)}
   .title{font-size:17px;font-weight:600;line-height:1.25;letter-spacing:-.2px;
     display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-  .room{font-size:15px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .room{font-size:15px;color:var(--mute);display:flex;align-items:center;gap:6px;min-width:0}
+  .rt{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .hw{flex:none;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;color:var(--hf);background:var(--hb)}
+  .hw.pending{color:var(--mute);background:transparent;box-shadow:inset 0 0 0 1px #C7C7CC;border-radius:999px}
+  .ev.cancel .title{text-decoration:line-through}
+  .due{margin-top:14px;width:100%;text-align:left;background:var(--card);border-radius:18px;padding:14px 18px;
+    box-shadow:0 1px 2px rgba(0,0,0,.04),0 0 0 .5px rgba(0,0,0,.04);transition:transform .15s}
+  .due:active{transform:scale(.98)}
+  .due .k{font-size:13px;font-weight:600;color:var(--mute);margin-bottom:6px}
+  .due .dl{font-size:15px;line-height:1.45;display:flex;gap:8px;align-items:baseline}
+  .due .dl + .dl{margin-top:4px}
+  .due .dl i{flex:none;width:8px;height:8px;border-radius:50%;background:var(--hc);transform:translateY(-1px)}
+  .due .dl.pending{color:var(--mute)}
+  .due .dl.pending i{background:transparent;box-shadow:inset 0 0 0 1.5px #C7C7CC}
+  .due .dl span{color:var(--mute)}
+  .propose{display:block;margin:26px auto 0;padding:11px 20px;border-radius:999px;background:var(--card);color:var(--red);
+    font-size:15px;font-weight:600;box-shadow:0 1px 2px rgba(0,0,0,.04),0 0 0 .5px rgba(0,0,0,.06)}
+  .propose[hidden]{display:none}
+  .propose:active{transform:scale(.97)}
+  .sheet{max-height:92vh;overflow-y:auto}
+  .sheet h5{font-size:13px;font-weight:600;color:var(--mute);margin:18px 4px 8px;text-transform:uppercase;letter-spacing:.3px}
+  .row span:first-child{white-space:nowrap}
+  .pend{color:var(--mute);font-style:italic}
+  .f{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px;font-size:17px;min-height:48px}
+  .f + .f{border-top:.5px solid var(--sep)}
+  .f label{white-space:nowrap}
+  .f input,.f select{font:inherit;font-size:16px;color:var(--txt);border:0;background:transparent;text-align:right;min-width:0;flex:1;outline:none}
+  .f select{text-align-last:right}
+  .f.stack{flex-direction:column;align-items:stretch;gap:6px}
+  .f textarea{font:inherit;font-size:16px;border:0;outline:none;resize:none;min-height:64px;background:transparent;color:var(--txt)}
+  .f .seg{flex:none}
+  .hint{font-size:13px;color:var(--mute);margin:8px 6px 0;line-height:1.4}
+  .err{font-size:13px;color:var(--red);margin:10px 6px 0;min-height:18px}
+  .send{display:block;width:100%;margin-top:16px;padding:14px;border-radius:14px;background:var(--red);color:#fff;font-size:17px;font-weight:600}
+  .send:disabled{opacity:.5}
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+  .toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translate(-50%,20px);opacity:0;
+    background:#1C1C1E;color:#fff;font-size:15px;padding:11px 18px;border-radius:999px;transition:.3s;pointer-events:none;z-index:20}
+  .toast.on{opacity:1;transform:translate(-50%,0)}
   .ev.past{opacity:.45}
   .empty{height:108px;border-radius:18px;display:grid;place-items:center;color:var(--mute);font-size:15px;
     border:1px dashed rgba(60,60,67,.18)}
@@ -141,8 +179,10 @@
   </div>
   <nav class="days" id="days"></nav>
   <main class="board" id="board"><div class="msg">Chargement…</div></main>
+  <button class="propose" id="proposeBtn" hidden>+ Proposer un devoir</button>
   <footer id="foot"></footer>
 </div>
+<div class="toast" id="toast"></div>
 <div id="sheetRoot">
   <div class="sheet-bg" id="sheetBg"></div>
   <div class="sheet" id="sheet" role="dialog" aria-modal="true"></div>
@@ -156,8 +196,20 @@ const MONTHS_LONG = ["janvier","février","mars","avril","mai","juin","juillet",
 
 const PIN = `<svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1.5a4.5 4.5 0 0 0-4.5 4.5c0 3.2 3.8 7.6 4.1 8a.5.5 0 0 0 .8 0c.3-.4 4.1-4.8 4.1-8A4.5 4.5 0 0 0 8 1.5Zm0 6.2a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4Z"/></svg>`;
 const isCompanyDay = e => /entreprise/i.test(e.title);
+
+// Adresse du script Google (Déployer > Application web). Laisser vide pour désactiver les devoirs.
+const HW_API = "https://script.google.com/macros/s/AKfycbyy2vjVQKT4PeeumACXm7iTXn0gIEpwbUXyXPkjpeZVUpRJSDtGORvdykABMXOi45s/exec";
+// Types de devoirs : couleur de la pastille (fond, texte) et du point
+const HW_TYPES = {
+  "Interro":    {bg: "#FFEBD6", fg: "#B24A00", dot: "#FF9500"},
+  "À rendre":   {bg: "#E0EEFF", fg: "#0A4FA8", dot: "#007AFF"},
+  "À préparer": {bg: "#EBEBEF", fg: "#55555C", dot: "#8E8E93"},
+};
+const hwStyle = h => { const t = HW_TYPES[h.type] || HW_TYPES["À préparer"]; return `--hb:${t.bg};--hf:${t.fg};--hc:${t.dot}`; };
+const hwLabel = h => esc(h.type) + (h.status === "pending" ? " ?" : "");
 const $ = id => document.getElementById(id);
 let scrollPending = true;
+let allHomework = [], homework = [], dueBoxes = [], hwByCourse = {}, codeTitle = {};
 let events = [], allEvents = [], tracks = [], track = null, updated = null, weekStart, selDay;
 
 function readTrack(){
@@ -169,6 +221,7 @@ function setTrack(t){
   track = t;
   try { localStorage.setItem("edt-track", t); } catch {}
   events = allEvents.filter(e => !e.tracks || e.tracks.includes(t));
+  homework = dedupe(allHomework.filter(h => !h.tracks || h.tracks.includes(t)));
   $("seg").innerHTML = tracks.map(x => `<button class="${x === t ? "on" : ""}" data-t="${x}">${x}</button>`).join("");
   render();
 }
@@ -212,6 +265,14 @@ function render(){
 
   if (selDay < weekStart || selDay >= addDays(weekStart, n)) selDay = new Date(weekStart);
 
+  // devoirs : pastille sur le cours de la matière ce jour-là, sinon case « À prévoir » sous le jour
+  // (le week-end va sous le dernier jour affiché)
+  hwByCourse = {}; dueBoxes = Array.from({length: n}, () => []);
+  homework.filter(h => h.d >= weekStart && h.d < addDays(weekStart, 7)).forEach(h => {
+    const course = wk.find(e => sameDay(e.s, h.d) && e.code === h.code && (!h.due || (h.due >= e.s && h.due <= e.e)));
+    if (course) (hwByCourse[course.id] ||= []).push(h);
+    else dueBoxes[Math.min(Math.round((h.d - weekStart) / 864e5), n - 1)].push(h);
+  });
   let pills = "", cols = "";
   for (let i = 0; i < n; i++){
     const d = addDays(weekStart, i);
@@ -224,9 +285,11 @@ function render(){
     const card = (e, n) => {
       const past = now >= e.e;
       const sub = n > 1 ? `${hm(e.s)} – ${hm(e.e)}${e.room ? " · " + esc(e.room) : ""}` : esc(e.room || "Salle non indiquée");
+      const hws = (hwByCourse[e.id] || []).map(h =>
+        `<span class="hw ${h.status === "pending" ? "pending" : ""}" style="${hwStyle(h)}">${hwLabel(h)}</span>`).join("");
       return `<button class="ev ${past ? "past" : ""}" style="--c:${e.c}" data-id="${esc(e.id)}">
           <div class="title">${esc(e.title)}</div>
-          <div class="room">${sub}</div>
+          <div class="room"><span class="rt">${sub}</span>${hws}</div>
         </button>`;
     };
     const slotHtml = (items, cls = "") => {
@@ -249,6 +312,14 @@ function render(){
     } else {
       body = slotHtml(list.filter(e => e.s.getHours() < 13)) + slotHtml(list.filter(e => e.s.getHours() >= 13));
     }
+    if (dueBoxes[i].length){
+      const lines = dueBoxes[i].map(h => {
+        const other = !sameDay(h.d, d) ? `${DAYS_LONG[h.d.getDay()][0].toUpperCase()}${DAYS_LONG[h.d.getDay()].slice(1)} ` : "";
+        const when = (other || h.due) ? ` · <span>${other}${h.due ? hm(h.due) : ""}</span>` : "";
+        return `<div class="dl ${h.status === "pending" ? "pending" : ""}" style="${hwStyle(h)}"><i></i><div>${hwLabel(h)} ${esc(h.code)}${when}</div></div>`;
+      }).join("");
+      body += `<button class="due" data-due="${i}"><div class="k">À prévoir</div>${lines}</button>`;
+    }
     cols += `<section class="col ${sameDay(d, selDay) ? "sel" : ""} ${sameDay(d, now) ? "today" : ""}">
       <h3><span>${DAYS_LONG[d.getDay()]}</span><b>${d.getDate()}</b></h3><div class="list">${body}</div></section>`;
   }
@@ -263,7 +334,7 @@ function render(){
   }
 
   const ref = lastCheck || updated;
-  if (ref){
+  if (ref && checkDone){
     const min = Math.round((now - ref) / 60000);
     const ago = min < 1 ? "à l'instant" : min < 60 ? `il y a ${min} min` : min < 1440 ? `il y a ${Math.round(min/60)} h` : `le ${ref.getDate()} ${MONTHS[ref.getMonth()]}`;
     const verb = lastCheck ? "Vérifié" : "Mis à jour";
@@ -273,7 +344,7 @@ function render(){
 }
 
 // heure du dernier passage du robot, demandée directement à GitHub (sans commit)
-let lastCheck = null, lastFailed = false;
+let lastCheck = null, lastFailed = false, checkDone = false;
 async function loadLastCheck(){
   try {
     const r = await fetch("https://api.github.com/repos/HakimChaabna/edt-ing1-si/actions/workflows/update.yml/runs?per_page=1&status=completed");
@@ -282,8 +353,8 @@ async function loadLastCheck(){
     if (!run) return;
     lastCheck = new Date(run.updated_at);
     lastFailed = run.conclusion !== "success";
-    render();
   } catch {}
+  finally { checkDone = true; render(); }
 }
 
 function openSheet(id){
@@ -299,10 +370,126 @@ function openSheet(id){
       ${isCompanyDay(e) ? "" : row("Durée", `${Math.floor(dur/60)} h${dur%60 ? " "+pad(dur%60) : ""}`)}
       ${row(e.teachers.length > 1 ? "Enseignants" : "Enseignant", e.teachers.map(esc).join("<br>"))}
       ${row("Groupes", e.groups.map(esc).join("<br>"))}
-    </div>`;
+    </div>
+    ${(hwByCourse[e.id] || []).length ? `<h5>À prévoir</h5><div class="group">${hwByCourse[e.id].map(hwRow).join("")}</div>` : ""}`;
   $("closeBtn").onclick = closeSheet;
   $("sheetRoot").classList.add("open");
 }
+function hwRow(h){
+  const val = h.status === "pending" ? `<span class="pend">Pas encore vérifié</span>` : esc(h.detail || "");
+  return `<div class="row"><span>${esc(h.type)}${h.due ? " · " + hm(h.due) : ""}</span><span>${val}</span></div>`;
+}
+function openDue(i){
+  const list = dueBoxes[i]; if (!list || !list.length) return;
+  $("sheet").innerHTML = `<div class="grab"></div>
+    <div class="top"><h4>À prévoir</h4><button class="close" id="closeBtn">OK</button></div>
+    ${list.map(h => `<h5>${esc(codeTitle[h.code] || h.code)}</h5><div class="group">
+        <div class="row"><span>Pour le</span><span>${DAYS_LONG[h.d.getDay()]} ${h.d.getDate()} ${MONTHS_LONG[h.d.getMonth()]}${h.due ? " à " + hm(h.due) : ""}</span></div>
+        ${hwRow(h)}
+      </div>`).join("")}`;
+  $("closeBtn").onclick = closeSheet;
+  $("sheetRoot").classList.add("open");
+}
+
+// un seul devoir affiché par (jour, matière, type) : le validé l'emporte sur les propositions
+function dedupe(list){
+  const best = {};
+  list.forEach(h => {
+    const k = `${h.date}|${h.code}|${h.type}`;
+    if (!best[k] || (best[k].status === "pending" && h.status === "ok")) best[k] = h;
+  });
+  return Object.values(best);
+}
+function prepHomework(items){
+  return items.map(h => {
+    const d = new Date(h.date + "T00:00:00");
+    let due = null;
+    if (h.time){ const [H, M] = h.time.split(":").map(Number); due = new Date(d); due.setHours(H, M); }
+    return {...h, d, due};
+  });
+}
+async function loadHomework(){
+  if (!HW_API) return;
+  try {
+    const r = await fetch(HW_API);
+    const data = await r.json();
+    allHomework = prepHomework(data.items || []);
+    setTrack(track);
+  } catch {}
+}
+
+/* ---------- formulaire « Proposer un devoir » ---------- */
+let toastTimer;
+function toast(msg){
+  $("toast").textContent = msg; $("toast").classList.add("on");
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => $("toast").classList.remove("on"), 2600);
+}
+function openPropose(){
+  const iso = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+  const today = new Date();
+  const codes = Object.keys(codeTitle).filter(c => !/entreprise/i.test(codeTitle[c])).sort((a, b) => codeTitle[a].localeCompare(codeTitle[b], "fr"));
+  const segBtns = (name, opts, on) => `<div class="seg" data-name="${name}">${opts.map(o => `<button type="button" class="${o === on ? "on" : ""}" data-v="${o}">${o}</button>`).join("")}</div>`;
+  $("sheet").innerHTML = `<div class="grab"></div>
+    <div class="top"><h4>Proposer un devoir</h4><button class="close" id="closeBtn">Annuler</button></div>
+    <p class="sw">Anonyme. Ta proposition apparaît en gris jusqu'à ce qu'un délégué la vérifie.</p>
+    <form id="pf" novalidate>
+      <div class="group">
+        <div class="f"><label>Type</label>${segBtns("type", Object.keys(HW_TYPES), "Interro")}</div>
+        <div class="f"><label for="pfCode">Matière</label><select id="pfCode"><option value="">Choisir</option>${codes.map(c => `<option value="${esc(c)}">${esc(codeTitle[c])}</option>`).join("")}</select></div>
+        <div class="f"><label for="pfDate">Date</label><input type="date" id="pfDate" value="${iso(today)}" min="${iso(addDays(today, -1))}"></div>
+        <div class="f"><label for="pfTime">Heure limite</label><input type="time" id="pfTime"></div>
+        <div class="f"><label>Parcours</label>${segBtns("track", ["FISE", "FISA", "Les deux"], "Les deux")}</div>
+      </div>
+      <p class="hint">Laisse l'heure vide si c'est pour le cours. Mets-la si c'est à rendre à un autre moment (ex. 23h59 sur Moodle).</p>
+      <div class="group" style="margin-top:14px">
+        <div class="f stack"><label for="pfDetail">Détail</label><textarea id="pfDetail" maxlength="200" placeholder="Chapitres 1 à 3"></textarea></div>
+      </div>
+      <input class="hp" id="pfWeb" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <p class="err" id="pfErr"></p>
+      <button class="send" id="pfSend" type="submit">Envoyer</button>
+    </form>`;
+  $("closeBtn").onclick = closeSheet;
+  $("sheet").querySelectorAll(".seg").forEach(seg => seg.onclick = ev => {
+    const b = ev.target.closest("button"); if (!b) return;
+    seg.querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b));
+  });
+  ["pfCode", "pfDate"].forEach(id => $(id).oninput = () => $("pfErr").textContent = "");
+  $("pf").onsubmit = submitPropose;
+  $("sheetRoot").classList.add("open");
+}
+async function submitPropose(ev){
+  ev.preventDefault();
+  const pick = name => $("sheet").querySelector(`.seg[data-name="${name}"] .on`)?.dataset.v;
+  const p = {
+    type: pick("type"), track: pick("track"),
+    code: $("pfCode").value, date: $("pfDate").value, time: $("pfTime").value,
+    detail: $("pfDetail").value.trim(), website: $("pfWeb").value,
+  };
+  if (!p.code) return $("pfErr").textContent = "Choisis la matière.";
+  if (!p.date) return $("pfErr").textContent = "Choisis la date.";
+  // limite douce côté téléphone : 6 propositions par heure
+  let sent = [];
+  try { sent = JSON.parse(localStorage.getItem("edt-sent") || "[]").filter(t => Date.now() - t < 36e5); } catch {}
+  if (sent.length >= 6) return $("pfErr").textContent = "Tu as déjà envoyé beaucoup de propositions, réessaie plus tard.";
+  $("pfSend").disabled = true; $("pfSend").textContent = "Envoi…";
+  try {
+    const r = await fetch(HW_API, {method: "POST", headers: {"Content-Type": "text/plain;charset=utf-8"}, body: JSON.stringify(p)});
+    const res = await r.json();
+    if (!res.ok) throw new Error(res.error);
+    try { localStorage.setItem("edt-sent", JSON.stringify([...sent, Date.now()])); } catch {}
+    // affichage immédiat en gris, sans attendre le prochain chargement
+    allHomework.push(...prepHomework([{id: res.id, date: p.date, time: p.time || null, code: p.code, type: p.type,
+      tracks: p.track === "Les deux" ? ["FISE", "FISA"] : [p.track], status: "pending", detail: null}]));
+    closeSheet(); setTrack(track); toast("Merci, c'est envoyé aux délégués");
+  } catch (err) {
+    const msg = {plein: "Trop de propositions en attente, réessaie plus tard.", date: "Cette date n'est pas valide."}[err.message];
+    $("pfErr").textContent = msg || "L'envoi n'a pas marché, réessaie dans un instant.";
+    $("pfSend").disabled = false; $("pfSend").textContent = "Envoyer";
+  }
+}
+$("proposeBtn").onclick = openPropose;
+$("proposeBtn").hidden = !HW_API;
+
 const closeSheet = () => $("sheetRoot").classList.remove("open");
 
 function go(deltaWeeks){
@@ -323,10 +510,14 @@ $("prev").onclick = () => go(-1);
 $("next").onclick = () => go(1);
 $("todayBtn").onclick = () => { defaultView(); scrollPending = true; render(); };
 $("days").onclick = ev => { const b = ev.target.closest(".day"); if (b){ selDay = addDays(weekStart, +b.dataset.i); render(); } };
-$("board").onclick = ev => { const b = ev.target.closest(".ev"); if (b) openSheet(b.dataset.id); };
+$("board").onclick = ev => {
+  const b = ev.target.closest(".ev"); if (b) return openSheet(b.dataset.id);
+  const d = ev.target.closest(".due"); if (d) openDue(+d.dataset.due);
+};
 $("sheetBg").onclick = closeSheet;
 document.addEventListener("keydown", e => {
   if (e.key === "Escape") closeSheet();
+  if ($("sheetRoot").classList.contains("open")) return;
   if (e.key === "ArrowLeft") shiftDay(-1);
   if (e.key === "ArrowRight") shiftDay(1);
 });
@@ -336,6 +527,7 @@ function load(data){
   const keys = [...new Set((data.events || []).map(e => e.code || e.title))].sort();
   const col = k => PALETTE[keys.indexOf(k) % PALETTE.length];
   allEvents = (data.events || []).map(e => ({...e, s: new Date(e.start), e: new Date(e.end), c: col(e.code || e.title)}));
+  allEvents.forEach(e => { if (e.code && !codeTitle[e.code]) codeTitle[e.code] = e.title; });
   tracks = data.tracks || [];
   $("seg").hidden = tracks.length < 2;
   const saved = readTrack();
@@ -351,6 +543,7 @@ $("seg").onclick = ev => { const b = ev.target.closest("button"); if (b && b.dat
     if (!r.ok) throw new Error(r.status);
     load(await r.json());
     loadLastCheck();
+    loadHomework();
   } catch (err) {
     $("board").innerHTML = `<div class="msg">Impossible de charger l'emploi du temps pour le moment.<br>Réessaie dans quelques minutes.</div>`;
   }
