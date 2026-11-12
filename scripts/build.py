@@ -133,8 +133,10 @@ def match_subject(title: str, subjects: dict[str, str]) -> str:
     return best if score >= 0.75 else ""
 
 
-def split_description(desc: str) -> tuple[list[str], list[str]]:
-    groups, teachers = [], []
+def split_description(desc: str) -> list[str]:
+    """Garde uniquement les groupes. Les autres lignes (noms des enseignants) ne sont jamais copiées :
+    ce sont des données personnelles, et le site est public."""
+    groups = []
     for raw in desc.split("\n"):
         l = raw.strip()
         if not l or l.lower().startswith("(export") or l.lower().startswith("export"):
@@ -142,8 +144,8 @@ def split_description(desc: str) -> tuple[list[str], list[str]]:
         if re.search(r"\bING\b|\bFIS[AE]\b|\bGr(oupe)?\b|\bpromo", l, re.I):
             groups.append(l)
         else:
-            teachers.append(l)
-    return groups, teachers
+            continue
+    return groups
 
 
 def build(feeds: dict[str, str]) -> dict:
@@ -166,7 +168,7 @@ def build(feeds: dict[str, str]) -> dict:
                 if track not in merged[uid]["tracks"]:
                     merged[uid]["tracks"].append(track)
                 continue
-            groups, teachers = split_description(e.get("DESCRIPTION", ""))
+            groups = split_description(e.get("DESCRIPTION", ""))
             merged[uid] = {
                 "id": uid,
                 "start": start.isoformat(),
@@ -175,7 +177,6 @@ def build(feeds: dict[str, str]) -> dict:
                 "title": title,
                 "type": kind,
                 "room": e.get("LOCATION", "").strip(),
-                "teachers": teachers,
                 "groups": groups,
                 "tracks": [track],
             }

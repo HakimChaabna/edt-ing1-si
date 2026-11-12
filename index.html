@@ -282,7 +282,7 @@ function applyChanges(list, changes){
       const s = at(c.start), e = at(c.end);
       if (out.some(x => sameSubject(x.code, c.code) && x.s < e && x.e > s)) return;
       out.push({id: "chg-" + c.id, s, e, start: s.toISOString(), end: e.toISOString(), code: c.code,
-        title: c.title || codeTitle[c.code] || c.code, type: "", room: c.room || "", teachers: [], groups: [],
+        title: c.title || codeTitle[c.code] || c.code, type: "", room: c.room || "", groups: [],
         tracks: c.tracks, c: colorOf(c.code), mods: [{action: "add", id: c.id}]});
       return;
     }
@@ -426,7 +426,7 @@ function render(){
     const ago = min < 1 ? "à l'instant" : min < 60 ? `il y a ${min} min` : min < 1440 ? `il y a ${Math.round(min/60)} h` : `le ${ref.getDate()} ${MONTHS[ref.getMonth()]}`;
     const verb = lastCheck ? "Vérifié" : "Mis à jour";
     const warn = lastFailed ? "⚠️ Dernière synchronisation échouée · " : "";
-    $("foot").innerHTML = `${warn}${verb} ${ago} depuis ADE`;
+    $("foot").innerHTML = `${warn}${verb} ${ago} depuis ADE<br>En cas de doute, ADE et le groupe Annonces font foi.`;
   }
 }
 
@@ -456,7 +456,6 @@ function openSheet(id){
       ${row("Type", esc(e.type))}
       ${e.tbc ? row("Horaire", "À confirmer") : ""}
       ${isCompanyDay(e) ? "" : row("Durée", `${Math.floor(dur/60)} h${dur%60 ? " "+pad(dur%60) : ""}`)}
-      ${row(e.teachers.length > 1 ? "Enseignants" : "Enseignant", e.teachers.map(esc).join("<br>"))}
       ${row("Groupes", e.groups.map(esc).join("<br>"))}
     </div>
     ${(e.mods || []).length ? `<h5>Info délégués</h5><div class="group">${e.mods.map(m => {
