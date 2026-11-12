@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T21:03+01:00",
+ "updated": "2026-11-12T21:37+01:00",
  "tracks": [
   "FISA",
   "FISE"
@@ -13,10 +13,6 @@
    "title": "Introduction à l'infrastructure système et réseau",
    "type": "CM",
    "room": "INFO 1 St-Simon",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "(Modifié le:23/07/2026 11:15)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -32,10 +28,6 @@
    "title": "Programmation orientée objet avancée",
    "type": "CM",
    "room": "INFO 3 St-Simon",
-   "teachers": [
-    "Maestracci Valentin",
-    "(Modifié le:30/09/2026 16:56)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -51,9 +43,6 @@
    "title": "Bases de données : conception et développement",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "(Modifié le:22/07/2026 17:03)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -71,10 +60,6 @@
    "title": "Projet SI Résilient, Innovant, Utile et Sobre 2",
    "type": "CM",
    "room": "TD 7 St-Simon,INFO 3 St-Simon",
-   "teachers": [
-    "Das Neves Nicolas",
-    "(Modifié le:13/10/2026 12:21)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -92,9 +77,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:57)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -110,9 +92,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:57)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -128,9 +107,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:27/10/2026 10:03)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -146,9 +122,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:57)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -164,9 +137,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:22/10/2026 10:35)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -182,10 +152,6 @@
    "title": "Mathématique pour l'ingénieur",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Egloff Sebastien",
-    "(Modifié le:22/07/2026 12:03)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -203,10 +169,6 @@
    "title": "Théorie des Graphes",
    "type": "CM",
    "room": "INFO 3 St-Simon",
-   "teachers": [
-    "Caspard Nathalie",
-    "(Modifié le:21/10/2026 12:27)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -222,10 +184,6 @@
    "title": "Dynamique de groupe et communication",
    "type": "CM",
    "room": "INFO 2 St-Simon",
-   "teachers": [
-    "Dartiguepeyrou Samuel",
-    "(Modifié le:22/07/2026 14:11)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -243,10 +201,6 @@
    "title": "Introduction au développement durable",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Michel Olivier",
-    "(Modifié le:21/10/2026 12:39)"
-   ],
    "groups": [
     "SI ING 1 FISE",
     "SI ING 1 FISA"
@@ -264,10 +218,6 @@
    "title": "Introduction à l'infrastructure système et réseau",
    "type": "TD",
    "room": "TD 6 St-Simon",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "(Modifié le:21/07/2026 16:55)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -283,10 +233,6 @@
    "title": "Programmation orientée objet avancée",
    "type": "CM",
    "room": "INFO 4 St-Simon",
-   "teachers": [
-    "Maestracci Valentin",
-    "(Modifié le:21/10/2026 12:55)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -302,11 +248,6 @@
    "title": "Introduction à l'infrastructure système et réseau",
    "type": "CM",
    "room": "INFO 3 St-Simon",
-   "teachers": [
-    "A deplacer",
-    "Busatto-Gaston Damien",
-    "(Modifié le:21/10/2026 13:11)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -322,10 +263,6 @@
    "title": "Bases de données : conception et développement",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "DISTANCIEL",
-    "(Modifié le:21/10/2026 13:18)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -343,11 +280,6 @@
    "title": "Statistiques Inférentielles",
    "type": "CM",
    "room": "Distanciel",
-   "teachers": [
-    "Ne pas deplacer CC TD5",
-    "Brofferio Sara",
-    "(Modifié le:06/11/2026 10:06)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -365,10 +297,6 @@
    "title": "Anglais",
    "type": "CM",
    "room": "INFO 2 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:13/10/2026 12:29)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -384,10 +312,6 @@
    "title": "Mathématique pour l'ingénieur",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Egloff Sebastien",
-    "(Modifié le:02/11/2026 10:24)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -405,10 +329,6 @@
    "title": "Dynamique de groupe et communication",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Dartiguepeyrou Samuel",
-    "(Modifié le:22/07/2026 17:04)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -426,10 +346,6 @@
    "title": "Logique 1",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "(Modifié le:02/11/2026 12:17)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -447,10 +363,6 @@
    "title": "Introduction à l'infrastructure système et réseau",
    "type": "TD",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "(Modifié le:02/11/2026 12:20)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -466,9 +378,6 @@
    "title": "Bases de données : conception et développement",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "(Modifié le:22/07/2026 17:04)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -486,10 +395,6 @@
    "title": "Programmation orientée objet avancée",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Maestracci Valentin",
-    "(Modifié le:17/09/2026 16:18)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -507,10 +412,6 @@
    "title": "Statistiques Inférentielles",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Brofferio Sara",
-    "(Modifié le:26/08/2026 13:30)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -528,9 +429,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:22/10/2026 12:17)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -546,10 +444,6 @@
    "title": "Anglais",
    "type": "CM",
    "room": "INFO 1 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:22/07/2026 12:12)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -565,10 +459,6 @@
    "title": "Atelier CFA Numia -Systèmes d'information - Recherche d'entreprise",
    "type": "",
    "room": "INFO 6 St-Simon",
-   "teachers": [
-    "UNIQUEMENT LES FAT",
-    "(Modifié le:12/11/2026 13:06)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -584,10 +474,6 @@
    "title": "Théorie des Graphes",
    "type": "CM",
    "room": "INFO 2 St-Simon",
-   "teachers": [
-    "Caspard Nathalie",
-    "(Modifié le:09/11/2026 11:34)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -603,9 +489,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:57)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -621,10 +504,6 @@
    "title": "Introduction à l'infrastructure système et réseau",
    "type": "TD",
    "room": "INFO 1 St-Simon",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "(Modifié le:09/11/2026 11:49)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -640,10 +519,6 @@
    "title": "Théorie des Graphes",
    "type": "TD",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Caspard Nathalie",
-    "(Modifié le:09/11/2026 11:52)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -659,9 +534,6 @@
    "title": "Bases de données : conception et développement",
    "type": "CM",
    "room": "INFO 2 St-Simon",
-   "teachers": [
-    "(Modifié le:09/11/2026 12:14)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -677,9 +549,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:57)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -695,10 +564,6 @@
    "title": "Seconde langue vivante au choix",
    "type": "CM",
    "room": "TD 6 St-Simon",
-   "teachers": [
-    "Aguilera Vita Sergio",
-    "(Modifié le:23/07/2026 12:38)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -714,9 +579,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:57)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -732,9 +594,6 @@
    "title": "Mathématique pour l'ingénieur",
    "type": "TD",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "(Modifié le:22/07/2026 17:05)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -752,10 +611,6 @@
    "title": "Théorie des Graphes",
    "type": "TD",
    "room": "TD 6 St-Simon",
-   "teachers": [
-    "Caspard Nathalie",
-    "(Modifié le:22/07/2026 11:19)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -771,10 +626,6 @@
    "title": "Dynamique de groupe et communication",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Dartiguepeyrou Samuel",
-    "(Modifié le:22/07/2026 17:05)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -792,10 +643,6 @@
    "title": "Introduction au développement durable",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Michel Olivier",
-    "(Modifié le:22/07/2026 17:05)"
-   ],
    "groups": [
     "SI ING 1 FISE",
     "SI ING 1 FISA"
@@ -813,10 +660,6 @@
    "title": "Logique 1",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "(Modifié le:22/07/2026 17:05)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -834,10 +677,6 @@
    "title": "Programmation orientée objet avancée",
    "type": "CM",
    "room": "INFO 2 St-Simon",
-   "teachers": [
-    "Maestracci Valentin",
-    "(Modifié le:17/09/2026 16:18)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -853,10 +692,6 @@
    "title": "Introduction à l'infrastructure système et réseau",
    "type": "TD",
    "room": "INFO 1 St-Simon",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "(Modifié le:23/07/2026 11:15)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -872,9 +707,6 @@
    "title": "Bases de données : conception et développement",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "(Modifié le:22/07/2026 17:05)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -892,10 +724,6 @@
    "title": "Programmation orientée objet avancée",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Maestracci Valentin",
-    "(Modifié le:17/09/2026 16:18)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -913,10 +741,6 @@
    "title": "Anglais",
    "type": "CM",
    "room": "INFO 2 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:23/07/2026 11:15)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -932,9 +756,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:57)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -950,10 +771,6 @@
    "title": "Anglais",
    "type": "TD",
    "room": "TD 3 St-Simon,TD 6 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:10/09/2026 11:23)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -969,10 +786,6 @@
    "title": "Théorie des Graphes",
    "type": "TD",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Caspard Nathalie",
-    "(Modifié le:22/07/2026 17:39)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -988,10 +801,6 @@
    "title": "Anglais",
    "type": "CM",
    "room": "INFO 5 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:22/07/2026 12:13)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -1007,9 +816,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:57)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -1025,10 +831,6 @@
    "title": "Théorie des Graphes",
    "type": "TD",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Caspard Nathalie",
-    "(Modifié le:22/07/2026 11:21)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -1044,10 +846,6 @@
    "title": "Introduction à l'infrastructure système et réseau",
    "type": "TP",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "(Modifié le:21/07/2026 16:56)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -1063,9 +861,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:22/09/2026 12:05)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -1081,10 +876,6 @@
    "title": "Programmation orientée objet avancée",
    "type": "CM",
    "room": "TD 6 St-Simon",
-   "teachers": [
-    "Maestracci Valentin",
-    "(Modifié le:17/09/2026 16:18)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -1100,9 +891,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:57)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -1118,9 +906,6 @@
    "title": "Bases de données : conception et développement",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "(Modifié le:21/07/2026 16:52)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -1136,10 +921,6 @@
    "title": "Seconde langue vivante au choix",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Aguilera Vita Sergio",
-    "(Modifié le:23/07/2026 12:38)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -1155,9 +936,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:57)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -1173,10 +951,6 @@
    "title": "Programmation orientée objet avancée",
    "type": "CM",
    "room": "TD 6 St-Simon",
-   "teachers": [
-    "Maestracci Valentin",
-    "(Modifié le:17/09/2026 16:18)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -1192,9 +966,6 @@
    "title": "Mathématique pour l'ingénieur",
    "type": "TD",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "(Modifié le:22/07/2026 17:06)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -1212,10 +983,6 @@
    "title": "Théorie des Graphes",
    "type": "TD",
    "room": "INFO 4 St-Simon",
-   "teachers": [
-    "Caspard Nathalie",
-    "(Modifié le:22/07/2026 17:39)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -1231,10 +998,6 @@
    "title": "Dynamique de groupe et communication",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Dartiguepeyrou Samuel",
-    "(Modifié le:14/10/2026 15:22)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -1252,10 +1015,6 @@
    "title": "Logique 1",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "(Modifié le:22/07/2026 17:07)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -1273,11 +1032,6 @@
    "title": "Statistiques Inférentielles",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Ne pas deplacer CC TD5",
-    "Brofferio Sara",
-    "(Modifié le:02/10/2026 12:34)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -1295,10 +1049,6 @@
    "title": "Programmation orientée objet avancée",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Maestracci Valentin",
-    "(Modifié le:17/09/2026 16:18)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -1316,10 +1066,6 @@
    "title": "Introduction à l'infrastructure système et réseau",
    "type": "TD",
    "room": "INFO 1 St-Simon",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "(Modifié le:23/07/2026 11:15)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -1335,9 +1081,6 @@
    "title": "Bases de données : conception et développement",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "(Modifié le:22/07/2026 17:07)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -1355,10 +1098,6 @@
    "title": "Projet SI Résilient, Innovant, Utile et Sobre 2",
    "type": "CM",
    "room": "INFO 6 St-Simon,INFO 5 St-Simon",
-   "teachers": [
-    "Das Neves Nicolas",
-    "(Modifié le:13/10/2026 12:39)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -1376,10 +1115,6 @@
    "title": "Programmation orientée objet avancée",
    "type": "CM",
    "room": "INFO 2 St-Simon",
-   "teachers": [
-    "Maestracci Valentin",
-    "(Modifié le:13/10/2026 12:39)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -1395,10 +1130,6 @@
    "title": "Anglais",
    "type": "CM",
    "room": "TD 6 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:23/07/2026 11:15)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -1414,9 +1145,6 @@
    "title": "Mathématique pour l'ingénieur",
    "type": "TD",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "(Modifié le:22/07/2026 17:08)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -1434,10 +1162,6 @@
    "title": "Théorie des Graphes",
    "type": "TD",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Caspard Nathalie",
-    "(Modifié le:22/07/2026 11:17)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -1453,10 +1177,6 @@
    "title": "Dynamique de groupe et communication",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Dartiguepeyrou Samuel",
-    "(Modifié le:22/07/2026 17:08)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -1474,10 +1194,6 @@
    "title": "Logique 1",
    "type": "TD",
    "room": "INFO 2 St-Simon",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "(Modifié le:22/07/2026 17:08)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -1495,10 +1211,6 @@
    "title": "Statistiques Inférentielles",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Brofferio Sara",
-    "(Modifié le:22/07/2026 17:08)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -1516,10 +1228,6 @@
    "title": "Programmation orientée objet avancée",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Maestracci Valentin",
-    "(Modifié le:17/09/2026 16:18)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -1537,10 +1245,6 @@
    "title": "Introduction à l'infrastructure système et réseau",
    "type": "TP",
    "room": "INFO 6 St-Simon",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "(Modifié le:22/07/2026 17:08)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -1556,9 +1260,6 @@
    "title": "Bases de données : conception et développement",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "(Modifié le:22/07/2026 17:09)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -1576,10 +1277,6 @@
    "title": "Introduction au développement durable",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Michel Olivier",
-    "(Modifié le:05/11/2026 11:21)"
-   ],
    "groups": [
     "SI ING 1 FISE",
     "SI ING 1 FISA"
@@ -1597,10 +1294,6 @@
    "title": "Théorie des Graphes",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Caspard Nathalie",
-    "(Modifié le:13/10/2026 11:40)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -1616,10 +1309,6 @@
    "title": "Dynamique de groupe et communication",
    "type": "TD",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Dartiguepeyrou Samuel",
-    "(Modifié le:22/07/2026 17:10)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -1637,10 +1326,6 @@
    "title": "Logique 1",
    "type": "TD",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "(Modifié le:22/07/2026 17:10)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -1658,10 +1343,6 @@
    "title": "Programmation orientée objet avancée",
    "type": "Examen",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "EXAMEN",
-    "(Modifié le:21/07/2026 17:30)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -1681,11 +1362,6 @@
    "title": "Statistiques Inférentielles",
    "type": "Examen",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Brofferio Sara",
-    "EXAMEN",
-    "(Modifié le:21/07/2026 17:34)"
-   ],
    "groups": [
     "SI ING 1 FISE",
     "SI ING 1 FISA"
@@ -1705,10 +1381,6 @@
    "title": "Introduction à l'infrastructure système et réseau",
    "type": "TP",
    "room": "TD 6 St-Simon",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "(Modifié le:22/07/2026 17:08)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -1724,9 +1396,6 @@
    "title": "Bases de données : conception et développement",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "(Modifié le:21/07/2026 16:49)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -1744,10 +1413,6 @@
    "title": "Projet SI Résilient, Innovant, Utile et Sobre 2",
    "type": "TD",
    "room": "INFO 1 St-Simon,INFO 3 St-Simon",
-   "teachers": [
-    "Das Neves Nicolas",
-    "(Modifié le:23/07/2026 12:58)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -1765,9 +1430,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:58)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -1783,10 +1445,6 @@
    "title": "Théorie des Graphes",
    "type": "CM",
    "room": "INFO 5 St-Simon",
-   "teachers": [
-    "Caspard Nathalie",
-    "(Modifié le:13/10/2026 11:39)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -1802,10 +1460,6 @@
    "title": "Anglais",
    "type": "TD",
    "room": "INFO 2 St-Simon,TD 6 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:22/07/2026 12:13)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -1821,9 +1475,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:58)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -1839,9 +1490,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:58)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -1857,10 +1505,6 @@
    "title": "Introduction à l'infrastructure système et réseau",
    "type": "TP",
    "room": "TD 6 St-Simon",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "(Modifié le:21/07/2026 16:56)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -1876,9 +1520,6 @@
    "title": "Bases de données : conception et développement",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "(Modifié le:21/07/2026 16:52)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -1894,9 +1535,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:58)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -1912,10 +1550,6 @@
    "title": "Seconde langue vivante au choix",
    "type": "TD",
    "room": "INFO 2 St-Simon",
-   "teachers": [
-    "Aguilera Vita Sergio",
-    "(Modifié le:23/07/2026 12:38)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -1931,9 +1565,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:58)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -1949,11 +1580,6 @@
    "title": "Mathématique pour l'ingénieur",
    "type": "Examen",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Egloff Sebastien",
-    "EXAMEN",
-    "(Modifié le:22/07/2026 12:04)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -1973,11 +1599,6 @@
    "title": "Théorie des Graphes",
    "type": "Examen",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Caspard Nathalie",
-    "EXAMEN",
-    "(Modifié le:22/07/2026 11:57)"
-   ],
    "groups": [
     "SI ING 1 FISE",
     "SI ING 1 FISA"
@@ -1997,10 +1618,6 @@
    "title": "Dynamique de groupe et communication",
    "type": "TD",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Dartiguepeyrou Samuel",
-    "(Modifié le:22/07/2026 12:16)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -2018,10 +1635,6 @@
    "title": "Logique 1",
    "type": "TD",
    "room": "INFO 2 St-Simon",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "(Modifié le:22/07/2026 12:01)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -2039,10 +1652,6 @@
    "title": "Anglais",
    "type": "TD",
    "room": "TD 6 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:10/09/2026 11:24)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2058,10 +1667,6 @@
    "title": "Introduction à l'infrastructure système et réseau",
    "type": "TP",
    "room": "INFO 4 St-Simon",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "(Modifié le:21/07/2026 16:56)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -2077,10 +1682,6 @@
    "title": "Introduction à l'infrastructure système et réseau",
    "type": "TP",
    "room": "INFO 4 St-Simon",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "(Modifié le:22/07/2026 17:08)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2096,10 +1697,6 @@
    "title": "Introduction à l'infrastructure système et réseau",
    "type": "TP",
    "room": "INFO 4 St-Simon",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "(Modifié le:21/07/2026 17:15)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -2115,10 +1712,6 @@
    "title": "Projet SI Résilient, Innovant, Utile et Sobre 2",
    "type": "TD",
    "room": "TD 3 St-Simon,TD 7 St-Simon",
-   "teachers": [
-    "Das Neves Nicolas",
-    "(Modifié le:23/07/2026 12:58)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -2136,10 +1729,6 @@
    "title": "Anglais",
    "type": "TD",
    "room": "INFO 1 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:23/07/2026 11:15)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2155,9 +1744,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:58)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2173,9 +1759,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:58)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2191,9 +1774,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:58)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2209,9 +1789,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:58)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2227,9 +1804,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:58)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2245,10 +1819,6 @@
    "title": "Dynamique de groupe et communication",
    "type": "Examen",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "EXAMEN",
-    "(Modifié le:22/07/2026 12:17)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -2268,11 +1838,6 @@
    "title": "Logique 1",
    "type": "Examen",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "EXAMEN",
-    "(Modifié le:22/07/2026 12:01)"
-   ],
    "groups": [
     "SI ING 1 FISE",
     "SI ING 1 FISA"
@@ -2292,10 +1857,6 @@
    "title": "Introduction à l'infrastructure système et réseau",
    "type": "Examen",
    "room": "Amphi B3 (A. Boulle)",
-   "teachers": [
-    "Busatto-Gaston Damien",
-    "(Modifié le:21/10/2026 17:45)"
-   ],
    "groups": [
     "SI ING 1 FISE",
     "SI ING 1 FISA"
@@ -2315,10 +1876,6 @@
    "title": "Bases de données : conception et développement",
    "type": "Examen",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Gava Frederic",
-    "(Modifié le:21/07/2026 17:18)"
-   ],
    "groups": [
     "SI ING 1 FISE",
     "SI ING 1 FISA"
@@ -2338,9 +1895,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:58)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2356,9 +1910,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:58)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2374,9 +1925,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:58)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2392,9 +1940,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:58)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2410,9 +1955,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:58)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2428,10 +1970,6 @@
    "title": "Modélisation des systèmes d'information",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Haddad Mehdi",
-    "(Modifié le:23/07/2026 11:57)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -2449,10 +1987,6 @@
    "title": "Outils pour le cycle de vie du logiciel",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Gorret Guillaume",
-    "(Modifié le:23/07/2026 12:01)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -2470,10 +2004,6 @@
    "title": "Anglais",
    "type": "CM",
    "room": "INFO 6 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:23/07/2026 12:14)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2489,10 +2019,6 @@
    "title": "Les organisations dans leur écosystème",
    "type": "CM",
    "room": "INFO 3 St-Simon",
-   "teachers": [
-    "Coulibaly Micheline Mazawan",
-    "(Modifié le:23/07/2026 12:26)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2508,10 +2034,6 @@
    "title": "Intelligence artificielle",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Li Chong",
-    "(Modifié le:23/07/2026 12:12)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -2529,10 +2051,6 @@
    "title": "Programmation pour la communication",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Mourlin Fabrice",
-    "(Modifié le:23/07/2026 12:04)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -2550,10 +2068,6 @@
    "title": "Seconde langue vivante au choix",
    "type": "CM",
    "room": "INFO 3 St-Simon",
-   "teachers": [
-    "Aguilera Vita Sergio",
-    "(Modifié le:23/07/2026 12:40)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -2569,10 +2083,6 @@
    "title": "Projet SI Résilient, Innovant, Utile et Sobre 2",
    "type": "TD",
    "room": "INFO 6 St-Simon,TD 5 St-Simon",
-   "teachers": [
-    "Das Neves Nicolas",
-    "(Modifié le:23/07/2026 12:58)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -2590,10 +2100,6 @@
    "title": "Projet SI Résilient, Innovant, Utile et Sobre 2",
    "type": "TD",
    "room": "INFO 2 St-Simon,INFO 3 St-Simon",
-   "teachers": [
-    "Das Neves Nicolas",
-    "(Modifié le:23/07/2026 12:58)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -2611,10 +2117,6 @@
    "title": "Anglais",
    "type": "CM",
    "room": "INFO 4 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:23/07/2026 12:16)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -2630,10 +2132,6 @@
    "title": "Les organisations dans leur écosystème",
    "type": "CM",
    "room": "TD 6 St-Simon",
-   "teachers": [
-    "Coulibaly Micheline Mazawan",
-    "(Modifié le:23/07/2026 12:29)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -2649,9 +2147,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:59)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2667,9 +2162,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:59)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2685,9 +2177,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:28/10/2026 11:20)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2703,10 +2192,6 @@
    "title": "Modélisation des systèmes d'information",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Haddad Mehdi",
-    "(Modifié le:23/07/2026 11:57)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -2724,10 +2209,6 @@
    "title": "Anglais",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:23/07/2026 12:14)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2743,10 +2224,6 @@
    "title": "Outils pour le cycle de vie du logiciel",
    "type": "CM",
    "room": "INFO 2 St-Simon",
-   "teachers": [
-    "Gorret Guillaume",
-    "(Modifié le:23/07/2026 12:02)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -2764,10 +2241,6 @@
    "title": "Les organisations dans leur écosystème",
    "type": "CM",
    "room": "TD 6 St-Simon",
-   "teachers": [
-    "Coulibaly Micheline Mazawan",
-    "(Modifié le:23/07/2026 12:26)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2783,10 +2256,6 @@
    "title": "Comptabilité de gestion",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "El Fidha Fayçal",
-    "(Modifié le:23/07/2026 12:19)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -2804,10 +2273,6 @@
    "title": "Intelligence artificielle",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Li Chong",
-    "(Modifié le:23/07/2026 12:12)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -2825,10 +2290,6 @@
    "title": "Programmation pour la communication",
    "type": "CM",
    "room": "INFO 2 St-Simon",
-   "teachers": [
-    "Mourlin Fabrice",
-    "(Modifié le:23/07/2026 12:04)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -2846,10 +2307,6 @@
    "title": "Seconde langue vivante au choix",
    "type": "CM",
    "room": "TD 7 St-Simon",
-   "teachers": [
-    "Aguilera Vita Sergio",
-    "(Modifié le:23/07/2026 12:41)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -2865,10 +2322,6 @@
    "title": "Projet SI Résilient, Innovant, Utile et Sobre 2",
    "type": "TD",
    "room": "TD 3 St-Simon,TD 6 St-Simon",
-   "teachers": [
-    "Das Neves Nicolas",
-    "(Modifié le:23/07/2026 12:58)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -2886,10 +2339,6 @@
    "title": "Projet SI Résilient, Innovant, Utile et Sobre 2",
    "type": "TD",
    "room": "INFO 5 St-Simon,INFO 2 St-Simon",
-   "teachers": [
-    "Das Neves Nicolas",
-    "(Modifié le:23/07/2026 12:58)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -2907,9 +2356,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:59)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2925,9 +2371,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:59)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2943,10 +2386,6 @@
    "title": "Anglais",
    "type": "CM",
    "room": "INFO 3 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:23/07/2026 12:16)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -2962,10 +2401,6 @@
    "title": "Les organisations dans leur écosystème",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Coulibaly Micheline Mazawan",
-    "(Modifié le:23/07/2026 12:29)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -2981,9 +2416,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:59)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -2999,9 +2431,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:59)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3017,9 +2446,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:59)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3035,10 +2461,6 @@
    "title": "Modélisation des systèmes d'information",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Haddad Mehdi",
-    "(Modifié le:23/07/2026 11:57)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3056,10 +2478,6 @@
    "title": "Anglais",
    "type": "CM",
    "room": "INFO 2 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:23/07/2026 12:15)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3075,10 +2493,6 @@
    "title": "Outils pour le cycle de vie du logiciel",
    "type": "TD",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Gorret Guillaume",
-    "(Modifié le:23/07/2026 12:02)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3096,10 +2510,6 @@
    "title": "Comptabilité de gestion",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "El Fidha Fayçal",
-    "(Modifié le:23/07/2026 12:19)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3117,10 +2527,6 @@
    "title": "Ressource et énergie",
    "type": "CM",
    "room": "INFO 1 St-Simon",
-   "teachers": [
-    "El Idi Mohamed Moussa",
-    "(Modifié le:23/07/2026 12:10)"
-   ],
    "groups": [
     "SI ING 1 FISE",
     "SI ING 1 FISA"
@@ -3138,10 +2544,6 @@
    "title": "Ressource et énergie",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "El Idi Mohamed Moussa",
-    "(Modifié le:23/07/2026 12:10)"
-   ],
    "groups": [
     "SI ING 1 FISE",
     "SI ING 1 FISA"
@@ -3159,10 +2561,6 @@
    "title": "Programmation pour la communication",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Mourlin Fabrice",
-    "(Modifié le:23/07/2026 12:05)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3180,10 +2578,6 @@
    "title": "Le risque sociétal dans le métier de l'ingénieur",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Perdriel Jean Luc",
-    "(Modifié le:23/07/2026 12:33)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3201,10 +2595,6 @@
    "title": "Projet SI Résilient, Innovant, Utile et Sobre 2",
    "type": "TD",
    "room": "INFO 6 St-Simon,INFO 5 St-Simon",
-   "teachers": [
-    "Das Neves Nicolas",
-    "(Modifié le:23/07/2026 12:58)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3222,10 +2612,6 @@
    "title": "Projet SI Résilient, Innovant, Utile et Sobre 2",
    "type": "TD",
    "room": "TD 3 St-Simon,TD 6 St-Simon",
-   "teachers": [
-    "Das Neves Nicolas",
-    "(Modifié le:23/07/2026 12:58)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3243,9 +2629,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:59)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3261,10 +2644,6 @@
    "title": "Anglais",
    "type": "CM",
    "room": "INFO 4 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:23/07/2026 12:17)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -3280,9 +2659,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:59)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3298,10 +2674,6 @@
    "title": "Les organisations dans leur écosystème",
    "type": "CM",
    "room": "TD 7 St-Simon",
-   "teachers": [
-    "Coulibaly Micheline Mazawan",
-    "(Modifié le:23/07/2026 12:29)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -3317,9 +2689,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:59)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3335,9 +2704,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:59)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3353,9 +2719,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:59)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3371,10 +2734,6 @@
    "title": "Outils pour le cycle de vie du logiciel",
    "type": "TD",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Gorret Guillaume",
-    "(Modifié le:23/07/2026 12:02)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3392,10 +2751,6 @@
    "title": "Les organisations dans leur écosystème",
    "type": "CM",
    "room": "TD 6 St-Simon",
-   "teachers": [
-    "Coulibaly Micheline Mazawan",
-    "(Modifié le:23/07/2026 12:27)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3411,10 +2766,6 @@
    "title": "Intelligence artificielle",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Li Chong",
-    "(Modifié le:23/07/2026 12:12)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3432,10 +2783,6 @@
    "title": "Programmation pour la communication",
    "type": "TD",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Mourlin Fabrice",
-    "(Modifié le:23/07/2026 12:06)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3453,10 +2800,6 @@
    "title": "Le risque sociétal dans le métier de l'ingénieur",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Perdriel Jean Luc",
-    "(Modifié le:23/07/2026 12:33)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3474,10 +2817,6 @@
    "title": "Comptabilité de gestion",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "El Fidha Fayçal",
-    "(Modifié le:23/07/2026 12:20)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3495,10 +2834,6 @@
    "title": "Programmation pour la communication",
    "type": "TD",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Mourlin Fabrice",
-    "(Modifié le:23/07/2026 12:06)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3516,9 +2851,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 10:59)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3534,9 +2866,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:00)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3552,9 +2881,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:00)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3570,9 +2896,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:00)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3588,9 +2911,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:00)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3606,10 +2926,6 @@
    "title": "Modélisation des systèmes d'information",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Haddad Mehdi",
-    "(Modifié le:23/07/2026 14:05)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3627,10 +2943,6 @@
    "title": "Anglais",
    "type": "CM",
    "room": "INFO 6 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:23/07/2026 12:15)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3646,10 +2958,6 @@
    "title": "Outils pour le cycle de vie du logiciel",
    "type": "TD",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Gorret Guillaume",
-    "(Modifié le:23/07/2026 12:02)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3667,10 +2975,6 @@
    "title": "Les organisations dans leur écosystème",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Coulibaly Micheline Mazawan",
-    "(Modifié le:23/07/2026 12:28)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3686,10 +2990,6 @@
    "title": "Intelligence artificielle",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Li Chong",
-    "(Modifié le:23/07/2026 12:12)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3707,10 +3007,6 @@
    "title": "Programmation pour la communication",
    "type": "TD",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Mourlin Fabrice",
-    "(Modifié le:23/07/2026 12:06)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3728,10 +3024,6 @@
    "title": "Le risque sociétal dans le métier de l'ingénieur",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Perdriel Jean Luc",
-    "(Modifié le:23/07/2026 12:33)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3749,10 +3041,6 @@
    "title": "Projet SI Résilient, Innovant, Utile et Sobre 2",
    "type": "TD",
    "room": "TD 5 St-Simon,INFO 1 St-Simon",
-   "teachers": [
-    "Das Neves Nicolas",
-    "(Modifié le:23/07/2026 12:58)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3770,10 +3058,6 @@
    "title": "Projet SI Résilient, Innovant, Utile et Sobre 2",
    "type": "TD",
    "room": "INFO 5 St-Simon,TD 7 St-Simon",
-   "teachers": [
-    "Das Neves Nicolas",
-    "(Modifié le:23/07/2026 12:58)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3791,9 +3075,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:17)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3809,10 +3090,6 @@
    "title": "Anglais",
    "type": "CM",
    "room": "INFO 5 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:23/07/2026 12:17)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -3828,9 +3105,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:17)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3846,10 +3120,6 @@
    "title": "Les organisations dans leur écosystème",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Coulibaly Micheline Mazawan",
-    "(Modifié le:23/07/2026 12:30)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -3865,9 +3135,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:17)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3883,10 +3150,6 @@
    "title": "Modélisation des systèmes d'information",
    "type": "CM",
    "room": "TD 7 St-Simon",
-   "teachers": [
-    "Haddad Mehdi",
-    "(Modifié le:23/07/2026 11:58)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -3902,10 +3165,6 @@
    "title": "Intelligence artificielle",
    "type": "CM",
    "room": "INFO 5 St-Simon",
-   "teachers": [
-    "Li Chong",
-    "(Modifié le:23/07/2026 12:13)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -3921,9 +3180,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:17)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3939,10 +3195,6 @@
    "title": "Programmation pour la communication",
    "type": "CM",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Mourlin Fabrice",
-    "(Modifié le:23/07/2026 12:07)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -3958,10 +3210,6 @@
    "title": "Seconde langue vivante au choix",
    "type": "CM",
    "room": "INFO 5 St-Simon",
-   "teachers": [
-    "Aguilera Vita Sergio",
-    "(Modifié le:23/07/2026 12:43)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -3977,9 +3225,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:17)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3995,10 +3240,6 @@
    "title": "Modélisation des systèmes d'information",
    "type": "TD",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Haddad Mehdi",
-    "(Modifié le:23/07/2026 11:57)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -4016,10 +3257,6 @@
    "title": "Outils pour le cycle de vie du logiciel",
    "type": "TD",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Gorret Guillaume",
-    "(Modifié le:23/07/2026 12:02)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -4037,10 +3274,6 @@
    "title": "Anglais",
    "type": "CM",
    "room": "INFO 5 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:23/07/2026 12:15)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -4056,10 +3289,6 @@
    "title": "Ressource et énergie",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "El Idi Mohamed Moussa",
-    "(Modifié le:23/07/2026 12:10)"
-   ],
    "groups": [
     "SI ING 1 FISE",
     "SI ING 1 FISA"
@@ -4077,10 +3306,6 @@
    "title": "Ressource et énergie",
    "type": "TD",
    "room": "TD 3 St-Simon,TD 5 St-Simon",
-   "teachers": [
-    "El Idi Mohamed Moussa",
-    "(Modifié le:23/07/2026 12:11)"
-   ],
    "groups": [
     "SI ING 1 FISE",
     "SI ING 1 FISA"
@@ -4098,10 +3323,6 @@
    "title": "Programmation pour la communication",
    "type": "TD",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Mourlin Fabrice",
-    "(Modifié le:23/07/2026 12:06)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -4119,10 +3340,6 @@
    "title": "Le risque sociétal dans le métier de l'ingénieur",
    "type": "TD",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Perdriel Jean Luc",
-    "(Modifié le:23/07/2026 12:33)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -4140,10 +3357,6 @@
    "title": "Comptabilité de gestion",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "El Fidha Fayçal",
-    "(Modifié le:23/07/2026 12:20)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -4161,10 +3374,6 @@
    "title": "Programmation pour la communication",
    "type": "TD",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Mourlin Fabrice",
-    "(Modifié le:23/07/2026 12:06)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -4182,9 +3391,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:17)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -4200,9 +3406,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:18)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -4218,9 +3421,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:18)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -4236,11 +3436,6 @@
    "title": "Outils pour le cycle de vie du logiciel",
    "type": "Examen",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "EXAMEN",
-    "Gorret Guillaume",
-    "(Modifié le:23/07/2026 12:03)"
-   ],
    "groups": [
     "SI ING 1 FISE",
     "SI ING 1 FISA"
@@ -4260,11 +3455,6 @@
    "title": "Modélisation des systèmes d'information",
    "type": "Examen",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "EXAMEN",
-    "Haddad Mehdi",
-    "(Modifié le:23/07/2026 12:00)"
-   ],
    "groups": [
     "SI ING 1 FISE",
     "SI ING 1 FISA"
@@ -4284,10 +3474,6 @@
    "title": "Anglais",
    "type": "CM",
    "room": "INFO 3 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:23/07/2026 12:17)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -4303,10 +3489,6 @@
    "title": "Les organisations dans leur écosystème",
    "type": "TD",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Coulibaly Micheline Mazawan",
-    "(Modifié le:23/07/2026 12:28)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -4322,10 +3504,6 @@
    "title": "Anglais",
    "type": "CM",
    "room": "TD 6 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:23/07/2026 12:15)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -4341,10 +3519,6 @@
    "title": "Les organisations dans leur écosystème",
    "type": "TD",
    "room": "INFO 4 St-Simon",
-   "teachers": [
-    "Coulibaly Micheline Mazawan",
-    "(Modifié le:23/07/2026 12:30)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -4360,10 +3534,6 @@
    "title": "Programmation pour la communication",
    "type": "TD",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Mourlin Fabrice",
-    "(Modifié le:23/07/2026 12:06)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -4381,10 +3551,6 @@
    "title": "Le risque sociétal dans le métier de l'ingénieur",
    "type": "TD",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Perdriel Jean Luc",
-    "(Modifié le:23/07/2026 12:33)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -4402,10 +3568,6 @@
    "title": "Projet SI Résilient, Innovant, Utile et Sobre 2",
    "type": "TD",
    "room": "INFO 6 St-Simon,TD 6 St-Simon",
-   "teachers": [
-    "Das Neves Nicolas",
-    "(Modifié le:23/07/2026 12:58)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -4423,10 +3585,6 @@
    "title": "Projet SI Résilient, Innovant, Utile et Sobre 2",
    "type": "TD",
    "room": "TD 6 St-Simon,INFO 3 St-Simon",
-   "teachers": [
-    "Das Neves Nicolas",
-    "(Modifié le:23/07/2026 12:58)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -4444,9 +3602,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:18)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -4462,9 +3617,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:18)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -4480,10 +3632,6 @@
    "title": "Intelligence artificielle",
    "type": "CM",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Li Chong",
-    "(Modifié le:23/07/2026 12:13)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -4499,9 +3647,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:18)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -4517,10 +3662,6 @@
    "title": "Programmation pour la communication",
    "type": "CM",
    "room": "INFO 2 St-Simon",
-   "teachers": [
-    "Mourlin Fabrice",
-    "(Modifié le:23/07/2026 12:07)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -4536,10 +3677,6 @@
    "title": "Seconde langue vivante au choix",
    "type": "CM",
    "room": "INFO 5 St-Simon",
-   "teachers": [
-    "Aguilera Vita Sergio",
-    "(Modifié le:23/07/2026 12:43)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -4555,9 +3692,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:18)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -4573,10 +3707,6 @@
    "title": "Anglais",
    "type": "CM",
    "room": "INFO 6 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:23/07/2026 12:17)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -4592,10 +3722,6 @@
    "title": "Les organisations dans leur écosystème",
    "type": "TD",
    "room": "INFO 2 St-Simon",
-   "teachers": [
-    "Coulibaly Micheline Mazawan",
-    "(Modifié le:23/07/2026 12:28)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -4611,10 +3737,6 @@
    "title": "Anglais",
    "type": "TD",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:23/07/2026 12:15)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -4630,10 +3752,6 @@
    "title": "Les organisations dans leur écosystème",
    "type": "TD",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Coulibaly Micheline Mazawan",
-    "(Modifié le:23/07/2026 12:30)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -4649,10 +3767,6 @@
    "title": "Programmation pour la communication",
    "type": "TD",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Mourlin Fabrice",
-    "(Modifié le:23/07/2026 12:06)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -4670,10 +3784,6 @@
    "title": "Le risque sociétal dans le métier de l'ingénieur",
    "type": "TD",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Perdriel Jean Luc",
-    "(Modifié le:23/07/2026 12:33)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -4691,10 +3801,6 @@
    "title": "Comptabilité de gestion",
    "type": "TD",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "El Fidha Fayçal",
-    "(Modifié le:23/07/2026 12:22)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -4712,10 +3818,6 @@
    "title": "Anglais",
    "type": "TD",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:23/07/2026 12:22)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -4731,9 +3833,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:18)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -4749,9 +3848,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:18)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -4767,9 +3863,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:18)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -4785,9 +3878,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:18)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -4803,10 +3893,6 @@
    "title": "Programmation pour la communication",
    "type": "CM",
    "room": "INFO 6 St-Simon",
-   "teachers": [
-    "Mourlin Fabrice",
-    "(Modifié le:23/07/2026 12:07)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -4822,10 +3908,6 @@
    "title": "Seconde langue vivante au choix",
    "type": "TD",
    "room": "TD 7 St-Simon",
-   "teachers": [
-    "Aguilera Vita Sergio",
-    "(Modifié le:23/07/2026 12:44)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -4841,9 +3923,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:18)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -4859,10 +3938,6 @@
    "title": "Anglais",
    "type": "TD",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:23/07/2026 12:17)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -4878,10 +3953,6 @@
    "title": "Les organisations dans leur écosystème",
    "type": "TD",
    "room": "INFO 6 St-Simon",
-   "teachers": [
-    "Coulibaly Micheline Mazawan",
-    "(Modifié le:23/07/2026 12:28)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -4897,10 +3968,6 @@
    "title": "Anglais",
    "type": "TD",
    "room": "TD 6 St-Simon",
-   "teachers": [
-    "Frenyo Anna",
-    "(Modifié le:23/07/2026 12:16)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -4916,10 +3983,6 @@
    "title": "Les organisations dans leur écosystème",
    "type": "TD",
    "room": "INFO 4 St-Simon",
-   "teachers": [
-    "Coulibaly Micheline Mazawan",
-    "(Modifié le:23/07/2026 12:30)"
-   ],
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -4935,11 +3998,6 @@
    "title": "Programmation pour la communication",
    "type": "Examen",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Mourlin Fabrice",
-    "EXAMEN",
-    "(Modifié le:23/07/2026 12:09)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -4959,11 +4017,6 @@
    "title": "Le risque sociétal dans le métier de l'ingénieur",
    "type": "Examen",
    "room": "TD 3 St-Simon",
-   "teachers": [
-    "EXAMEN",
-    "Perdriel Jean Luc",
-    "(Modifié le:23/07/2026 12:36)"
-   ],
    "groups": [
     "SI ING 1 FISE",
     "SI ING 1 FISA"
@@ -4983,10 +4036,6 @@
    "title": "Projet SI Résilient, Innovant, Utile et Sobre 2",
    "type": "TD",
    "room": "INFO 2 St-Simon,INFO 3 St-Simon",
-   "teachers": [
-    "Das Neves Nicolas",
-    "(Modifié le:23/07/2026 12:58)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -5004,10 +4053,6 @@
    "title": "Projet SI Résilient, Innovant, Utile et Sobre 2",
    "type": "TD",
    "room": "TD 6 St-Simon,INFO 2 St-Simon",
-   "teachers": [
-    "Das Neves Nicolas",
-    "(Modifié le:23/07/2026 12:58)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -5025,11 +4070,6 @@
    "title": "Les organisations dans leur écosystème",
    "type": "Examen",
    "room": "TD 5 St-Simon",
-   "teachers": [
-    "Coulibaly Micheline Mazawan",
-    "EXAMEN",
-    "(Modifié le:23/07/2026 12:31)"
-   ],
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -5049,9 +4089,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:18)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -5067,9 +4104,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:18)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -5085,9 +4119,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:18)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -5103,9 +4134,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:19)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -5121,9 +4149,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:19)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -5139,9 +4164,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:19)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -5157,9 +4179,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:19)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -5175,9 +4194,6 @@
    "title": "JOURNEE EN ENTREPRISE",
    "type": "",
    "room": "nulle part pour l'instant - EPISEN",
-   "teachers": [
-    "(Modifié le:26/08/2026 11:19)"
-   ],
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -5187,7 +4203,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-12T20:03:47.722Z",
+  "updated": "2026-11-12T20:37:20.118Z",
   "items": [
    {
     "id": "8b5015f0",
