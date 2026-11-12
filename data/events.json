@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T04:46+01:00",
+ "updated": "2026-11-12T12:37+01:00",
  "tracks": [
   "FISA",
   "FISE"
@@ -558,15 +558,16 @@
    ]
   },
   {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3236",
-   "start": "2026-11-17T09:15:00+01:00",
-   "end": "2026-11-17T18:15:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
+   "id": "ADE602d55504543323032362d323032372d33353336312d302d30",
+   "start": "2026-11-17T14:00:00+01:00",
+   "end": "2026-11-17T16:00:00+01:00",
+   "code": "",
+   "title": "Atelier CFA Numia -Systèmes d'information - Recherche d'entreprise",
    "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
+   "room": "INFO 6 St-Simon",
    "teachers": [
-    "(Modifié le:26/08/2026 10:57)"
+    "UNIQUEMENT LES FAT",
+    "(Modifié le:12/11/2026 13:06)"
    ],
    "groups": [
     "SI ING 1 FISA"
