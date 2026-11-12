@@ -263,7 +263,7 @@ function render(){
   }
 
   const ref = lastCheck || updated;
-  if (ref){
+  if (ref && checkDone){
     const min = Math.round((now - ref) / 60000);
     const ago = min < 1 ? "à l'instant" : min < 60 ? `il y a ${min} min` : min < 1440 ? `il y a ${Math.round(min/60)} h` : `le ${ref.getDate()} ${MONTHS[ref.getMonth()]}`;
     const verb = lastCheck ? "Vérifié" : "Mis à jour";
@@ -273,7 +273,7 @@ function render(){
 }
 
 // heure du dernier passage du robot, demandée directement à GitHub (sans commit)
-let lastCheck = null, lastFailed = false;
+let lastCheck = null, lastFailed = false, checkDone = false;
 async function loadLastCheck(){
   try {
     const r = await fetch("https://api.github.com/repos/HakimChaabna/edt-ing1-si/actions/workflows/update.yml/runs?per_page=1&status=completed");
@@ -284,6 +284,7 @@ async function loadLastCheck(){
     lastFailed = run.conclusion !== "success";
     render();
   } catch {}
+  finally { checkDone = true; render(); }
 }
 
 function openSheet(id){
