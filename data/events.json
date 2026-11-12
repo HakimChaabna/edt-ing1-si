@@ -1,52 +1,10 @@
 {
- "updated": "2026-11-11T16:48+01:00",
+ "updated": "2026-11-12T12:37+01:00",
  "tracks": [
   "FISA",
   "FISE"
  ],
  "events": [
-  {
-   "id": "ADE602d55504543323032362d323032372d31383735352d302d32",
-   "start": "2026-10-21T09:00:00+02:00",
-   "end": "2026-10-21T13:00:00+02:00",
-   "code": "STAT",
-   "title": "Statistiques Inférentielles",
-   "type": "CM",
-   "room": "INFO 2 St-Simon",
-   "teachers": [
-    "Brofferio Sara",
-    "(Modifié le:14/10/2026 12:27)"
-   ],
-   "groups": [
-    "SI ING 1 FISA",
-    "SI ING 1 FISE"
-   ],
-   "tracks": [
-    "FISA",
-    "FISE"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d32313035382d302d36",
-   "start": "2026-10-21T14:00:00+02:00",
-   "end": "2026-10-21T18:00:00+02:00",
-   "code": "POO",
-   "title": "Programmation orientée objet avancée",
-   "type": "CM",
-   "room": "INFO 2 St-Simon",
-   "teachers": [
-    "Maestracci Valentin",
-    "(Modifié le:14/10/2026 12:41)"
-   ],
-   "groups": [
-    "SI ING 1 FISA",
-    "SI ING 1 FISE"
-   ],
-   "tracks": [
-    "FISA",
-    "FISE"
-   ]
-  },
   {
    "id": "ADE602d55504543323032362d323032372d383238362d302d32",
    "start": "2026-10-22T09:00:00+02:00",
@@ -600,15 +558,16 @@
    ]
   },
   {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3236",
-   "start": "2026-11-17T09:15:00+01:00",
-   "end": "2026-11-17T18:15:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
+   "id": "ADE602d55504543323032362d323032372d33353336312d302d30",
+   "start": "2026-11-17T14:00:00+01:00",
+   "end": "2026-11-17T16:00:00+01:00",
+   "code": "",
+   "title": "Atelier CFA Numia -Systèmes d'information - Recherche d'entreprise",
    "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
+   "room": "INFO 6 St-Simon",
    "teachers": [
-    "(Modifié le:26/08/2026 10:57)"
+    "UNIQUEMENT LES FAT",
+    "(Modifié le:12/11/2026 13:06)"
    ],
    "groups": [
     "SI ING 1 FISA"
