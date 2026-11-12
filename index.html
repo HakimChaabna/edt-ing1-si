@@ -233,7 +233,9 @@ const PALETTE = ["#007AFF","#34C759","#FF9500","#AF52DE","#30B0C7","#5856D6","#A
 const MONTHS_LONG = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
 
 const PIN = `<svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1.5a4.5 4.5 0 0 0-4.5 4.5c0 3.2 3.8 7.6 4.1 8a.5.5 0 0 0 .8 0c.3-.4 4.1-4.8 4.1-8A4.5 4.5 0 0 0 8 1.5Zm0 6.2a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4Z"/></svg>`;
-const isCompanyDay = e => /journ[ée]e en entreprise/i.test(e.title);
+// journée en entreprise : le titre ADE, ou le code ENT sur un événement d'au moins 5 h
+// (un événement court avec ce code, comme une réunion, garde son horaire)
+const isCompanyDay = e => /journ[ée]e en entreprise/i.test(e.title) || (e.code === "ENT" && (e.e - e.s) >= 5 * 36e5);
 
 // Adresse du script Google (Déployer > Application web). Laisser vide pour désactiver les devoirs.
 const HW_API = "https://script.google.com/macros/s/AKfycbyy2vjVQKT4PeeumACXm7iTXn0gIEpwbUXyXPkjpeZVUpRJSDtGORvdykABMXOi45s/exec";
@@ -365,6 +367,7 @@ function render(){
       const order = ["cancel", "add", "visio", "room"];
       const mods = e.mods || [];
       const all = [
+        ...(e.exam ? [`<span class="hw" style="--hb:#1C1C1E;--hf:#fff">Examen</span>`] : []),
         ...mods.filter(m => m.action !== "note").sort((a, b) => order.indexOf(a.action) - order.indexOf(b.action)).map(chgPill),
         ...(hwByCourse[e.id] || []).map(h => `<span class="hw ${h.status === "pending" ? "pending" : ""}" style="${hwStyle(h)}">${hwLabel(h)}</span>`),
         ...mods.filter(m => m.action === "note").map(chgPill),
@@ -381,7 +384,8 @@ function render(){
       const live = items.some(e => now >= e.s && now < e.e && !hasMod(e, "cancel"));
       const first = items[0], last = items.reduce((a, b) => b.e > a.e ? b : a);
       // pas d'horaire pour les journées en entreprise : ça dépend de chaque entreprise
-      const label = items.every(isCompanyDay) ? "&nbsp;" : `${hm(first.s)} – ${hm(last.e)}${live ? " · En cours" : ""}`;
+      const tbc = items.some(e => e.tbc) ? " · à confirmer" : "";
+      const label = items.every(isCompanyDay) ? "&nbsp;" : `${hm(first.s)} – ${hm(last.e)}${live ? " · En cours" : tbc}`;
       return `<div class="slot ${n > 1 ? "multi" : ""} ${cls}">
         <div class="when ${live && label !== "&nbsp;" ? "live" : ""}">${label}</div>
         <div class="cards">${items.map(e => card(e, n)).join("")}</div></div>`;
@@ -450,6 +454,7 @@ function openSheet(id){
     <div class="group">
       ${row("Salle", hasMod(e, "visio") ? "En visio" : modVal(e, "room") ? `${esc(modVal(e, "room"))} <s>${esc(e.room)}</s>` : esc(e.room))}
       ${row("Type", esc(e.type))}
+      ${e.tbc ? row("Horaire", "À confirmer") : ""}
       ${isCompanyDay(e) ? "" : row("Durée", `${Math.floor(dur/60)} h${dur%60 ? " "+pad(dur%60) : ""}`)}
       ${row(e.teachers.length > 1 ? "Enseignants" : "Enseignant", e.teachers.map(esc).join("<br>"))}
       ${row("Groupes", e.groups.map(esc).join("<br>"))}
@@ -535,7 +540,7 @@ function openPropose(){
   const iso = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
   const today = new Date();
   const byTitle = {};
-  Object.keys(codeTitle).sort().forEach(c => { if (!/journ[ée]e en entreprise/i.test(codeTitle[c]) && !byTitle[subjectKey(c)]) byTitle[subjectKey(c)] = c; });
+  Object.keys(codeTitle).sort().forEach(c => { if (c !== "ENT" && !/journ[ée]e en entreprise/i.test(codeTitle[c]) && !byTitle[subjectKey(c)]) byTitle[subjectKey(c)] = c; });
   const codes = Object.values(byTitle).sort((a, b) => codeTitle[a].localeCompare(codeTitle[b], "fr"));
   const segBtns = (name, opts, on) => `<div class="seg" data-name="${name}">${opts.map(o => `<button type="button" class="${o === on ? "on" : ""}" data-v="${o}">${o}</button>`).join("")}</div>`;
   $("sheet").innerHTML = `<div class="grab"></div>
@@ -673,7 +678,7 @@ function openLogin(){
 /* ---- validation des propositions ---- */
 function subjectOptions(sel){
   const byTitle = {};
-  Object.keys(codeTitle).sort().forEach(c => { if (!/journ[ée]e en entreprise/i.test(codeTitle[c]) && !byTitle[subjectKey(c)]) byTitle[subjectKey(c)] = c; });
+  Object.keys(codeTitle).sort().forEach(c => { if (c !== "ENT" && !/journ[ée]e en entreprise/i.test(codeTitle[c]) && !byTitle[subjectKey(c)]) byTitle[subjectKey(c)] = c; });
   const codes = Object.values(byTitle).sort((a, b) => codeTitle[a].localeCompare(codeTitle[b], "fr"));
   if (sel && !codes.some(c => sameSubject(c, sel))) codes.unshift(sel);
   return codes.map(c => `<option value="${esc(c)}" ${sel && sameSubject(c, sel) ? "selected" : ""}>${esc(codeTitle[c] || c)}</option>`).join("");

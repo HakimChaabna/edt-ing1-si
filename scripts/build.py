@@ -98,6 +98,41 @@ def clean_title(summary: str) -> tuple[str, str, str]:
     return code, s.strip(" -:") or summary.strip(), kind
 
 
+EXAM_RE = re.compile(r"^\s*\*+\s*examen\b\s*(?:SI\b)?\s*[-–:]?\s*(.*)$", re.I)
+TBC_RE = re.compile(r"\(\s*horaires?\s*(?:a|à)\s*confirm\w*\s*\)", re.I)
+
+
+def parse_exam(summary: str):
+    """'*** Examen SI - Logique ( horaire a confirmer)' -> ('Logique', True). None si ce n'est pas un examen."""
+    m = EXAM_RE.match(summary or "")
+    if not m:
+        return None
+    rest = m.group(1)
+    tbc = bool(TBC_RE.search(rest))
+    title = TBC_RE.sub("", rest).strip(" -–:")
+    return (title or "Examen"), tbc
+
+
+def match_subject(title: str, subjects: dict[str, str]) -> str:
+    """Retrouve le code de la matière d'un examen à partir de son nom (tolère accents, pluriels, fautes)."""
+    import difflib
+    import unicodedata
+    def words(s):
+        s = unicodedata.normalize("NFD", s.lower())
+        s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+        return [w.rstrip("s") for w in re.findall(r"[a-z0-9]+", s) if len(w) > 2 or w.isdigit()]
+    t = " ".join(words(title))
+    best, score = "", 0.0
+    for code, name in subjects.items():
+        n = " ".join(words(name))
+        r = difflib.SequenceMatcher(None, t, n).ratio()
+        if n.startswith(t) or t.startswith(n):  # « Logique » / « Logique 1 »
+            r = max(r, 0.9)
+        if r > score:
+            best, score = code, r
+    return best if score >= 0.75 else ""
+
+
 def split_description(desc: str) -> tuple[list[str], list[str]]:
     groups, teachers = [], []
     for raw in desc.split("\n"):
@@ -121,7 +156,11 @@ def build(feeds: dict[str, str]) -> dict:
             end = e.get("DTEND", e["DTSTART"] + timedelta(hours=1)).astimezone(PARIS)
             if start.date() < keep_from:
                 continue
-            code, title, kind = clean_title(e.get("SUMMARY", "Cours"))
+            exam = parse_exam(e.get("SUMMARY", ""))
+            if exam:
+                code, title, kind = "", exam[0], "Examen"
+            else:
+                code, title, kind = clean_title(e.get("SUMMARY", "Cours"))
             uid = e.get("UID") or f"{start.isoformat()}-{title}"
             if uid in merged:
                 if track not in merged[uid]["tracks"]:
@@ -140,6 +179,20 @@ def build(feeds: dict[str, str]) -> dict:
                 "groups": groups,
                 "tracks": [track],
             }
+            if exam:
+                merged[uid]["exam"] = True
+                if exam[1]:
+                    merged[uid]["tbc"] = True
+    # les examens n'ont pas de code dans ADE : on retrouve la matière par son nom (couleur et devoirs associés)
+    subjects = {}
+    for ev in merged.values():
+        if ev["code"] and not ev.get("exam") and ev["code"] not in subjects:
+            subjects[ev["code"]] = ev["title"]
+    for ev in merged.values():
+        if ev.get("exam") and not ev["code"]:
+            ev["code"] = match_subject(ev["title"], subjects)
+            if ev["code"]:
+                ev["title"] = subjects[ev["code"]]
     out = sorted(merged.values(), key=lambda x: (x["start"], x["title"]))
     for ev in out:
         ev["tracks"].sort()
