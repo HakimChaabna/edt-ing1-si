@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T12:37+01:00",
+ "updated": "2026-11-12T20:37+01:00",
  "tracks": [
   "FISA",
   "FISE"
@@ -5159,5 +5159,113 @@
     "FISA"
    ]
   }
- ]
+ ],
+ "homework": {
+  "updated": "2026-11-12T19:37:21.776Z",
+  "items": [
+   {
+    "id": "8b5015f0",
+    "date": "2026-11-26",
+    "time": null,
+    "code": "BD",
+    "type": "Interro",
+    "tracks": [
+     "FISE",
+     "FISA"
+    ],
+    "status": "ok",
+    "detail": ""
+   },
+   {
+    "id": "21e528cf",
+    "date": "2026-11-17",
+    "time": null,
+    "code": "ANG1",
+    "type": "À préparer",
+    "tracks": [
+     "FISE"
+    ],
+    "status": "ok",
+    "detail": "Tiktok + Murphy English Grammar modal verbs + chapitre 7 TOEIC book + 5 premiers chapitres TOEIC Vocabulary + Phonetics exercises + if conditionals exercises"
+   },
+   {
+    "id": "c8180ee1",
+    "date": "2026-12-09",
+    "time": null,
+    "code": "STAT",
+    "type": "Interro",
+    "tracks": [
+     "FISE",
+     "FISA"
+    ],
+    "status": "ok",
+    "detail": "Chapitre 1 (ajustement exponentiel), Chapitre 2 jusqu'à fonction de repartition"
+   }
+  ],
+  "changes": [
+   {
+    "id": "fb49d464",
+    "date": "2026-11-13",
+    "slot": "aprem",
+    "code": "STAT",
+    "action": "visio",
+    "value": "",
+    "start": "",
+    "end": "",
+    "title": "",
+    "room": "",
+    "tracks": [
+     "FISE",
+     "FISA"
+    ]
+   },
+   {
+    "id": "49ee799a",
+    "date": "2026-11-13",
+    "slot": "matin",
+    "code": "POO",
+    "action": "visio",
+    "value": "",
+    "start": "",
+    "end": "",
+    "title": "",
+    "room": "",
+    "tracks": [
+     "FISE",
+     "FISA"
+    ]
+   },
+   {
+    "id": "3676cc58",
+    "date": "2026-11-12",
+    "slot": "aprem",
+    "code": "BD",
+    "action": "visio",
+    "value": "",
+    "start": "",
+    "end": "",
+    "title": "",
+    "room": "",
+    "tracks": [
+     "FISE",
+     "FISA"
+    ]
+   },
+   {
+    "id": "da178035",
+    "date": "2026-11-12",
+    "slot": "matin",
+    "code": "INFR",
+    "action": "cancel",
+    "value": "",
+    "start": "",
+    "end": "",
+    "title": "",
+    "room": "",
+    "tracks": [
+     "FISA"
+    ]
+   }
+  ]
+ }
 }
