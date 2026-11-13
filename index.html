@@ -426,7 +426,7 @@ function render(){
     const ago = min < 1 ? "à l'instant" : min < 60 ? `il y a ${min} min` : min < 1440 ? `il y a ${Math.round(min/60)} h` : `le ${ref.getDate()} ${MONTHS[ref.getMonth()]}`;
     const verb = lastCheck ? "Vérifié" : "Mis à jour";
     const warn = lastFailed ? "⚠️ Dernière synchronisation échouée · " : "";
-    $("foot").innerHTML = `${warn}${verb} ${ago} depuis ADE<br>En cas de doute, ADE et le groupe Annonces font foi.`;
+    $("foot").innerHTML = `${warn}${verb} ${ago} depuis ADE`;
   }
 }
 
