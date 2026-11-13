@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T09:07+01:00",
+ "updated": "2026-11-13T10:37+01:00",
  "tracks": [
   "FISA",
   "FISE"
@@ -4156,7 +4156,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-13T08:07:22.847Z",
+  "updated": "2026-11-13T09:37:21.144Z",
   "items": [
    {
     "id": "8b5015f0",
@@ -4221,6 +4221,31 @@
     ],
     "status": "ok",
     "detail": "exercice 1, exercice 2 et exercice 3 de la fiche \"orthogonalité dans R^n\"."
+   },
+   {
+    "id": "41a2baaf",
+    "date": "2026-11-19",
+    "time": null,
+    "code": "ESP1",
+    "type": "À préparer",
+    "tracks": [
+     "FISE"
+    ],
+    "status": "ok",
+    "detail": ""
+   },
+   {
+    "id": "3cfa01fe",
+    "date": "2026-11-24",
+    "time": "23:59",
+    "code": "DYN",
+    "type": "À rendre",
+    "tracks": [
+     "FISE",
+     "FISA"
+    ],
+    "status": "ok",
+    "detail": "Retour prise de notes sur l'article de Fournier sur Teams"
    }
   ],
   "changes": [
