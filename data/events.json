@@ -1,27 +1,10 @@
 {
- "updated": "2026-11-13T10:37+01:00",
+ "updated": "2026-11-14T00:07+01:00",
  "tracks": [
   "FISA",
   "FISE"
  ],
  "events": [
-  {
-   "id": "ADE602d55504543323032362d323032372d31323032392d302d30",
-   "start": "2026-10-23T09:00:00+02:00",
-   "end": "2026-10-23T13:00:00+02:00",
-   "code": "SIR1",
-   "title": "Projet SI Résilient, Innovant, Utile et Sobre 2",
-   "type": "CM",
-   "room": "TD 7 St-Simon,INFO 3 St-Simon",
-   "groups": [
-    "SI ING 1 FISA",
-    "SI ING 1 FISE"
-   ],
-   "tracks": [
-    "FISA",
-    "FISE"
-   ]
-  },
   {
    "id": "ADE602d55504543323032362d323032372d33353237342d302d34",
    "start": "2026-10-26T09:00:00+01:00",
@@ -4156,7 +4139,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-13T09:37:21.144Z",
+  "updated": "2026-11-13T23:07:19.600Z",
   "items": [
    {
     "id": "8b5015f0",
@@ -4278,37 +4261,6 @@
     "room": "",
     "tracks": [
      "FISE",
-     "FISA"
-    ]
-   },
-   {
-    "id": "3676cc58",
-    "date": "2026-11-12",
-    "slot": "aprem",
-    "code": "BD",
-    "action": "visio",
-    "value": "",
-    "start": "",
-    "end": "",
-    "title": "",
-    "room": "",
-    "tracks": [
-     "FISE",
-     "FISA"
-    ]
-   },
-   {
-    "id": "da178035",
-    "date": "2026-11-12",
-    "slot": "matin",
-    "code": "INFR",
-    "action": "cancel",
-    "value": "",
-    "start": "",
-    "end": "",
-    "title": "",
-    "room": "",
-    "tracks": [
      "FISA"
     ]
    }
