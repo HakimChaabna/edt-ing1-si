@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T00:07+01:00",
+ "updated": "2026-11-13T09:07+01:00",
  "tracks": [
   "FISA",
   "FISE"
@@ -4156,7 +4156,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-12T23:07:20.508Z",
+  "updated": "2026-11-13T08:07:22.847Z",
   "items": [
    {
     "id": "8b5015f0",
@@ -4207,7 +4207,20 @@
      "FISA"
     ],
     "status": "ok",
-    "detail": ""
+    "detail": "exercice 1, exercice 2 et exercice 3 de la fiche \"orthogonalité dans R^n\"."
+   },
+   {
+    "id": "7ca12030",
+    "date": "2026-11-23",
+    "time": null,
+    "code": "MATH",
+    "type": "À préparer",
+    "tracks": [
+     "FISE",
+     "FISA"
+    ],
+    "status": "ok",
+    "detail": "exercice 1, exercice 2 et exercice 3 de la fiche \"orthogonalité dans R^n\"."
    }
   ],
   "changes": [
