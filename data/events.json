@@ -1,70 +1,10 @@
 {
- "updated": "2026-11-17T01:07+01:00",
+ "updated": "2026-11-17T15:07+01:00",
  "tracks": [
   "FISA",
   "FISE"
  ],
  "events": [
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3139",
-   "start": "2026-10-27T09:00:00+01:00",
-   "end": "2026-10-27T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3231",
-   "start": "2026-10-28T09:00:00+01:00",
-   "end": "2026-10-28T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d32",
-   "start": "2026-10-29T09:00:00+01:00",
-   "end": "2026-10-29T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3233",
-   "start": "2026-10-30T09:00:00+01:00",
-   "end": "2026-10-30T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
   {
    "id": "ADE602d55504543323032362d323032372d31383730362d302d32",
    "start": "2026-11-02T09:00:00+01:00",
@@ -343,21 +283,6 @@
    ]
   },
   {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3138",
-   "start": "2026-11-16T09:00:00+01:00",
-   "end": "2026-11-16T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
    "id": "ADE602d55504543323032362d323032372d32303435362d302d32",
    "start": "2026-11-17T09:00:00+01:00",
    "end": "2026-11-17T13:00:00+01:00",
@@ -400,21 +325,6 @@
    ],
    "tracks": [
     "FISE"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3237",
-   "start": "2026-11-18T08:45:00+01:00",
-   "end": "2026-11-18T17:45:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
    ]
   },
   {
@@ -463,21 +373,6 @@
    ]
   },
   {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3235",
-   "start": "2026-11-19T09:00:00+01:00",
-   "end": "2026-11-19T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
    "id": "ADE602d55504543323032362d323032372d32313736382d302d32",
    "start": "2026-11-19T14:00:00+01:00",
    "end": "2026-11-19T18:00:00+01:00",
@@ -490,21 +385,6 @@
    ],
    "tracks": [
     "FISE"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3234",
-   "start": "2026-11-20T09:15:00+01:00",
-   "end": "2026-11-20T18:15:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
    ]
   },
   {
@@ -670,21 +550,6 @@
    ]
   },
   {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3232",
-   "start": "2026-11-30T08:45:00+01:00",
-   "end": "2026-11-30T17:45:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
    "id": "ADE602d55504543323032362d323032372d32313734392d302d31",
    "start": "2026-11-30T09:00:00+01:00",
    "end": "2026-11-30T13:00:00+01:00",
@@ -730,21 +595,6 @@
    ]
   },
   {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3331",
-   "start": "2026-12-01T09:15:00+01:00",
-   "end": "2026-12-01T18:15:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
    "id": "ADE602d55504543323032362d323032372d32333433322d302d33",
    "start": "2026-12-01T14:00:00+01:00",
    "end": "2026-12-01T18:00:00+01:00",
@@ -775,21 +625,6 @@
    ]
   },
   {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3332",
-   "start": "2026-12-02T09:00:00+01:00",
-   "end": "2026-12-02T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
    "id": "ADE602d55504543323032362d323032372d31303930332d302d32",
    "start": "2026-12-02T14:00:00+01:00",
    "end": "2026-12-02T18:00:00+01:00",
@@ -802,21 +637,6 @@
    ],
    "tracks": [
     "FISE"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3333",
-   "start": "2026-12-03T08:45:00+01:00",
-   "end": "2026-12-03T17:45:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
    ]
   },
   {
@@ -847,21 +667,6 @@
    ],
    "tracks": [
     "FISE"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3239",
-   "start": "2026-12-04T09:00:00+01:00",
-   "end": "2026-12-04T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
    ]
   },
   {
@@ -1344,21 +1149,6 @@
    ]
   },
   {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3238",
-   "start": "2027-01-11T09:00:00+01:00",
-   "end": "2027-01-11T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
    "id": "ADE602d55504543323032362d323032372d32313834332d302d33",
    "start": "2027-01-11T14:00:00+01:00",
    "end": "2027-01-11T18:00:00+01:00",
@@ -1386,36 +1176,6 @@
    ],
    "tracks": [
     "FISE"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3336",
-   "start": "2027-01-12T09:00:00+01:00",
-   "end": "2027-01-12T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3334",
-   "start": "2027-01-13T08:45:00+01:00",
-   "end": "2027-01-13T17:45:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
    ]
   },
   {
@@ -1449,21 +1209,6 @@
    ]
   },
   {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3335",
-   "start": "2027-01-14T09:00:00+01:00",
-   "end": "2027-01-14T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
    "id": "ADE602d55504543323032362d323032372d33343934312d302d30",
    "start": "2027-01-14T14:00:00+01:00",
    "end": "2027-01-14T18:00:00+01:00",
@@ -1476,21 +1221,6 @@
    ],
    "tracks": [
     "FISE"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3330",
-   "start": "2027-01-15T08:45:00+01:00",
-   "end": "2027-01-15T17:45:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
    ]
   },
   {
@@ -1658,81 +1388,6 @@
    ]
   },
   {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3337",
-   "start": "2027-01-25T09:00:00+01:00",
-   "end": "2027-01-25T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3338",
-   "start": "2027-01-26T09:00:00+01:00",
-   "end": "2027-01-26T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3430",
-   "start": "2027-01-27T09:00:00+01:00",
-   "end": "2027-01-27T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3431",
-   "start": "2027-01-28T09:00:00+01:00",
-   "end": "2027-01-28T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3432",
-   "start": "2027-01-29T09:00:00+01:00",
-   "end": "2027-01-29T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
    "id": "ADE602d55504543323032362d323032372d36333936322d302d30",
    "start": "2027-02-02T09:00:00+01:00",
    "end": "2027-02-02T11:00:00+01:00",
@@ -1807,81 +1462,6 @@
    ],
    "exam": true,
    "tbc": true
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3339",
-   "start": "2027-02-08T08:45:00+01:00",
-   "end": "2027-02-08T17:45:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3435",
-   "start": "2027-02-09T09:00:00+01:00",
-   "end": "2027-02-09T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3436",
-   "start": "2027-02-10T08:45:00+01:00",
-   "end": "2027-02-10T17:45:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3434",
-   "start": "2027-02-11T08:45:00+01:00",
-   "end": "2027-02-11T17:45:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3437",
-   "start": "2027-02-12T09:00:00+01:00",
-   "end": "2027-02-12T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
   },
   {
    "id": "ADE602d55504543323032362d323032372d32313233322d302d31",
@@ -2061,51 +1641,6 @@
    ]
   },
   {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3137",
-   "start": "2027-02-24T09:00:00+01:00",
-   "end": "2027-02-24T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3438",
-   "start": "2027-02-25T08:45:00+01:00",
-   "end": "2027-02-25T17:45:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3439",
-   "start": "2027-02-26T09:30:00+01:00",
-   "end": "2027-02-26T18:30:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
    "id": "ADE602d55504543323032362d323032372d32313233322d302d32",
    "start": "2027-03-01T09:00:00+01:00",
    "end": "2027-03-01T13:00:00+01:00",
@@ -2270,36 +1805,6 @@
    ]
   },
   {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3531",
-   "start": "2027-03-08T09:00:00+01:00",
-   "end": "2027-03-08T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3535",
-   "start": "2027-03-09T08:45:00+01:00",
-   "end": "2027-03-09T17:45:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
    "id": "ADE602d55504543323032362d323032372d333635362d302d34",
    "start": "2027-03-09T09:00:00+01:00",
    "end": "2027-03-09T13:00:00+01:00",
@@ -2327,51 +1832,6 @@
    ],
    "tracks": [
     "FISE"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3534",
-   "start": "2027-03-10T09:00:00+01:00",
-   "end": "2027-03-10T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3533",
-   "start": "2027-03-11T08:45:00+01:00",
-   "end": "2027-03-11T17:45:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3532",
-   "start": "2027-03-12T09:00:00+01:00",
-   "end": "2027-03-12T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
    ]
   },
   {
@@ -2543,21 +2003,6 @@
    ]
   },
   {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3530",
-   "start": "2027-03-22T10:00:00+01:00",
-   "end": "2027-03-22T19:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
    "id": "ADE602d55504543323032362d323032372d333635362d302d35",
    "start": "2027-03-23T09:00:00+01:00",
    "end": "2027-03-23T13:00:00+01:00",
@@ -2573,21 +2018,6 @@
    ]
   },
   {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3539",
-   "start": "2027-03-23T09:00:00+01:00",
-   "end": "2027-03-23T18:00:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
    "id": "ADE602d55504543323032362d323032372d31383332312d302d33",
    "start": "2027-03-23T14:00:00+01:00",
    "end": "2027-03-23T18:00:00+01:00",
@@ -2600,51 +2030,6 @@
    ],
    "tracks": [
     "FISE"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3538",
-   "start": "2027-03-24T09:15:00+01:00",
-   "end": "2027-03-24T18:15:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3537",
-   "start": "2027-03-25T09:30:00+01:00",
-   "end": "2027-03-25T18:30:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3630",
-   "start": "2027-03-26T09:30:00+01:00",
-   "end": "2027-03-26T18:30:00+01:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
    ]
   },
   {
@@ -2762,81 +2147,6 @@
    "tracks": [
     "FISA",
     "FISE"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3536",
-   "start": "2027-04-05T09:15:00+02:00",
-   "end": "2027-04-05T18:15:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3633",
-   "start": "2027-04-06T09:30:00+02:00",
-   "end": "2027-04-06T18:30:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3631",
-   "start": "2027-04-07T09:30:00+02:00",
-   "end": "2027-04-07T18:30:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3634",
-   "start": "2027-04-08T09:45:00+02:00",
-   "end": "2027-04-08T18:45:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3635",
-   "start": "2027-04-09T09:30:00+02:00",
-   "end": "2027-04-09T18:30:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
    ]
   },
   {
@@ -2989,21 +2299,6 @@
    ]
   },
   {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3433",
-   "start": "2027-04-19T09:00:00+02:00",
-   "end": "2027-04-19T18:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
    "id": "ADE602d55504543323032362d323032372d333635362d302d33",
    "start": "2027-04-20T09:00:00+02:00",
    "end": "2027-04-20T13:00:00+02:00",
@@ -3019,21 +2314,6 @@
    ]
   },
   {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3632",
-   "start": "2027-04-20T09:00:00+02:00",
-   "end": "2027-04-20T18:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
    "id": "ADE602d55504543323032362d323032372d31383332312d302d31",
    "start": "2027-04-20T14:00:00+02:00",
    "end": "2027-04-20T18:00:00+02:00",
@@ -3046,21 +2326,6 @@
    ],
    "tracks": [
     "FISE"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3637",
-   "start": "2027-04-21T09:00:00+02:00",
-   "end": "2027-04-21T18:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
    ]
   },
   {
@@ -3094,21 +2359,6 @@
    ]
   },
   {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3639",
-   "start": "2027-04-22T09:00:00+02:00",
-   "end": "2027-04-22T18:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
    "id": "ADE602d55504543323032362d323032372d32323033352d302d30",
    "start": "2027-04-22T09:00:00+02:00",
    "end": "2027-04-22T13:00:00+02:00",
@@ -3136,21 +2386,6 @@
    ],
    "tracks": [
     "FISE"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3638",
-   "start": "2027-04-23T09:00:00+02:00",
-   "end": "2027-04-23T18:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
    ]
   },
   {
@@ -3302,51 +2537,6 @@
    "tracks": [
     "FISA",
     "FISE"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3730",
-   "start": "2027-05-03T10:00:00+02:00",
-   "end": "2027-05-03T19:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3731",
-   "start": "2027-05-04T10:00:00+02:00",
-   "end": "2027-05-04T19:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3732",
-   "start": "2027-05-05T10:00:00+02:00",
-   "end": "2027-05-05T19:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
    ]
   },
   {
@@ -3516,36 +2706,6 @@
    ]
   },
   {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3733",
-   "start": "2027-05-18T09:00:00+02:00",
-   "end": "2027-05-18T18:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3636",
-   "start": "2027-05-19T08:45:00+02:00",
-   "end": "2027-05-19T17:45:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
    "id": "ADE602d55504543323032362d323032372d383535382d302d33",
    "start": "2027-05-19T14:00:00+02:00",
    "end": "2027-05-19T18:00:00+02:00",
@@ -3558,21 +2718,6 @@
    ],
    "tracks": [
     "FISE"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3735",
-   "start": "2027-05-20T08:45:00+02:00",
-   "end": "2027-05-20T17:45:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
    ]
   },
   {
@@ -3603,21 +2748,6 @@
    ],
    "tracks": [
     "FISE"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3737",
-   "start": "2027-05-21T09:00:00+02:00",
-   "end": "2027-05-21T18:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
    ]
   },
   {
@@ -3747,66 +2877,6 @@
    ]
   },
   {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3736",
-   "start": "2027-05-31T09:00:00+02:00",
-   "end": "2027-05-31T18:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3830",
-   "start": "2027-06-01T09:00:00+02:00",
-   "end": "2027-06-01T18:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3832",
-   "start": "2027-06-02T09:00:00+02:00",
-   "end": "2027-06-02T18:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3739",
-   "start": "2027-06-03T09:00:00+02:00",
-   "end": "2027-06-03T18:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
    "id": "ADE602d55504543323032362d323032372d32323033352d302d31",
    "start": "2027-06-03T09:00:00+02:00",
    "end": "2027-06-03T13:00:00+02:00",
@@ -3834,21 +2904,6 @@
    ],
    "tracks": [
     "FISE"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3738",
-   "start": "2027-06-04T09:00:00+02:00",
-   "end": "2027-06-04T18:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
    ]
   },
   {
@@ -4001,130 +3056,10 @@
    ],
    "exam": true,
    "tbc": true
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3833",
-   "start": "2027-06-16T09:30:00+02:00",
-   "end": "2027-06-16T18:30:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3831",
-   "start": "2027-06-17T09:00:00+02:00",
-   "end": "2027-06-17T18:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3835",
-   "start": "2027-06-18T09:00:00+02:00",
-   "end": "2027-06-18T18:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3834",
-   "start": "2027-06-21T09:00:00+02:00",
-   "end": "2027-06-21T18:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3836",
-   "start": "2027-06-22T09:00:00+02:00",
-   "end": "2027-06-22T18:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3734",
-   "start": "2027-06-23T09:00:00+02:00",
-   "end": "2027-06-23T18:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3838",
-   "start": "2027-06-24T09:00:00+02:00",
-   "end": "2027-06-24T18:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d33353237342d302d3930",
-   "start": "2027-06-25T09:00:00+02:00",
-   "end": "2027-06-25T18:00:00+02:00",
-   "code": "ENT",
-   "title": "JOURNEE EN ENTREPRISE",
-   "type": "",
-   "room": "nulle part pour l'instant - EPISEN",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
   }
  ],
  "homework": {
-  "updated": "2026-11-17T00:07:22.926Z",
+  "updated": "2026-11-17T14:07:22.718Z",
   "items": [
    {
     "id": "8b5015f0",
