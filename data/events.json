@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T13:37+01:00",
+ "updated": "2026-11-19T00:07+01:00",
  "tracks": [
   "FISA",
   "FISE"
@@ -3059,7 +3059,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-18T12:37:18.436Z",
+  "updated": "2026-11-18T23:07:19.654Z",
   "items": [
    {
     "id": "8b5015f0",
@@ -3073,18 +3073,6 @@
     ],
     "status": "ok",
     "detail": ""
-   },
-   {
-    "id": "21e528cf",
-    "date": "2026-11-17",
-    "time": null,
-    "code": "ANG1",
-    "type": "À préparer",
-    "tracks": [
-     "FISE"
-    ],
-    "status": "ok",
-    "detail": "Tiktok + Murphy English Grammar modal verbs + chapitre 7 TOEIC book + 5 premiers chapitres TOEIC Vocabulary + Phonetics exercises + if conditionals exercises"
    },
    {
     "id": "c8180ee1",
@@ -3176,36 +3164,6 @@
    }
   ],
   "changes": [
-   {
-    "id": "6cfec537",
-    "date": "2026-11-17",
-    "slot": "matin",
-    "code": "ANG1",
-    "action": "visio",
-    "value": "",
-    "start": "",
-    "end": "",
-    "title": "",
-    "room": "",
-    "tracks": [
-     "FISE"
-    ]
-   },
-   {
-    "id": "ea34c150",
-    "date": "2026-11-17",
-    "slot": "aprem",
-    "code": "TG",
-    "action": "visio",
-    "value": "",
-    "start": "",
-    "end": "",
-    "title": "",
-    "room": "",
-    "tracks": [
-     "FISE"
-    ]
-   },
    {
     "id": "11c1d2b6",
     "date": "2026-11-18",
