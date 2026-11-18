@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T15:07+01:00",
+ "updated": "2026-11-18T08:37+01:00",
  "tracks": [
   "FISA",
   "FISE"
@@ -3059,7 +3059,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-17T14:07:22.718Z",
+  "updated": "2026-11-18T07:37:17.817Z",
   "items": [
    {
     "id": "8b5015f0",
@@ -3149,6 +3149,30 @@
     ],
     "status": "ok",
     "detail": "Retour prise de notes sur l'article de Fournier sur Teams"
+   },
+   {
+    "id": "71833e9e",
+    "date": "2026-11-23",
+    "time": null,
+    "code": "TG",
+    "type": "Interro",
+    "tracks": [
+     "FISA"
+    ],
+    "status": "ok",
+    "detail": ""
+   },
+   {
+    "id": "d567bc25",
+    "date": "2026-11-30",
+    "time": null,
+    "code": "TG",
+    "type": "Interro",
+    "tracks": [
+     "FISE"
+    ],
+    "status": "ok",
+    "detail": ""
    }
   ],
   "changes": [
