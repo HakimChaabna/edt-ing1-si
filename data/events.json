@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T09:37+01:00",
+ "updated": "2026-11-18T13:37+01:00",
  "tracks": [
   "FISA",
   "FISE"
@@ -3059,7 +3059,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-18T08:37:19.257Z",
+  "updated": "2026-11-18T12:37:18.436Z",
   "items": [
    {
     "id": "8b5015f0",
@@ -3241,6 +3241,21 @@
     "date": "2026-11-19",
     "slot": "matin",
     "code": "BD",
+    "action": "visio",
+    "value": "",
+    "start": "",
+    "end": "",
+    "title": "",
+    "room": "",
+    "tracks": [
+     "FISE"
+    ]
+   },
+   {
+    "id": "d894cf0c",
+    "date": "2026-11-19",
+    "slot": "aprem",
+    "code": "ESP1",
     "action": "visio",
     "value": "",
     "start": "",
