@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T00:07+01:00",
+ "updated": "2026-11-20T00:07+01:00",
  "tracks": [
   "FISA",
   "FISE"
@@ -3059,7 +3059,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-18T23:07:19.654Z",
+  "updated": "2026-11-19T23:07:20.311Z",
   "items": [
    {
     "id": "8b5015f0",
@@ -3164,36 +3164,6 @@
    }
   ],
   "changes": [
-   {
-    "id": "11c1d2b6",
-    "date": "2026-11-18",
-    "slot": "matin",
-    "code": "INFR",
-    "action": "cancel",
-    "value": "",
-    "start": "",
-    "end": "",
-    "title": "",
-    "room": "",
-    "tracks": [
-     "FISE"
-    ]
-   },
-   {
-    "id": "edb631d4",
-    "date": "2026-11-18",
-    "slot": "aprem",
-    "code": "TG",
-    "action": "visio",
-    "value": "",
-    "start": "",
-    "end": "",
-    "title": "",
-    "room": "",
-    "tracks": [
-     "FISE"
-    ]
-   },
    {
     "id": "2161d958",
     "date": "2026-11-19",
