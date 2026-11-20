@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T10:37+01:00",
+ "updated": "2026-11-20T20:07+01:00",
  "tracks": [
   "FISA",
   "FISE"
@@ -3059,7 +3059,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-20T09:37:23.599Z",
+  "updated": "2026-11-20T19:07:23.662Z",
   "items": [
    {
     "id": "8b5015f0",
@@ -3158,6 +3158,19 @@
     "type": "Interro",
     "tracks": [
      "FISE"
+    ],
+    "status": "ok",
+    "detail": ""
+   },
+   {
+    "id": "399d9e9e",
+    "date": "2026-11-27",
+    "time": null,
+    "code": "POO",
+    "type": "Interro",
+    "tracks": [
+     "FISE",
+     "FISA"
     ],
     "status": "ok",
     "detail": ""
