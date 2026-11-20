@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T20:07+01:00",
+ "updated": "2026-11-21T00:07+01:00",
  "tracks": [
   "FISA",
   "FISE"
@@ -3059,7 +3059,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-20T19:07:23.662Z",
+  "updated": "2026-11-20T23:07:20.416Z",
   "items": [
    {
     "id": "8b5015f0",
@@ -3114,18 +3114,6 @@
     "detail": "exercice 1, exercice 2 et exercice 3 de la fiche \"orthogonalité dans R^n\"."
    },
    {
-    "id": "41a2baaf",
-    "date": "2026-11-19",
-    "time": null,
-    "code": "ESP1",
-    "type": "À préparer",
-    "tracks": [
-     "FISE"
-    ],
-    "status": "ok",
-    "detail": ""
-   },
-   {
     "id": "3cfa01fe",
     "date": "2026-11-24",
     "time": "23:59",
@@ -3176,37 +3164,6 @@
     "detail": ""
    }
   ],
-  "changes": [
-   {
-    "id": "2161d958",
-    "date": "2026-11-19",
-    "slot": "matin",
-    "code": "BD",
-    "action": "visio",
-    "value": "",
-    "start": "",
-    "end": "",
-    "title": "",
-    "room": "",
-    "tracks": [
-     "FISE"
-    ]
-   },
-   {
-    "id": "d894cf0c",
-    "date": "2026-11-19",
-    "slot": "aprem",
-    "code": "ESP1",
-    "action": "visio",
-    "value": "",
-    "start": "",
-    "end": "",
-    "title": "",
-    "room": "",
-    "tracks": [
-     "FISE"
-    ]
-   }
-  ]
+  "changes": []
  }
 }
