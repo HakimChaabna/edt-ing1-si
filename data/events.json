@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T10:07+01:00",
+ "updated": "2026-11-20T10:37+01:00",
  "tracks": [
   "FISA",
   "FISE"
@@ -492,7 +492,7 @@
    "code": "INFR",
    "title": "Introduction à l'infrastructure système et réseau",
    "type": "TD",
-   "room": "INFO 1 St-Simon",
+   "room": "TD 6 St-Simon",
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -541,7 +541,7 @@
    "code": "ANG1",
    "title": "Anglais",
    "type": "CM",
-   "room": "INFO 2 St-Simon",
+   "room": "INFO 4 St-Simon",
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -3059,7 +3059,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-20T09:07:21.314Z",
+  "updated": "2026-11-20T09:37:23.599Z",
   "items": [
    {
     "id": "8b5015f0",
