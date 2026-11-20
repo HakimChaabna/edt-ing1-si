@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T00:07+01:00",
+ "updated": "2026-11-20T10:07+01:00",
  "tracks": [
   "FISA",
   "FISE"
@@ -394,7 +394,7 @@
    "code": "MATH",
    "title": "Mathématique pour l'ingénieur",
    "type": "TD",
-   "room": "TD 5 St-Simon",
+   "room": "TD 3 St-Simon",
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -411,7 +411,7 @@
    "code": "TG",
    "title": "Théorie des Graphes",
    "type": "TD",
-   "room": "TD 6 St-Simon",
+   "room": "TD 3 St-Simon",
    "groups": [
     "SI ING 1 FISA"
    ],
@@ -477,7 +477,7 @@
    "code": "POO",
    "title": "Programmation orientée objet avancée",
    "type": "CM",
-   "room": "INFO 2 St-Simon",
+   "room": "TD 5 St-Simon",
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -507,7 +507,7 @@
    "code": "BD",
    "title": "Bases de données : conception et développement",
    "type": "CM",
-   "room": "TD 5 St-Simon",
+   "room": "TD 3 St-Simon",
    "groups": [
     "SI ING 1 FISA",
     "SI ING 1 FISE"
@@ -3059,7 +3059,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-19T23:07:20.311Z",
+  "updated": "2026-11-20T09:07:21.314Z",
   "items": [
    {
     "id": "8b5015f0",
