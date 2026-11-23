@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T12:37+01:00",
+ "updated": "2026-11-23T13:07+01:00",
  "tracks": [
   "FISA",
   "FISE"
@@ -3059,7 +3059,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-23T11:37:22.280Z",
+  "updated": "2026-11-23T12:07:21.865Z",
   "items": [
    {
     "id": "8b5015f0",
@@ -3187,7 +3187,20 @@
      "FISA"
     ],
     "status": "ok",
-    "detail": ""
+    "detail": "Projections orthogonales + fonctions"
+   },
+   {
+    "id": "5f1851ce",
+    "date": "2026-12-07",
+    "time": null,
+    "code": "MATH",
+    "type": "À préparer",
+    "tracks": [
+     "FISE",
+     "FISA"
+    ],
+    "status": "ok",
+    "detail": "Exos 1 et 3 fonctions"
    }
   ],
   "changes": []
