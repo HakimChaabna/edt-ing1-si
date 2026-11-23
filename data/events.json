@@ -1,42 +1,10 @@
 {
- "updated": "2026-11-23T13:07+01:00",
+ "updated": "2026-11-24T00:07+01:00",
  "tracks": [
   "FISA",
   "FISE"
  ],
  "events": [
-  {
-   "id": "ADE602d55504543323032362d323032372d31383730362d302d32",
-   "start": "2026-11-02T09:00:00+01:00",
-   "end": "2026-11-02T13:00:00+01:00",
-   "code": "MATH",
-   "title": "Mathématique pour l'ingénieur",
-   "type": "CM",
-   "room": "TD 5 St-Simon",
-   "groups": [
-    "SI ING 1 FISA",
-    "SI ING 1 FISE"
-   ],
-   "tracks": [
-    "FISA",
-    "FISE"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d383331362d302d32",
-   "start": "2026-11-02T14:00:00+01:00",
-   "end": "2026-11-02T18:00:00+01:00",
-   "code": "TG",
-   "title": "Théorie des Graphes",
-   "type": "CM",
-   "room": "INFO 3 St-Simon",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
   {
    "id": "ADE602d55504543323032362d323032372d31383334332d302d33",
    "start": "2026-11-03T09:00:00+01:00",
@@ -3059,7 +3027,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-23T12:07:21.865Z",
+  "updated": "2026-11-23T23:07:21.982Z",
   "items": [
    {
     "id": "8b5015f0",
