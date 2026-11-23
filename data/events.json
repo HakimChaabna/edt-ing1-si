@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T11:07+01:00",
+ "updated": "2026-11-23T11:37+01:00",
  "tracks": [
   "FISA",
   "FISE"
@@ -616,7 +616,7 @@
    "code": "INFR",
    "title": "Introduction à l'infrastructure système et réseau",
    "type": "TP",
-   "room": "INFO 1 St-Simon",
+   "room": "INFO 2 St-Simon",
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -631,7 +631,7 @@
    "code": "POO",
    "title": "Programmation orientée objet avancée",
    "type": "CM",
-   "room": "TD 6 St-Simon",
+   "room": "INFO 4 St-Simon",
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -661,7 +661,7 @@
    "code": "ESP1",
    "title": "Seconde langue vivante au choix",
    "type": "CM",
-   "room": "TD 3 St-Simon",
+   "room": "INFO 2 St-Simon",
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -676,7 +676,7 @@
    "code": "POO",
    "title": "Programmation orientée objet avancée",
    "type": "CM",
-   "room": "TD 6 St-Simon",
+   "room": "INFO 4 St-Simon",
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -3059,7 +3059,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-23T10:07:20.956Z",
+  "updated": "2026-11-23T10:37:20.720Z",
   "items": [
    {
     "id": "8b5015f0",
