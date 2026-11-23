@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T10:37+01:00",
+ "updated": "2026-11-23T11:07+01:00",
  "tracks": [
   "FISA",
   "FISE"
@@ -556,7 +556,7 @@
    "code": "ANG1",
    "title": "Anglais",
    "type": "TD",
-   "room": "TD 7 St-Simon",
+   "room": "INFO 4 St-Simon",
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -571,7 +571,7 @@
    "code": "TG",
    "title": "Théorie des Graphes",
    "type": "TD",
-   "room": "TD 5 St-Simon",
+   "room": "INFO 5 St-Simon",
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -586,7 +586,7 @@
    "code": "ANG1",
    "title": "Anglais",
    "type": "CM",
-   "room": "INFO 5 St-Simon",
+   "room": "INFO 2 St-Simon",
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -601,7 +601,7 @@
    "code": "TG",
    "title": "Théorie des Graphes",
    "type": "TD",
-   "room": "TD 5 St-Simon",
+   "room": "INFO 6 St-Simon",
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -616,7 +616,7 @@
    "code": "INFR",
    "title": "Introduction à l'infrastructure système et réseau",
    "type": "TP",
-   "room": "TD 5 St-Simon",
+   "room": "INFO 1 St-Simon",
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -3059,7 +3059,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-23T09:37:21.937Z",
+  "updated": "2026-11-23T10:07:20.956Z",
   "items": [
    {
     "id": "8b5015f0",
@@ -3168,6 +3168,19 @@
     "date": "2026-12-15",
     "time": null,
     "code": "DYN",
+    "type": "Interro",
+    "tracks": [
+     "FISE",
+     "FISA"
+    ],
+    "status": "ok",
+    "detail": ""
+   },
+   {
+    "id": "b15ae959",
+    "date": "2026-12-07",
+    "time": null,
+    "code": "MATH",
     "type": "Interro",
     "tracks": [
      "FISE",
