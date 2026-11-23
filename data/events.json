@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T22:37+01:00",
+ "updated": "2026-11-23T10:37+01:00",
  "tracks": [
   "FISA",
   "FISE"
@@ -556,7 +556,7 @@
    "code": "ANG1",
    "title": "Anglais",
    "type": "TD",
-   "room": "TD 3 St-Simon,TD 6 St-Simon",
+   "room": "TD 7 St-Simon",
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -1170,7 +1170,7 @@
    "code": "ANG1",
    "title": "Anglais",
    "type": "TD",
-   "room": "INFO 2 St-Simon,TD 6 St-Simon",
+   "room": "INFO 2 St-Simon",
    "groups": [
     "SI ING 1 FISE"
    ],
@@ -3059,7 +3059,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-21T21:37:20.384Z",
+  "updated": "2026-11-23T09:37:21.937Z",
   "items": [
    {
     "id": "8b5015f0",
