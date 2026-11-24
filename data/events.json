@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T00:07+01:00",
+ "updated": "2026-11-24T14:37+01:00",
  "tracks": [
   "FISA",
   "FISE"
@@ -3027,7 +3027,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-23T23:07:21.982Z",
+  "updated": "2026-11-24T13:37:23.380Z",
   "items": [
    {
     "id": "8b5015f0",
@@ -3169,6 +3169,19 @@
     ],
     "status": "ok",
     "detail": "Exos 1 et 3 fonctions"
+   },
+   {
+    "id": "f7fbb871",
+    "date": "2026-11-29",
+    "time": "23:59",
+    "code": "DD1",
+    "type": "À rendre",
+    "tracks": [
+     "FISE",
+     "FISA"
+    ],
+    "status": "ok",
+    "detail": "Travail en binôme"
    }
   ],
   "changes": []
