@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T00:07+01:00",
+ "updated": "2026-11-25T09:37+01:00",
  "tracks": [
   "FISA",
   "FISE"
@@ -2993,7 +2993,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-24T23:07:20.670Z",
+  "updated": "2026-11-25T08:37:23.636Z",
   "items": [
    {
     "id": "8b5015f0",
@@ -3110,6 +3110,45 @@
     ],
     "status": "ok",
     "detail": "Travail en binôme"
+   },
+   {
+    "id": "677e094e",
+    "date": "2026-12-15",
+    "time": null,
+    "code": "LOG1",
+    "type": "Interro",
+    "tracks": [
+     "FISE",
+     "FISA"
+    ],
+    "status": "ok",
+    "detail": ""
+   },
+   {
+    "id": "238fac83",
+    "date": "2027-01-05",
+    "time": null,
+    "code": "LOG1",
+    "type": "À rendre",
+    "tracks": [
+     "FISE",
+     "FISA"
+    ],
+    "status": "ok",
+    "detail": "TP noté"
+   },
+   {
+    "id": "b54d5da4",
+    "date": "2027-01-19",
+    "time": null,
+    "code": "LOG1",
+    "type": "À rendre",
+    "tracks": [
+     "FISE",
+     "FISA"
+    ],
+    "status": "ok",
+    "detail": "TP noté"
    }
   ],
   "changes": []
