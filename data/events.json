@@ -1,40 +1,10 @@
 {
- "updated": "2026-11-25T09:37+01:00",
+ "updated": "2026-11-26T00:07+01:00",
  "tracks": [
   "FISA",
   "FISE"
  ],
  "events": [
-  {
-   "id": "ADE602d55504543323032362d323032372d32313831322d302d32",
-   "start": "2026-11-04T09:00:00+01:00",
-   "end": "2026-11-04T13:00:00+01:00",
-   "code": "INFR",
-   "title": "Introduction à l'infrastructure système et réseau",
-   "type": "TD",
-   "room": "TD 6 St-Simon",
-   "groups": [
-    "SI ING 1 FISE"
-   ],
-   "tracks": [
-    "FISE"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d31303930332d302d35",
-   "start": "2026-11-04T14:00:00+01:00",
-   "end": "2026-11-04T18:00:00+01:00",
-   "code": "POO",
-   "title": "Programmation orientée objet avancée",
-   "type": "CM",
-   "room": "INFO 4 St-Simon",
-   "groups": [
-    "SI ING 1 FISE"
-   ],
-   "tracks": [
-    "FISE"
-   ]
-  },
   {
    "id": "ADE602d55504543323032362d323032372d383238362d302d31",
    "start": "2026-11-05T09:00:00+01:00",
@@ -2993,7 +2963,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-25T08:37:23.636Z",
+  "updated": "2026-11-25T23:07:24.698Z",
   "items": [
    {
     "id": "8b5015f0",
@@ -3020,19 +2990,6 @@
     ],
     "status": "ok",
     "detail": "Chapitre 1 (ajustement exponentiel), Chapitre 2 jusqu'à fonction de repartition"
-   },
-   {
-    "id": "3cfa01fe",
-    "date": "2026-11-24",
-    "time": "23:59",
-    "code": "DYN",
-    "type": "À rendre",
-    "tracks": [
-     "FISE",
-     "FISA"
-    ],
-    "status": "ok",
-    "detail": "Retour prise de notes sur l'article de Fournier sur Teams"
    },
    {
     "id": "d567bc25",
