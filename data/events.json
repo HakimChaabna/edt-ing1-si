@@ -1,42 +1,10 @@
 {
- "updated": "2026-11-26T00:07+01:00",
+ "updated": "2026-11-27T00:07+01:00",
  "tracks": [
   "FISA",
   "FISE"
  ],
  "events": [
-  {
-   "id": "ADE602d55504543323032362d323032372d383238362d302d31",
-   "start": "2026-11-05T09:00:00+01:00",
-   "end": "2026-11-05T13:00:00+01:00",
-   "code": "INFR",
-   "title": "Introduction à l'infrastructure système et réseau",
-   "type": "CM",
-   "room": "INFO 3 St-Simon",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d32313033382d302d36",
-   "start": "2026-11-05T14:00:00+01:00",
-   "end": "2026-11-05T18:00:00+01:00",
-   "code": "BD",
-   "title": "Bases de données : conception et développement",
-   "type": "CM",
-   "room": "TD 5 St-Simon",
-   "groups": [
-    "SI ING 1 FISA",
-    "SI ING 1 FISE"
-   ],
-   "tracks": [
-    "FISA",
-    "FISE"
-   ]
-  },
   {
    "id": "ADE602d55504543323032362d323032372d31383737392d302d30",
    "start": "2026-11-06T09:00:00+01:00",
@@ -2963,7 +2931,7 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-25T23:07:24.698Z",
+  "updated": "2026-11-26T23:07:20.502Z",
   "items": [
    {
     "id": "8b5015f0",
