@@ -1,42 +1,10 @@
 {
- "updated": "2026-11-27T00:07+01:00",
+ "updated": "2026-11-28T00:07+01:00",
  "tracks": [
   "FISA",
   "FISE"
  ],
  "events": [
-  {
-   "id": "ADE602d55504543323032362d323032372d31383737392d302d30",
-   "start": "2026-11-06T09:00:00+01:00",
-   "end": "2026-11-06T13:00:00+01:00",
-   "code": "STAT",
-   "title": "Statistiques Inférentielles",
-   "type": "CM",
-   "room": "Distanciel",
-   "groups": [
-    "SI ING 1 FISA",
-    "SI ING 1 FISE"
-   ],
-   "tracks": [
-    "FISA",
-    "FISE"
-   ]
-  },
-  {
-   "id": "ADE602d55504543323032362d323032372d343934322d302d33",
-   "start": "2026-11-06T14:00:00+01:00",
-   "end": "2026-11-06T18:00:00+01:00",
-   "code": "ANG1",
-   "title": "Anglais",
-   "type": "CM",
-   "room": "INFO 2 St-Simon",
-   "groups": [
-    "SI ING 1 FISA"
-   ],
-   "tracks": [
-    "FISA"
-   ]
-  },
   {
    "id": "ADE602d55504543323032362d323032372d31383730362d302d31",
    "start": "2026-11-09T09:00:00+01:00",
@@ -2931,21 +2899,8 @@
   }
  ],
  "homework": {
-  "updated": "2026-11-26T23:07:20.502Z",
+  "updated": "2026-11-27T23:07:19.626Z",
   "items": [
-   {
-    "id": "8b5015f0",
-    "date": "2026-11-26",
-    "time": null,
-    "code": "BD",
-    "type": "Interro",
-    "tracks": [
-     "FISE",
-     "FISA"
-    ],
-    "status": "ok",
-    "detail": ""
-   },
    {
     "id": "c8180ee1",
     "date": "2026-12-09",
